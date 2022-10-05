@@ -1,24 +1,33 @@
 # sisdai-componentes
 
-## Project setup
+Sisdai-componentes es una biblioteca de componentes reutilizables de Vue alineada al sistema de diseño de la DAI.
+
+El proyecto contiene una carpeta docs-baseweb que es un ambiente para ir probando y documentando el desarrollo. A continuación de describen los comandos básicos
+
+## Instalación 
+
+Para instalar las dependencias de la biblioteca:
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
+Para instalar las dependencias del ambiente de desarrollo:
 ```
-npm run serve
+npm docs:install
 ```
 
-### Compiles and minifies for production
+### Compilar ambiente de desarrollo en local: 
+Este comando levanta la baseweb para que quien desarrolle pueda hacer pruebas
+```
+npm run docs:serve
+```
+
+### Compilar biblioteca para producción 
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### Compilar ambiente de desarrollo para visualizar en línea 
 ```
-npm run lint
+npm run docs:build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

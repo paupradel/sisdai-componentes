@@ -33,7 +33,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'NarrativaScroll',
   props: {
     msg: String,
   },

@@ -1,6 +1,8 @@
 .DS_Store
 node_modules
 /dist
+/docs-baseweb/node_modules
+/docs-baseweb/dist
 
 
 # local env files
