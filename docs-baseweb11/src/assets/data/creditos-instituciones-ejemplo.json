@@ -1,0 +1,20 @@
+[
+  {
+    "id": "cinvestav",
+    "nombre": "Centro de Investigación y de Estudios Avanzados",
+    "logo": "https://www.cinvestav.mx/portals/0/LogoCinvestav1Negro.png",
+    "url": "https://www.cinvestav.mx/"
+  },
+  {
+    "id": "centrogeo",
+    "nombre": "Centro de Investigación en Ciencias de Información Geoespacial, A.C.",
+    "logo": "https://www.centrogeo.org.mx/templates/ja_resume/images/logo_centrogeo_wide.svg",
+    "url": "https://www.cinvestav.mx/"
+  },
+  {
+    "id": "yoprefieroellago",
+    "nombre": "Yo prefiero el lago",
+    "logo": "https://socioecologia.conacyt.mx/texcoco/img/ypel.08d3a36a.jpg",
+    "url": ""
+  }
+]
