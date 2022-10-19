@@ -10,36 +10,18 @@ const routes = [
     name: 'Inicio',
     component: PaginaInicio
   },
-  {
-    path: '/creditos',
-    name: 'Créditos',
-    component: () => import('../views/PaginaCreditos.vue')
-  },
-  {
-    path: '/creditos/:id',
-    name: 'Créditos / Investigador',
-    component: () => import('../views/PaginaCreditosDetalle.vue')
-  },
-  {
-    path: '/preguntas-frecuentes',
-    name: 'Preguntas Frecuentes',
-    component: () => import('../views/PaginaPreguntasFrecuentes.vue')
-  },
-  {
-    path: '/ayuda',
-    name: 'Ayuda de Accesibilidad',
-    component: () => import('../views/AccesibilidadAyuda.vue')
-  },
+
+
   {
     path: '/herramientas',
     name: 'Herramientas',
     component: () => import('../views/PaginaHerramientas.vue')
   },
   {
-    path: '**',
-    name: 'pagina-no-encontrada',
-    component: () => import('@/views/ErrorPaginaNoEncontrada.vue'),
-  }
+    path: '/narrativa-scroll',
+    name: 'NarrativaScroll',
+    component: () => import('../views/VistaNarrativaScroll.vue')
+  },
 ]
 
 const router = new VueRouter({

@@ -2,6 +2,7 @@
   "name": "sisdai-componentes",
   "version": "0.1.0",
   "private": true,
+  "licence": "MIT",
   "files": [
     "dist/*"
   ],
@@ -10,12 +11,14 @@
     "docs:serve": "cd docs-baseweb && vue-cli-service serve ",
     "docs:install": "cd docs-baseweb && npm install",
     "docs:build": "cd docs-baseweb && vue-cli-service build",
-    "build": "vue-cli-service build --target lib docs/index.js",
+    "build": "vue-cli-service build --target lib src/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "copy-webpack-plugin": "^6.4.1",
     "core-js": "^3.6.5",
+    "intersection-observer": "^0.12.2",
+    "scrollama": "^3.2.0",
     "vue": "^2.6.11",
     "vuex": "^3.4.0"
   },

@@ -15,10 +15,8 @@
       <div class="nav-menu-principal">
         <ul class="nav-menu">
           <li><router-link class="nav-hipervinculo" to="/">Inicio</router-link></li>
-          <li><router-link class="nav-hipervinculo" to="/creditos">Créditos</router-link></li>
-          <li><router-link class="nav-hipervinculo" to="/preguntas-frecuentes">Preguntas Frecuentes</router-link></li>
-          <li><router-link class="nav-hipervinculo" to="/herramientas">Herramientas</router-link></li>
-          <li><router-link class="nav-hipervinculo" to="/ayuda">Ayuda</router-link></li>
+          <li><router-link class="nav-hipervinculo" to="/narrativa-scroll">NarrativaScroll</router-link></li>
+
         </ul>
       </div>
     </div>

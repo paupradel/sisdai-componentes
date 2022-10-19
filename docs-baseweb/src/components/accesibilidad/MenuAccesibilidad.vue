@@ -36,6 +36,7 @@
     position: fixed;
     right: map-get($espaciado,'1');
     bottom: map-get($espaciado,'1');
+    z-index: 100;
   }
   .boton-accesibilidad {
     background: #0000;
