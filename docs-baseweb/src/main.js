@@ -3,11 +3,15 @@ import VueMatomo from 'vue-matomo'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import VueCodeHighlight from 'vue-code-highlight'
 
 import { NarrativaScroll} from "../../src/index.js"
 
+import "vue-code-highlight/themes/prism-tomorrow.css";
 
 Vue.config.productionTip = false
+
+Vue.use(VueCodeHighlight)
 Vue.use(NarrativaScroll)
 
 new Vue({

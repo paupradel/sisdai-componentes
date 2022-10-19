@@ -13,6 +13,7 @@
     "core-js": "^3.8.3",
     "dadsig-css": "github:conacyt-dai/dadsig-css#v0.30.2",
     "vue": "^2.6.14",
+    "vue-code-highlight": "^0.7.8",
     "vue-matomo": "4.1.0",
     "vue-router": "^3.5.1",
     "vuex": "^3.6.2"
