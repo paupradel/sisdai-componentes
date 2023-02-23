@@ -1,6 +1,5 @@
-import * as SisDaiComponentes from "./index"  
+import * as SisDaiComponentes from './index'
 
-
-export default{
-    ...SisDaiComponentes,
+export default {
+  ...SisDaiComponentes,
 }
