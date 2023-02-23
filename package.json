@@ -2,63 +2,43 @@
   "name": "sisdai-componentes",
   "version": "0.2.0",
   "private": true,
-  "licence": "MIT",
+  "description": "Biblioteca de componentes de Vue reutilizables",
+  "main": "./dist/sisdai-componentes.umd.js",
   "files": [
     "dist/*"
   ],
-  "main": "./dist/sisdai-componentes.umd.js",
   "scripts": {
-    "docs:serve": "cd docs-baseweb && vue-cli-service serve ",
-    "docs:install": "cd docs-baseweb && npm install",
-    "docs:build": "cd docs-baseweb && vue-cli-service build",
+    "docs": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "docs:build-nossr": "vuepress buildnossr docs",
     "build": "vue-cli-service build --target lib src/index.js",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "format": "prettier . --write",
+    "format-lint": "npm run format && npm run lint"
   },
   "dependencies": {
-    "copy-webpack-plugin": "^6.4.1",
     "core-js": "^3.6.5",
-    "intersection-observer": "^0.12.2",
+    "sisdai-css": "github:salsa-community/sisdai-css",
     "scrollama": "^3.2.0",
-    "vue": "^2.6.11",
-    "vuex": "^3.4.0"
+    "vue": "^2.7.14"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.16",
-    "@babel/eslint-parser": "^7.12.16",
-    "@vue/cli-plugin-babel": "~4.5.13",
-    "@vue/cli-plugin-eslint": "~4.5.13",
-    "@vue/cli-plugin-vuex": "~4.5.13",
-    "@vue/cli-service": "~4.5.13",
-    "@vue/eslint-config-airbnb": "^5.0.2",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
+    "@babel/core": "^7.20.12",
+    "@babel/eslint-parser": "^7.19.1",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-eslint": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-html": "^7.1.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-vue": "^8.0.3",
-    "lint-staged": "^11.1.2",
-    "prettier": "2.7.1",
-    "node-sass": "^4.12.0",
-    "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.11"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "@vue/airbnb"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.8.0",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.2",
+    "sass": "^1.57.1",
+    "sass-loader": "^10.4.1",
+    "vue-template-compiler": "^2.7.14",
+    "vuepress": "^1.9.8",
+    "vuepress-html-webpack-plugin": "^3.2.0"
+  }
 }

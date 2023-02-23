@@ -1,5 +1,3 @@
-import * as NarrativaScroll from './narrativa-scroll';
+import * as NarrativaScroll from './narrativa-scroll'
 
-export {
-  NarrativaScroll,
-};
+export { NarrativaScroll }

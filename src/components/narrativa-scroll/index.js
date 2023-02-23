@@ -1,15 +1,12 @@
-import NarrativaScroll from './NarrativaScroll.vue';
+import NarrativaScroll from './NarrativaScroll.vue'
 
 function plugin(Vue) {
   if (plugin.installed) {
-    return;
+    return
   }
-  plugin.installed = true;
-  Vue.component(NarrativaScroll.name, NarrativaScroll);
+  plugin.installed = true
+  Vue.component(NarrativaScroll.name, NarrativaScroll)
 }
 
-export default plugin;
-export {
-  plugin as install,
-  NarrativaScroll,
-};
+export default plugin
+export { plugin as install, NarrativaScroll }
