@@ -1,11 +1,14 @@
-import NarrativaScroll from './components/narrativa-scroll/NarrativaScroll.vue'
+import {
+  //NarrativaScroll,
+  ComponenteVacio
+} from './components'
 
-export default function plugin(Vue) {
-  if (plugin.installed) {
-    return
+const plugin = {
+  install: function (Vue) {
+    //Vue.use(NarrativaScroll)
+    Vue.use(ComponenteVacio)
   }
-  plugin.installed = true
-  Vue.use(NarrativaScroll.__name, NarrativaScroll)
 }
 
-export { plugin as install }
+
+export default plugin

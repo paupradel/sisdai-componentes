@@ -1,3 +1,7 @@
-import * as NarrativaScroll from './narrativa-scroll'
+//import NarrativaScroll from './narrativa-scroll'
+import ComponenteVacio from './componente-vacio'
 
-export { NarrativaScroll }
+export {
+    //NarrativaScroll, 
+    ComponenteVacio
+}
