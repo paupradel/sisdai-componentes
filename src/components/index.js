@@ -2,6 +2,6 @@
 import ComponenteVacio from './componente-vacio'
 
 export {
-    //NarrativaScroll, 
-    ComponenteVacio
+  //NarrativaScroll,
+  ComponenteVacio,
 }
