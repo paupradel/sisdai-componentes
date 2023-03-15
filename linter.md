@@ -64,7 +64,7 @@ vue add @vue/cli-plugin-eslint
 npm run lint
 ```
 
-- Además se habilitó el siguiente git hook con la opción de formatear y ejecutar el `linter` en cada `commit` en el archivo `packaje.json`:
+- Además, se habilitó el siguiente git hook con la opción de formatear y ejecutar el `linter` en cada `commit` en el archivo `packaje.json`:
 
 ```json
   "gitHooks": {
