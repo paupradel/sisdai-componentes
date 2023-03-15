@@ -1,11 +1,11 @@
 import {
-  //NarrativaScroll,
+  NarrativaScroll,
   ComponenteVacio,
 } from './components'
 
 const plugin = {
   install: function (Vue) {
-    //Vue.use(NarrativaScroll)
+    Vue.use(NarrativaScroll)
     Vue.use(ComponenteVacio)
   },
 }
