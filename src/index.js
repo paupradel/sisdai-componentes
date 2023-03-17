@@ -1,7 +1,4 @@
-import {
-  NarrativaScroll,
-  ComponenteVacio,
-} from './components'
+import { NarrativaScroll, ComponenteVacio } from './components'
 
 const plugin = {
   install: function (Vue) {
