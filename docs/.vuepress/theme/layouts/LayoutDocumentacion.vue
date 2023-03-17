@@ -38,6 +38,13 @@ const elementos = {
       clase: 'menu-routerlink',
       icono: '',
     },
+    {
+      id: 'seccion_3',
+      titulo: 'Accesibilidad',
+      url: '/documentacion/accesibilidad',
+      clase: 'menu-routerlink',
+      icono: '',
+    },
   ],
   links: [
     {
