@@ -3,7 +3,5 @@ import MenuAccesibilidad from './../../../../src/components/accesibilidad/MenuAc
 </script>
 
 <template>
-  <div>
-    <MenuAccesibilidad />
-  </div>
+  <MenuAccesibilidad />
 </template>
