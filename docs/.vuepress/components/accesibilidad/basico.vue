@@ -36,10 +36,10 @@ const menuAccesibilidad = ref(null)
 .punto-partida {
   position: absolute;
   background-color: red;
-  width: 2px;
-  height: 2px;
-  right: 43px;
-  bottom: 43px;
+  width: 20px;
+  height: 20px;
+  right: 34px;
+  bottom: 34px;
   z-index: 6;
 }
 </style>

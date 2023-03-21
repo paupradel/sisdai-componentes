@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 
 /**
  *
@@ -30,13 +30,31 @@ const opciones = [
 /**
  *
  */
-const esteMenuAccesibilidadAbierto = ref(false)
+const estaMenuAccesibilidadAbierto = ref(false)
+
+var control, tiempo
+function sumarTiempo() {
+  tiempo++
+}
+function controlarCronometro() {
+  tiempo = 0
+  if (estaMenuAccesibilidadAbierto.value) {
+    control = setInterval(sumarTiempo, 1)
+  } else {
+    clearInterval(control)
+  }
+}
+
+function mensaje(elemento) {
+  return `tiempo: ${tiempo}\nw: ${elemento.offsetWidth}\nh: ${elemento.offsetHeight}`
+}
 
 /**
  *
  */
 function alternarMenuAccesibilidadAbierto() {
-  esteMenuAccesibilidadAbierto.value = !esteMenuAccesibilidadAbierto.value
+  estaMenuAccesibilidadAbierto.value = !estaMenuAccesibilidadAbierto.value
+  controlarCronometro()
 }
 
 /**
@@ -44,16 +62,28 @@ function alternarMenuAccesibilidadAbierto() {
  */
 function ejecutarAccionOpcion(accion) {
   console.log(accion)
-  esteMenuAccesibilidadAbierto.value = false
+  estaMenuAccesibilidadAbierto.value = false
 }
 
 defineExpose({ alternarMenuAccesibilidadAbierto })
+
+const menu = ref(null)
+
+onMounted(() => {
+  if (menu.value !== null) {
+    // console.log(menu.value)
+    new ResizeObserver(() => {
+      console.log(mensaje(menu.value))
+    }).observe(menu.value)
+  }
+})
 </script>
 
 <template>
   <div
     class="contenedor-a11y"
-    :class="{ abierto: esteMenuAccesibilidadAbierto }"
+    :class="{ abierto: estaMenuAccesibilidadAbierto }"
+    ref="menu"
   >
     <button
       class="boton-a11y"
@@ -148,55 +178,63 @@ defineExpose({ alternarMenuAccesibilidadAbierto })
 }
 
 /* T R A N S I C I O N E S */
-
 .contenedor-a11y {
+  --a11y-transicion: 2000ms;
+  --a11y-ancho: 200;
+  --a11y-relacion-tiempo: calc(var(--a11y-transicion) / var(--a11y-ancho));
   bottom: 24px;
   right: 24px;
   transition-property: bottom, right;
-  transition-duration: 320ms, 320ms;
+  transition-duration: calc(var(--a11y-relacion-tiempo) * 32),
+    calc(var(--a11y-relacion-tiempo) * 32);
   transition-timing-function: linear, linear;
-  transition-delay: 3680ms, 3680ms;
+  transition-delay: calc(var(--a11y-relacion-tiempo) * 128),
+    calc(var(--a11y-relacion-tiempo) * 128);
 }
 .contenedor-a11y.abierto {
   bottom: 8px;
   right: 8px;
-  transition-delay: 0s, 0s;
-}
-
-.contenedor-a11y > .boton-a11y {
-  display: none; /*  */
-  margin-top: 0 !important;
-  margin-right: 24px !important;
-  margin-bottom: 24px !important;
-  margin-left: 0 !important;
-}
-
-.contenedor-a11y.abierto > .boton-a11y {
-  /* margin: -20px !important; */
-
-  /* margin-bottom: -16px !important; */
+  transition-delay: calc(var(--a11y-relacion-tiempo) * 40),
+    calc(var(--a11y-relacion-tiempo) * 40);
 }
 
 .contenedor-a11y > .menu-a11y {
   z-index: 5; /*  */
+  max-height: 0px;
+  width: 0px;
   margin-top: 0;
   margin-right: 20px;
   margin-bottom: 20px;
   margin-left: 0;
-  max-height: 0;
-  width: 0;
   /** transition: width 2.7s ease-in, max-height 2s ease-in 0.1s; **/
   transition-property: width, max-height, margin-right, margin-bottom;
-  transition-duration: 4s, 4s, 400ms, 400ms;
+  transition-duration: var(--a11y-transicion), var(--a11y-transicion),
+    calc(var(--a11y-relacion-tiempo) * 40),
+    calc(var(--a11y-relacion-tiempo) * 40);
   transition-timing-function: linear, linear, linear, linear;
-  transition-delay: 0s, 0s, 3280ms, 3280ms;
+  transition-delay: 0s, 0s, calc(var(--a11y-relacion-tiempo) * 160),
+    calc(var(--a11y-relacion-tiempo) * 160);
 }
 
 .contenedor-a11y.abierto > .menu-a11y {
-  width: 200px;
+  width: calc(var(--a11y-ancho) * 1px);
   max-height: 270px;
   margin-right: 0;
   margin-bottom: 0;
-  transition-delay: 0s, 0s, 320ms, 320ms;
+  transition-delay: 0s, 0s, 0s, 0s;
+}
+
+.contenedor-a11y > .boton-a11y {
+  display: none; /*  */
+  /* margin-top: 0 !important;
+  margin-right: 24px !important;
+  margin-bottom: 24px !important;
+  margin-left: 0 !important; */
+}
+
+.contenedor-a11y.abierto > .boton-a11y {
+  /* margin: -20px !important; */
+  /* margin-bottom: -16px !important; */
+  display: none;
 }
 </style>
