@@ -13,8 +13,6 @@ const menuAccesibilidad = ref(null)
       </button>
     </div>
 
-    <span class="punto-partida" />
-
     <MenuAccesibilidad ref="menuAccesibilidad" />
   </div>
 </template>
@@ -31,15 +29,5 @@ const menuAccesibilidad = ref(null)
 
 .contenerdor-panttalla-simulada .contenedor-a11y {
   position: absolute;
-}
-
-.punto-partida {
-  position: absolute;
-  background-color: red;
-  width: 20px;
-  height: 20px;
-  right: 34px;
-  bottom: 34px;
-  z-index: 6;
 }
 </style>

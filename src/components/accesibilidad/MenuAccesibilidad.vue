@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref } from 'vue'
+import { ref } from 'vue'
 
 /**
  *
@@ -32,29 +32,11 @@ const opciones = [
  */
 const estaMenuAccesibilidadAbierto = ref(false)
 
-var control, tiempo
-function sumarTiempo() {
-  tiempo++
-}
-function controlarCronometro() {
-  tiempo = 0
-  if (estaMenuAccesibilidadAbierto.value) {
-    control = setInterval(sumarTiempo, 1)
-  } else {
-    clearInterval(control)
-  }
-}
-
-function mensaje(elemento) {
-  return `tiempo: ${tiempo}\nw: ${elemento.offsetWidth}\nh: ${elemento.offsetHeight}`
-}
-
 /**
  *
  */
 function alternarMenuAccesibilidadAbierto() {
   estaMenuAccesibilidadAbierto.value = !estaMenuAccesibilidadAbierto.value
-  controlarCronometro()
 }
 
 /**
@@ -66,24 +48,12 @@ function ejecutarAccionOpcion(accion) {
 }
 
 defineExpose({ alternarMenuAccesibilidadAbierto })
-
-const menu = ref(null)
-
-onMounted(() => {
-  if (menu.value !== null) {
-    // console.log(menu.value)
-    new ResizeObserver(() => {
-      console.log(mensaje(menu.value))
-    }).observe(menu.value)
-  }
-})
 </script>
 
 <template>
   <div
     class="contenedor-a11y"
     :class="{ abierto: estaMenuAccesibilidadAbierto }"
-    ref="menu"
   >
     <button
       class="boton-a11y"
@@ -110,7 +80,7 @@ onMounted(() => {
   </div>
 </template>
 
-<style scoped>
+<style>
 .contenedor-a11y {
   position: fixed;
   z-index: 4;
@@ -125,6 +95,7 @@ onMounted(() => {
   height: 40px;
   width: 40px;
   padding: 0;
+  margin: 0 0 -16px !important;
 }
 
 .contenedor-a11y > .boton-a11y:hover,
@@ -179,41 +150,50 @@ onMounted(() => {
 
 /* T R A N S I C I O N E S */
 .contenedor-a11y {
-  --a11y-transicion: 2000ms;
+  --a11y-transicion: 300ms;
   --a11y-ancho: 200;
   --a11y-relacion-tiempo: calc(var(--a11y-transicion) / var(--a11y-ancho));
   bottom: 24px;
   right: 24px;
-  transition-property: bottom, right;
-  transition-duration: calc(var(--a11y-relacion-tiempo) * 32),
-    calc(var(--a11y-relacion-tiempo) * 32);
-  transition-timing-function: linear, linear;
-  transition-delay: calc(var(--a11y-relacion-tiempo) * 128),
-    calc(var(--a11y-relacion-tiempo) * 128);
+  transition: /* cambia 16px */ bottom
+      /* dura lo que al contenedor le tome crecer 32px (16*2) */
+      calc(var(--a11y-relacion-tiempo) * 32) linear
+      /* al cerrar: tiene un retraso del tiempo que al contenedor le tome reducir a 64px (32*2) */
+      calc(var(--a11y-relacion-tiempo) * calc(var(--a11y-ancho) - 64)),
+    /* cambia 16px */ right
+      /* dura lo que al contenedor le tome crecer 32px (16*2) */
+      calc(var(--a11y-relacion-tiempo) * 32) linear
+      /* al cerrar: tiene un retraso del tiempo que al contenedor le tome reducir a 64px (32*2) */
+      calc(var(--a11y-relacion-tiempo) * calc(var(--a11y-ancho) - 64));
 }
+
 .contenedor-a11y.abierto {
   bottom: 8px;
   right: 8px;
-  transition-delay: calc(var(--a11y-relacion-tiempo) * 40),
-    calc(var(--a11y-relacion-tiempo) * 40);
+  transition-delay: /* al abrir: inicia sin retraso */ 0s,
+    /* al abrir: inicia sin retraso */ 0s;
 }
 
 .contenedor-a11y > .menu-a11y {
-  z-index: 5; /*  */
   max-height: 0px;
   width: 0px;
-  margin-top: 0;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  margin-left: 0;
-  /** transition: width 2.7s ease-in, max-height 2s ease-in 0.1s; **/
-  transition-property: width, max-height, margin-right, margin-bottom;
-  transition-duration: var(--a11y-transicion), var(--a11y-transicion),
-    calc(var(--a11y-relacion-tiempo) * 40),
-    calc(var(--a11y-relacion-tiempo) * 40);
-  transition-timing-function: linear, linear, linear, linear;
-  transition-delay: 0s, 0s, calc(var(--a11y-relacion-tiempo) * 160),
-    calc(var(--a11y-relacion-tiempo) * 160);
+  margin: 0 16px 16px 24px;
+  transition: /* cambia 200px */ width
+      /* dura el tiempo completo de la transición */ var(--a11y-transicion)
+      linear /* al cerrar: inicia sin retraso */ 0s,
+    /* cambia el alto del contenido, sin exceder 270px */ max-height
+      /* dura el tiempo completo de la transición */ var(--a11y-transicion)
+      linear /* al cerrar: inicia sin retraso */ 0s,
+    /* cambia 16px */ margin-right
+      /* dura lo que al contenedor le tome crecer 32px (16*2) */
+      calc(var(--a11y-relacion-tiempo) * 32) linear
+      /* al cerrar: tiene un retraso del tiempo que al contenedor le tome reducir a 32px */
+      calc(var(--a11y-relacion-tiempo) * calc(var(--a11y-ancho) - 32)),
+    /* cambia 16px */ margin-bottom
+      /* dura lo que al contenedor le tome crecer 32px (16*2) */
+      calc(var(--a11y-relacion-tiempo) * 32) linear
+      /* al cerrar: tiene un retraso del tiempo que al contenedor le tome reducir a 32px */
+      calc(var(--a11y-relacion-tiempo) * calc(var(--a11y-ancho) - 32));
 }
 
 .contenedor-a11y.abierto > .menu-a11y {
@@ -221,20 +201,10 @@ onMounted(() => {
   max-height: 270px;
   margin-right: 0;
   margin-bottom: 0;
-  transition-delay: 0s, 0s, 0s, 0s;
-}
-
-.contenedor-a11y > .boton-a11y {
-  display: none; /*  */
-  /* margin-top: 0 !important;
-  margin-right: 24px !important;
-  margin-bottom: 24px !important;
-  margin-left: 0 !important; */
-}
-
-.contenedor-a11y.abierto > .boton-a11y {
-  /* margin: -20px !important; */
-  /* margin-bottom: -16px !important; */
-  display: none;
+  transition-delay: 0s, 0s,
+    /* al abrir: tiene un retraso del tiempo que al contenedor le tome crecer a 32px */
+      calc(var(--a11y-relacion-tiempo) * 32),
+    /* al abrir: tiene un retraso del tiempo que al contenedor le tome crecer a 32px */
+      calc(var(--a11y-relacion-tiempo) * 32);
 }
 </style>
