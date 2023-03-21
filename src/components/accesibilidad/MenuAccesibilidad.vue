@@ -1,16 +1,61 @@
 <script setup>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 
-const esteMenuAccesibilidadAbierto = ref(false)
+/**
+ *
+ */
+const opciones = [
+  {
+    titulo: 'Tipografia accesible',
+    icono: 'icono-cambio-tipografia',
+    accion: 'alternarTipografiaAccesible',
+  },
+  {
+    titulo: 'Vista simplificada',
+    icono: 'icono-vista-simplificada',
+    accion: 'alternarVistaSimplificada',
+  },
+  {
+    titulo: 'Enlaces subrayados',
+    icono: 'icono-enlace-subrayado',
+    accion: 'alternarEnlacesSubrayados',
+  },
+  {
+    titulo: 'Restablecer',
+    icono: 'icono-restablecer',
+    accion: 'limpiarClasesAccesibles',
+  },
+]
 
+/**
+ *
+ */
+const esteMenuAccesibilidadAbierto = ref(true)
+
+/**
+ *
+ */
 function alternarMenuAccesibilidad() {
   esteMenuAccesibilidadAbierto.value = !esteMenuAccesibilidadAbierto.value
 }
 
-function alternarTipografiaAccesible() {
-  console.log('alternarTipografiaAccesible')
+/**
+ *
+ */
+function ejecutarAccionOpcion(accion) {
+  console.log(accion)
   esteMenuAccesibilidadAbierto.value = false
 }
+
+const menu = ref(null)
+
+onMounted(() => {
+  if (menu.value !== null) {
+    new ResizeObserver(() => {
+      console.log(menu.value.offsetWidth, menu.value.offsetHeight)
+    }).observe(menu.value)
+  }
+})
 </script>
 
 <template>
@@ -24,15 +69,23 @@ function alternarTipografiaAccesible() {
     >
       <span class="boton-a11y icono-accesibilidad icono-5" />
     </button>
-    <menu class="menu-a11y">
+    <menu
+      class="menu-a11y"
+      ref="menu"
+    >
       <h6 class="menu-a11y titulo">Herramientas de accesibilidad</h6>
 
       <button
         class="menu-a11y opcion"
-        @click="alternarTipografiaAccesible"
+        v-for="(opcion, idx) in opciones"
+        :key="`opcion-a11y-${idx}`"
+        @click="ejecutarAccionOpcion(opcion.accion)"
       >
-        <span class="icono-cambio-tipografia icono-4" />
-        Tipografia accesible
+        <span
+          class="icono-4"
+          :class="opcion.icono"
+        />
+        {{ opcion.titulo }}
       </button>
     </menu>
   </div>
@@ -55,7 +108,6 @@ function alternarTipografiaAccesible() {
   height: 40px;
   width: 40px;
   padding: 0;
-  margin: 24px !important;
 }
 
 .contenedor-a11y > .boton-a11y:hover,
@@ -72,19 +124,11 @@ function alternarTipografiaAccesible() {
   padding-left: 0;
 }
 
-.contenedor-a11y.abierto > .boton-a11y {
-  margin: -20px !important;
-}
-
 .contenedor-a11y > .menu-a11y {
   background: #f6f6f6;
   box-shadow: 1px 1px 2px 0 var(--sombra);
-  margin: 0;
   padding: 0;
   overflow: hidden;
-  max-height: 0;
-  width: 0;
-  transition: width 0.27s ease-in, max-height 0.2s ease-in 0.1s;
 }
 
 .menu-a11y.titulo {
@@ -115,11 +159,43 @@ function alternarTipografiaAccesible() {
   padding: 0;
 }
 
+/* T R A N S I C I O N E S */
+
+.contenedor-a11y > .boton-a11y {
+  margin-top: 0 !important;
+  margin-right: 24px !important;
+  margin-bottom: 24px !important;
+  margin-left: 0 !important;
+}
+
+.contenedor-a11y > .menu-a11y {
+  margin-top: 24px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 24px;
+  max-height: 0;
+  width: 0;
+  /* transition: width 2.7s ease-in, max-height 2s ease-in 0.1s; */
+  transition-property: width, max-height;
+  transition-duration: 2s, 2s;
+  transition-timing-function: ease-in, ease-in;
+  transition-delay: 0s, 0s;
+}
+
+.contenedor-a11y.abierto > .boton-a11y {
+  /* margin: -20px !important; */
+
+  /* margin-bottom: -40px !important; */
+}
+
 .contenedor-a11y.abierto > .menu-a11y {
-  padding: 8px 0;
+  /* padding: 8px 0; */
   width: 200px;
   max-height: 270px;
-  margin-right: 8px;
-  margin-bottom: 8px;
+  /* margin-right: 8px; */
+  /* margin-bottom: 8px; */
+  margin-right: 0;
+  margin-bottom: 0;
+  transition-delay: 0s, 0s;
 }
 </style>
