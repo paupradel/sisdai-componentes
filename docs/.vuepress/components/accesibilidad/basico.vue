@@ -1,10 +1,21 @@
 <script setup>
+import { ref } from 'vue'
 import MenuAccesibilidad from './../../../../src/components/accesibilidad/MenuAccesibilidad.vue'
+
+const menuAccesibilidad = ref(null)
 </script>
 
 <template>
   <div class="contenerdor-panttalla-simulada">
-    <MenuAccesibilidad />
+    <div class="elementos-ejemplo">
+      <button @click="menuAccesibilidad.alternarMenuAccesibilidadAbierto()">
+        abrir/cerrar
+      </button>
+    </div>
+
+    <span class="punto-partida" />
+
+    <MenuAccesibilidad ref="menuAccesibilidad" />
   </div>
 </template>
 
@@ -20,5 +31,15 @@ import MenuAccesibilidad from './../../../../src/components/accesibilidad/MenuAc
 
 .contenerdor-panttalla-simulada .contenedor-a11y {
   position: absolute;
+}
+
+.punto-partida {
+  position: absolute;
+  background-color: red;
+  width: 2px;
+  height: 2px;
+  right: 43px;
+  bottom: 43px;
+  z-index: 6;
 }
 </style>

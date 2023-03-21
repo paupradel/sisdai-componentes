@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref } from 'vue'
+import { ref } from 'vue'
 
 /**
  *
@@ -30,12 +30,12 @@ const opciones = [
 /**
  *
  */
-const esteMenuAccesibilidadAbierto = ref(true)
+const esteMenuAccesibilidadAbierto = ref(false)
 
 /**
  *
  */
-function alternarMenuAccesibilidad() {
+function alternarMenuAccesibilidadAbierto() {
   esteMenuAccesibilidadAbierto.value = !esteMenuAccesibilidadAbierto.value
 }
 
@@ -47,15 +47,7 @@ function ejecutarAccionOpcion(accion) {
   esteMenuAccesibilidadAbierto.value = false
 }
 
-const menu = ref(null)
-
-onMounted(() => {
-  if (menu.value !== null) {
-    new ResizeObserver(() => {
-      console.log(menu.value.offsetWidth, menu.value.offsetHeight)
-    }).observe(menu.value)
-  }
-})
+defineExpose({ alternarMenuAccesibilidadAbierto })
 </script>
 
 <template>
@@ -65,14 +57,11 @@ onMounted(() => {
   >
     <button
       class="boton-a11y"
-      @click="alternarMenuAccesibilidad"
+      @click="alternarMenuAccesibilidadAbierto"
     >
       <span class="boton-a11y icono-accesibilidad icono-5" />
     </button>
-    <menu
-      class="menu-a11y"
-      ref="menu"
-    >
+    <menu class="menu-a11y">
       <h6 class="menu-a11y titulo">Herramientas de accesibilidad</h6>
 
       <button
@@ -94,8 +83,6 @@ onMounted(() => {
 <style scoped>
 .contenedor-a11y {
   position: fixed;
-  bottom: 0;
-  right: 0;
   z-index: 4;
   margin: 0;
 }
@@ -148,6 +135,7 @@ onMounted(() => {
   font-weight: 600;
   text-align: left;
   padding: 8px 16px;
+  margin-right: 0;
 }
 
 .menu-a11y.opcion:hover,
@@ -161,41 +149,54 @@ onMounted(() => {
 
 /* T R A N S I C I O N E S */
 
+.contenedor-a11y {
+  bottom: 24px;
+  right: 24px;
+  transition-property: bottom, right;
+  transition-duration: 320ms, 320ms;
+  transition-timing-function: linear, linear;
+  transition-delay: 3680ms, 3680ms;
+}
+.contenedor-a11y.abierto {
+  bottom: 8px;
+  right: 8px;
+  transition-delay: 0s, 0s;
+}
+
 .contenedor-a11y > .boton-a11y {
+  display: none; /*  */
   margin-top: 0 !important;
   margin-right: 24px !important;
   margin-bottom: 24px !important;
   margin-left: 0 !important;
 }
 
-.contenedor-a11y > .menu-a11y {
-  margin-top: 24px;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 24px;
-  max-height: 0;
-  width: 0;
-  /* transition: width 2.7s ease-in, max-height 2s ease-in 0.1s; */
-  transition-property: width, max-height;
-  transition-duration: 2s, 2s;
-  transition-timing-function: ease-in, ease-in;
-  transition-delay: 0s, 0s;
-}
-
 .contenedor-a11y.abierto > .boton-a11y {
   /* margin: -20px !important; */
 
-  /* margin-bottom: -40px !important; */
+  /* margin-bottom: -16px !important; */
+}
+
+.contenedor-a11y > .menu-a11y {
+  z-index: 5; /*  */
+  margin-top: 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 0;
+  max-height: 0;
+  width: 0;
+  /** transition: width 2.7s ease-in, max-height 2s ease-in 0.1s; **/
+  transition-property: width, max-height, margin-right, margin-bottom;
+  transition-duration: 4s, 4s, 400ms, 400ms;
+  transition-timing-function: linear, linear, linear, linear;
+  transition-delay: 0s, 0s, 3280ms, 3280ms;
 }
 
 .contenedor-a11y.abierto > .menu-a11y {
-  /* padding: 8px 0; */
   width: 200px;
   max-height: 270px;
-  /* margin-right: 8px; */
-  /* margin-bottom: 8px; */
   margin-right: 0;
   margin-bottom: 0;
-  transition-delay: 0s, 0s;
+  transition-delay: 0s, 0s, 320ms, 320ms;
 }
 </style>
