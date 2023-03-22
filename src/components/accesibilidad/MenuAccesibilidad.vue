@@ -1,6 +1,15 @@
 <script setup>
-import opciones from './opcionesDefault'
-import { ref } from 'vue'
+import opcionesDefault from './opcionesDefault'
+import { ref, toRefs } from 'vue'
+
+const props = defineProps({
+  opciones: {
+    type: Array,
+    default: () => opcionesDefault,
+  },
+})
+
+const { opciones } = toRefs(props)
 
 /**
  * Indica si el Menú de accesibilidad está abierto.
@@ -11,8 +20,8 @@ import { ref } from 'vue'
 const estaMenuAccesibilidadAbierto = ref(false)
 
 /**
- * Cambia el estado (contrario al ejecutar el evento, abierto o cerrado) del Menú de
- * accesibilidad.
+ * Cambia el estado (contrario de su valor actual al ejecutar el evento, abierto o cerrado) del
+ * Menú de accesibilidad.
  */
 function alternarMenuAccesibilidadAbierto() {
   estaMenuAccesibilidadAbierto.value = !estaMenuAccesibilidadAbierto.value

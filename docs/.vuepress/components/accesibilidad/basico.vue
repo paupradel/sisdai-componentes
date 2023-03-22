@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import MenuAccesibilidad from './../../../../src/components/accesibilidad/MenuAccesibilidad.vue'
+import MenuAccesibilidad from './../../../../src/components/accesibilidad/MenuAccesibilidad'
 
 const menuAccesibilidad = ref(null)
 </script>
@@ -23,7 +23,7 @@ const menuAccesibilidad = ref(null)
   border-right: solid gray 10px;
   border-bottom: solid #000 1px;
   height: 350px;
-  width: 400px;
+  width: 100%;
   overflow-y: hidden;
 }
 
