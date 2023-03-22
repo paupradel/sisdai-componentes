@@ -1,0 +1,66 @@
+.contenedor-a11y {
+  position: fixed;
+  z-index: 4;
+  margin: 0;
+}
+
+.contenedor-a11y > .boton-a11y {
+  background: transparent;
+  border-radius: 50%;
+  border: none;
+  display: block;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  margin: 0 0 -16px !important;
+}
+
+.contenedor-a11y > .boton-a11y:hover,
+.contenedor-a11y > .boton-a11y:focus {
+  box-shadow: 0 0 0 5px rgba(29, 116, 230, 0.25);
+}
+
+.boton-a11y.icono-accesibilidad {
+  background-color: #fff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: #1d74e6;
+  padding-left: 0;
+}
+
+.contenedor-a11y > .menu-a11y {
+  background: #f6f6f6;
+  box-shadow: 1px 1px 2px 0 var(--sombra);
+  padding: 0;
+  overflow: hidden;
+}
+
+.menu-a11y.titulo {
+  text-align: left;
+  font-weight: 600;
+  padding: 8px 16px;
+  margin: 0;
+}
+
+.menu-a11y.opcion {
+  background: transparent;
+  border: none;
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: left;
+  padding: 8px 16px;
+  margin-right: 0;
+}
+
+.menu-a11y.opcion:hover,
+.menu-a11y.opcion:focus {
+  background: #dddddd;
+}
+
+.menu-a11y.opcion .icono-4 {
+  padding: 0;
+}
