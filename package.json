@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "sisdai-css": "github:salsa-community/sisdai-css",
+    "sisdai-css": "github:salsa-community/sisdai-css#0.33.4",
     "scrollama": "^3.2.0",
     "vue": "^2.7.14"
   },
@@ -29,12 +29,12 @@
     "@vue/cli-plugin-eslint": "^5.0.8",
     "@vue/cli-service": "^5.0.8",
     "eslint": "^8.36.0",
-    "eslint-config-prettier": "^8.7.0",
+    "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-html": "^7.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.8.0",
     "lint-staged": "^13.2.0",
-    "prettier": "^2.8.2",
+    "prettier": "^2.8.6",
     "sass": "^1.57.1",
     "sass-loader": "^10.4.1",
     "vue-template-compiler": "^2.7.14",
