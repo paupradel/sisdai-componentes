@@ -38,6 +38,20 @@ const elementos = {
       clase: 'menu-routerlink',
       icono: '',
     },
+    {
+      id: 'seccion_3',
+      titulo: 'Colapsable navegacion',
+      url: '/documentacion/colapsable_navegacion',
+      clase: 'menu-routerlink',
+      icono: '',
+    },
+    {
+      id: 'seccion_4',
+      titulo: 'Menu lateral',
+      url: '/documentacion/menu_lateral',
+      clase: 'menu-routerlink',
+      icono: '',
+    },
   ],
   links: [
     {
