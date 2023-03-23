@@ -2,7 +2,7 @@
   <div class="theme-container">
     <nav-NavegacionGobMx></nav-NavegacionGobMx>
 
-    <nav-NavegacionPrincipal></nav-NavegacionPrincipal>
+    <nav-navegacion-principal></nav-navegacion-principal>
 
     <nav-MenuLateralComposicionFija>
       <template v-slot:menu>
@@ -35,6 +35,13 @@ const elementos = {
       id: 'seccion_2',
       titulo: 'NarrativaScroll',
       url: '/documentacion/narrativa_scroll',
+      clase: 'menu-routerlink',
+      icono: '',
+    },
+    {
+      id: 'seccion_3', // ?
+      titulo: 'NavegacionPrincipal',
+      url: '/documentacion/navegacion-principal',
       clase: 'menu-routerlink',
       icono: '',
     },

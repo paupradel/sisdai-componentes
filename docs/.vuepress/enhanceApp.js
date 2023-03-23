@@ -1,4 +1,4 @@
-import NarrativaScroll from '../../src/components/narrativa-scroll/NarrativaScroll.vue'
+import SisdaiComponentes from '../../src/index.js'
 
 // import './styles/index.scss';
 export default ({
@@ -12,5 +12,6 @@ export default ({
   //require('./theme/styles/index.scss'),
   require('./theme/styles/index.scss'),
     require('../../node_modules/sisdai-css/src/eni.scss')
-  Vue.component('NarrativaScroll', NarrativaScroll)
+
+  Vue.use(SisdaiComponentes)
 }
