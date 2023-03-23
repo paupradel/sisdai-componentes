@@ -23,9 +23,10 @@
       >
         <span class="nav-icono-menu"></span>
       </button>
-      <div class="nav-informacion">
-        Sección: <b>{{ navInformacion }}</b>
-      </div>
+      <div
+        class="nav-informacion"
+        v-html="navInformacion"
+      ></div>
     </div>
     <div
       class="nav-menu-contedor"
