@@ -1,6 +1,5 @@
-import NarrativaScroll from '../../src/components/narrativa-scroll/NarrativaScroll.vue'
+import SisdaiComponentes from '../../src/index.js'
 
-// import './styles/index.scss';
 export default ({
   Vue,
   // options, // the options for the root Vue instance
@@ -9,8 +8,8 @@ export default ({
 }) => {
   // ...apply enhancements to the app
   // import styles
-  //require('./theme/styles/index.scss'),
-  require('./theme/styles/index.scss'),
-    require('../../node_modules/sisdai-css/src/eni.scss')
-  Vue.component('NarrativaScroll', NarrativaScroll)
+  require('./theme/styles/index.scss')
+  require('../../node_modules/sisdai-css/src/eni.scss')
+
+  Vue.use(SisdaiComponentes)
 }

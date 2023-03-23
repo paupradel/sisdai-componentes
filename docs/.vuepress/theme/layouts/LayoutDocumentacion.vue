@@ -1,6 +1,6 @@
 <template>
   <div class="theme-container">
-    <nav-NavegacionGobMx></nav-NavegacionGobMx>
+    <NavegacionGobMx />
 
     <nav-NavegacionPrincipal></nav-NavegacionPrincipal>
 
@@ -9,7 +9,7 @@
         <nav-MenuLateral :elementos="elementos"></nav-MenuLateral>
       </template>
       <template v-slot:vista>
-        <div class="contenedor ancho-lectura m-y-5">
+        <div class="contenedor ancho-fijo m-y-5">
           <Content />
         </div>
       </template>
@@ -35,6 +35,13 @@ const elementos = {
       id: 'seccion_2',
       titulo: 'NarrativaScroll',
       url: '/documentacion/narrativa_scroll',
+      clase: 'menu-routerlink',
+      icono: '',
+    },
+    {
+      id: 'seccion_3',
+      titulo: 'NavegacionGobMx',
+      url: '/documentacion/navegacion_gob_mx',
       clase: 'menu-routerlink',
       icono: '',
     },

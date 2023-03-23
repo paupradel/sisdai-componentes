@@ -11,21 +11,21 @@
           width="128"
           height="38"
           class="nav-logo"
-          src="https://framework-gb.cdn.gob.mx/landing/img/logoheader.svg"
+          src="https://dev-dadsig-cdn.crip.conacyt.mx/sisdai-files/gobmx.svg"
           alt="Gobierno de México."
         />
       </a>
       <button
-        @click="toggleGob"
+        @click="alternarMenuGob"
         class="nav-boton-menu"
-        :class="{ abierto: true }"
+        :class="{ abierto: navegacion_gobierno_abierta }"
       >
         <span class="nav-icono-menu"></span>
       </button>
     </div>
     <div
       class="nav-menu-contedor"
-      :class="{ abierto: true }"
+      :class="{ abierto: navegacion_gobierno_abierta }"
     >
       <div class="nav-menu-principal">
         <ul class="nav-menu">
@@ -83,22 +83,10 @@
 <script setup>
 import { ref } from 'vue'
 
-const showGob = ref(null)
-const showMenu = ref(null)
-const showSubmenu1 = ref(null)
+const navegacion_gobierno_abierta = ref(false)
 
-showGob.value, showMenu.value, (showSubmenu1.value = false)
-
-function toggleGob() {
-  showMenu.value = false
-  showGob.value = !showGob.value
-}
-function toggleMenu() {
-  showGob.value = false
-  showSubmenu1.value = false
-  showMenu.value = !showMenu.value
-}
-function toggleReticula() {
-  showSubmenu1.value = !showSubmenu1.value
+function alternarMenuGob() {
+  // TODO: asegurarse de que otras navegaciones se cierren antes de abrir esta
+  navegacion_gobierno_abierta.value = !navegacion_gobierno_abierta.value
 }
 </script>
