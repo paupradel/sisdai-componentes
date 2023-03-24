@@ -3,6 +3,7 @@ import ComponenteVacio from './componente-vacio'
 import ColapsableNavegacion from './colapsable-navegacion'
 import MenuLateral from './menu-lateral'
 import MenuAccesibilidad from './menu-accesibilidad'
+import NavegacionPrincipal from './navegacion-principal'
 
 export {
   NarrativaScroll,
@@ -10,4 +11,5 @@ export {
   ColapsableNavegacion,
   MenuLateral,
   MenuAccesibilidad,
+  NavegacionPrincipal,
 }

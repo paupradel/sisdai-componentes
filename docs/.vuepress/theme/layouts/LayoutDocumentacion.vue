@@ -2,7 +2,7 @@
   <div class="theme-container">
     <nav-NavegacionGobMx></nav-NavegacionGobMx>
 
-    <nav-NavegacionPrincipal></nav-NavegacionPrincipal>
+    <nav-navegacion-principal></nav-navegacion-principal>
 
     <div class="flex">
       <div class="columna-4 columna-1-mov menu-fondo">
@@ -17,6 +17,11 @@
               <li>
                 <router-link to="/documentacion/menu-lateral">
                   Menú lateral</router-link
+                >
+              </li>
+              <li>
+                <router-link to="/documentacion/navegacion-principal">
+                  NavegacionPrincipal</router-link
                 >
               </li>
               <li>
