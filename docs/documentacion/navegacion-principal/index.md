@@ -9,9 +9,7 @@ Se trata del componente de barra de navegacion principal del sitio, generalmente
 Uso:
 
 ```html
-<NavegacionPrincipal>
-  ...contenido
-</NavegacionPrincipal>
+<NavegacionPrincipal> ...contenido </NavegacionPrincipal>
 ```
 
 ## API
@@ -19,9 +17,16 @@ Uso:
 ### Propiedades
 
 - **navInformacion**
-Para la version mobile es el contenido que se muestra debajo de la barra de navegacion, se usa  generalmente para mostrar  el nombre de la seccion actual del sitio.
+  Para la version mobile es el contenido que se muestra debajo de la barra de navegacion, se usa generalmente para mostrar el nombre de la seccion actual del sitio.
+
   - Tipo: `String`
-  - Valor predeterminado: `''` 
+  - Valor predeterminado: `''`
+  - Requerido: no
+
+- **fija**
+  Define si esta barra de navegacion se queda fija en la parte superior al hacer scroll en la vista actual
+  - Tipo: `Boolean`
+  - Valor predeterminado `true`
   - Requerido: no
 
 ### Metodos
@@ -31,6 +36,7 @@ Este componente no cuenta con metodos publicos
 ### Eventos
 
 Este componente no dispara eventos externos
+
 ### Slots
 
 ##### default
@@ -38,15 +44,18 @@ Este componente no dispara eventos externos
 - Requerido: si
 - Contenido predeterminado: contenido de prueba
 
-
-Slot para el contenido de navegacion, son los links a las secciones disponibles en el sitio. 
-
+Slot para el contenido de navegacion, son los links a las secciones disponibles en el sitio.
 
 ```html
 <NavegacionPrincipal>
   <ul class="nav-menu">
     <li>
-      <a class="nav-hipervinculo" href="#"> Enlace sección</a>
+      <a
+        class="nav-hipervinculo"
+        href="#"
+      >
+        Enlace sección</a
+      >
     </li>
   </ul>
 </NavegacionPrincipal>
@@ -61,7 +70,7 @@ En caso de tener un [router](https://router.vuejs.org/), el elemento `<a>` podri
 - Requerido: no
 - Contenido predeterminado: Logotipo de Conacyt
 
-Slot para el contenido de identidad del sitio, donde se despliegan los logos del mismo. 
+Slot para el contenido de identidad del sitio, donde se despliegan los logos del mismo.
 
 Se recomienda usar las clases css de Sisdaicss
 
@@ -84,4 +93,19 @@ Se recomienda usar las clases css de Sisdaicss
   </template>
 </NavegacionPrincipal>
 ```
+
 ## Ejemplos
+
+Usando el contenido por default
+
+<utils-ejemplo-doc ruta="navegacion-principal/basico.vue"/>
+
+Agregando contenido personalizado
+
+<utils-ejemplo-doc ruta="navegacion-principal/contenido-personalizado.vue"/>
+
+**TODO: borrar!**
+
+Ejemplo de como se ve un simple boton en el componente layout de ejemplos
+
+<utils-ejemplo-doc ruta="navegacion-principal/un-boton.vue"/>
