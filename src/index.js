@@ -3,6 +3,7 @@ import {
   ComponenteVacio,
   ColapsableNavegacion,
   MenuLateral,
+  MenuAccesibilidad,
 } from './components'
 
 const plugin = {
@@ -11,6 +12,7 @@ const plugin = {
     Vue.use(ComponenteVacio)
     Vue.use(ColapsableNavegacion)
     Vue.use(MenuLateral)
+    Vue.use(MenuAccesibilidad)
   },
 }
 
