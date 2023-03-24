@@ -104,8 +104,10 @@ Agregando contenido personalizado
 
 <utils-ejemplo-doc ruta="navegacion-principal/contenido-personalizado.vue"/>
 
-**TODO: borrar!**
+**TODO: borrar esto y el componente!**
 
-Ejemplo de como se ve un simple boton en el componente layout de ejemplos
+Ejemplo de como se ve un simple boton en el componente `utils/ejemplo-doc.vue` layout de ejemplos.
+
+el estilo de este componente aun puede cambiar
 
 <utils-ejemplo-doc ruta="navegacion-principal/un-boton.vue"/>

@@ -4,7 +4,7 @@ layout: LayoutDocumentacion
 
 # Menú lateral
 
-Este componente consiste en un elemento `menu.menu-lateral-contenedor`  que usualmente contiene enlaces de navegación. Sus estilos provienen de la biblioteca de estilos [sisdai-css](https://github.com/salsa-community/sisdai-css). En version de celular tiene un botón que muestra el contenido o lo colapsa.
+Este componente consiste en un elemento `menu.menu-lateral-contenedor` que usualmente contiene enlaces de navegación. Sus estilos provienen de la biblioteca de estilos [sisdai-css](https://github.com/salsa-community/sisdai-css). En version de celular tiene un botón que muestra el contenido o lo colapsa.
 
 <menu-lateral-basico/>
 
@@ -16,28 +16,29 @@ Este componente sólo admite slots.
 
 -`'contenido-menu-lateral'`: Este es el único slot que contiene el componente. En el se pueden incluir elementos de navegación como `<a></a>` o `<router-link>  </router-link>` en el caso de que que el proyecto esté usando [Vue Router](https://router.vuejs.org/). También se pueden agregar dichos enlaces contenidos en los elementos de lista `<li>` de una lista no ordenada `<ul/>`, así como incluir el componente `<ColapsableNavegacion/>`
 
-  Para este componente, el uso de [Vue Router](https://router.vuejs.org/) es altamente recomendado, entre otras cosas, por los estilos que asigna a los enlaces dentro de este componente.
-  
-  Por _default_ el contenido del slot es el siguiente:
+Para este componente, el uso de [Vue Router](https://router.vuejs.org/) es altamente recomendado, entre otras cosas, por los estilos que asigna a los enlaces dentro de este componente.
 
-  ```html
-  <router-link to="#routerlink"> router link prueba </router-link>
-  <a href="#anchore"> anchore link prueba </a>
-  <a
-    href="https://github.com/salsa-community/sisdai-componentes"
-    rel="noopener"
-    target="_blank"
-  >
-    <span class="icono-social-github"></span>
-    ejemplo github
-  </a>
-  ```
+Por _default_ el contenido del slot es el siguiente:
+
+```html
+<router-link to="#routerlink"> router link prueba </router-link>
+<a href="#anchore"> anchore link prueba </a>
+<a
+  href="https://github.com/salsa-community/sisdai-componentes"
+  rel="noopener"
+  target="_blank"
+>
+  <span class="icono-social-github"></span>
+  ejemplo github
+</a>
+```
 
 ## Ejemplos
 
 **_Default_**
 
 Así se renderiza el componente sin especificar su slot
+
 <div>
 <MenuLateral/>
 </div>
@@ -46,7 +47,7 @@ y se escribe como se muestra a continuación
 
 ```html
 <div>
-  <ColapsableNavegacion/>
+  <ColapsableNavegacion />
 </div>
 ```
 
@@ -80,33 +81,32 @@ El siguiente ejemplo contiene los mismos enlaces que el anterior, sin embargo, s
 La implementación se lleva a cabo como se muestra a continuación
 
 ```html
-  <div>
-    <MenuLateral>
-      <template slot="contenido-menu-lateral">
-        <ul>
-          <li>
-            <router-link to="#api"> API</router-link>
-          </li>
-          <li>
-            <router-link to="#slots"> Slots</router-link>
-          </li>
-          <ColapsableNavegacion :titulo="'<ColapsableNavegacion> :D'">
-            <template v-slot:listado-contenido>
-              <li><router-link to="#ejemplos"> Ejemplos </router-link></li>
-              <li><a href="#menu-lateral"> El mero inicio </a></li>
-            </template>
-          </ColapsableNavegacion>
-        </ul>
-        <a
-          href="##"
-          rel="noopener"
-          style="display: grid"
-        >
-          <span class="icono-social-github titulo-eni"></span>
-          <span> ir a github</span>
-        </a>
-      </template>
-    </MenuLateral>
-  </div>
-
+<div>
+  <MenuLateral>
+    <template slot="contenido-menu-lateral">
+      <ul>
+        <li>
+          <router-link to="#api"> API</router-link>
+        </li>
+        <li>
+          <router-link to="#slots"> Slots</router-link>
+        </li>
+        <ColapsableNavegacion :titulo="'<ColapsableNavegacion> :D'">
+          <template v-slot:listado-contenido>
+            <li><router-link to="#ejemplos"> Ejemplos </router-link></li>
+            <li><a href="#menu-lateral"> El mero inicio </a></li>
+          </template>
+        </ColapsableNavegacion>
+      </ul>
+      <a
+        href="##"
+        rel="noopener"
+        style="display: grid"
+      >
+        <span class="icono-social-github titulo-eni"></span>
+        <span> ir a github</span>
+      </a>
+    </template>
+  </MenuLateral>
+</div>
 ```
