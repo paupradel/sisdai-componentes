@@ -38,8 +38,6 @@ npm run build
 npm run docs:build
 ```
 
-
-
 ## ¿Como agregar nuevos componentes?
 
 ### Estructura
@@ -47,7 +45,7 @@ npm run docs:build
 - Los nuevos componentes se agregan en la carpeta `src/componentes`.
 - Cada componente se agrega en su propio directorio `src/componentes/nuevo-componente`.
 - Dentro la carpeta de cada componente deberan existir todos los archivos necesarios para dar funcionalidad a ese componente.
-- El archivo con extensión `.vue` y un `index.js` son necesarios 
+- El archivo con extensión `.vue` y un `index.js` son necesarios
 
 Ejemplo de estructura
 
@@ -65,11 +63,10 @@ sisdai-componentes/
 
 - Para el desarrollo se usa [Composition API](https://vuejs.org/guide/introduction.html#composition-api)
 - Se evita el uso de preprocesadores de estilos, se usa css en vez de scss o sass
-- En la medida de lo posible se evita la llamada de metodos al router de vue, si un componente por su funcionalidad requiere de  esta dependencia o de otra similar debera especificarlo en la documentacion de uso del componente.
-- Apegarse a los estilos de codigo definidos en las configuraciones del proyecto: *eslint, prettier,editorconfig y vscode-settings*. 
+- En la medida de lo posible se evita la llamada de metodos al router de vue, si un componente por su funcionalidad requiere de esta dependencia o de otra similar debera especificarlo en la documentacion de uso del componente.
+- Apegarse a los estilos de codigo definidos en las configuraciones del proyecto: _eslint, prettier,editorconfig y vscode-settings_.
 
 ### Script de instalacion en index.js
-
 
 Dentro del archivo `index.js` que acompaña al componente se agregara un codigo de instalación como el siguiente:
 
@@ -109,7 +106,7 @@ En el siguiente archivo se indexan todos los componentes para que sean accesible
 import ComponenteNuevo from './componente-nuevo'
 
 export {
-  ... 
+  ...
   ComponenteNuevo, // agregar al final de las exportaciones
 }
 
@@ -121,7 +118,7 @@ Finalmente en el siguiente archivo se agrega el nuevo componente al script globa
 // /src/index.js
 
 import {
-  ... 
+  ...
   ComponenteNuevo, //se importa el componente
 } from './components'
 
@@ -139,10 +136,9 @@ export default plugin
 
 ### Uso del store en componentes
 
-Los componentes que hagan uso de variables de estado globales podran hacerlo, pero sin comprometer o condicionar el funcionamiento de la biblioteca en general a tener un *store* de requisito, es decir, si la aplicacion no ocupa estos componentes (que usan el store) el usuario de la biblioteca no deberia necesitar instalar un store. Por el contrario, si desea ocuparlos si es un requisito.
+Los componentes que hagan uso de variables de estado globales podran hacerlo, pero sin comprometer o condicionar el funcionamiento de la biblioteca en general a tener un _store_ de requisito, es decir, si la aplicacion no ocupa estos componentes (que usan el store) el usuario de la biblioteca no deberia necesitar instalar un store. Por el contrario, si desea ocuparlos si es un requisito.
 
-Las variables y metodos del store que usen los componentes de esta biblioteca se implementaran de tal manera que solo se ofrezca la estructura del mismo, sin tener dependencia directa con la libreria de *store*.
-
+Las variables y metodos del store que usen los componentes de esta biblioteca se implementaran de tal manera que solo se ofrezca la estructura del mismo, sin tener dependencia directa con la libreria de _store_.
 
 **Ejemplo, teniendo estos componentes**
 
@@ -150,9 +146,9 @@ Las variables y metodos del store que usen los componentes de esta biblioteca se
 - ComponenteB no usa store
 - ComponenteC no usa store
 
-  Pensando en una aplicacion muy sencilla que **no requiere** usar *ComponenteA*, el usuarix de la biblioteca no se ve obligadx a instalar un store, y dado que solo usa *ComponenteB* y *ComponenteC* estos deberian funcionar perfectamente sin ninguna instalacion adicional.
+  Pensando en una aplicacion muy sencilla que **no requiere** usar _ComponenteA_, el usuarix de la biblioteca no se ve obligadx a instalar un store, y dado que solo usa _ComponenteB_ y _ComponenteC_ estos deberian funcionar perfectamente sin ninguna instalacion adicional.
 
-  En caso contrario, que el *ComponenteA*  sea utilizado, entonces es requisito instalar un store (en este momento [VUEX](https://vuex.vuejs.org/)) y en la definicion del mismo dar de alta la estructura que esta misma biblioteca ofrece.
+  En caso contrario, que el _ComponenteA_ sea utilizado, entonces es requisito instalar un store (en este momento [VUEX](https://vuex.vuejs.org/)) y en la definicion del mismo dar de alta la estructura que esta misma biblioteca ofrece.
 
 La ubicación de la estructura de los stores que ofrezca esta biblioteca es `/src/stores/nombre-del-nuevo-store.js`
 
@@ -168,4 +164,4 @@ Cada componente ofrecido por la presente biblioteca debera contar con 3 seccione
 - API
 - Ejemplos de uso
 
-*TO DO: explicar la estructura de archivos dentro de vuepress y como agregar nuevos elementos*
+_TO DO: explicar la estructura de archivos dentro de vuepress y como agregar nuevos elementos_

@@ -49,7 +49,7 @@ Así se renderiza el componente sin especificar `:titulo` ni slot
 y se expresa únicamente como
 
 ```html
-<ColapsableNavegacion/>
+<ColapsableNavegacion />
 ```
 
 **Titulo y slot**
@@ -61,9 +61,7 @@ Así se renderiza cuando especificamos un `:titulo` y su slot
 y se expresa obtiene de la siguiente forma
 
 ```html
-<ColapsableNavegacion
-  :titulo="'Este es el título del colapsable'"
->
+<ColapsableNavegacion :titulo="'Este es el título del colapsable'">
   <template v-slot:listado-contenido>
     <li>
       <a
