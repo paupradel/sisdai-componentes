@@ -7,9 +7,10 @@ layout: LayoutDocumentacion
 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet amet eius fuga facilis fugit, nobis totam molestiae accusantium corrupti consequatur recusandae! Ducimus excepturi sequi quis amet, eius cupiditate blanditiis minus.
 
 ## Uso
+
 ```html
 <script setup>
-import MenuAccesibilidad from 'sisdai-componentes/accesibilidad'
+  import MenuAccesibilidad from 'sisdai-componentes/accesibilidad'
 </script>
 
 <template>
@@ -26,6 +27,7 @@ import MenuAccesibilidad from 'sisdai-componentes/accesibilidad'
 #### `alternarMenuAccesibilidadAbierto`
 
 ## Ejemplo
+
 <accesibilidad-basico />
 
 ## Estilos
@@ -34,7 +36,4 @@ import MenuAccesibilidad from 'sisdai-componentes/accesibilidad'
 
 #### Estructura
 
-- Los nuevos componentes se agregan en la carpeta __src/componentes__.
-- El archivo con extensión .vue y un __index.js__ son necesarios
-
-
+- Los nuevos componentes se agregan en la carpeta **src/componentes**.

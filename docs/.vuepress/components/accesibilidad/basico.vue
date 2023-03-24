@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
-import MenuAccesibilidad from './../../../../src/components/accesibilidad/MenuAccesibilidad'
+// import MenuAccesibilidad from './../../../../src/components/accesibilidad/MenuAccesibilidad'
+// import { MenuAccesibilidad } from './../../../../dist/sisdai-componentes.umd'
 
 const menuAccesibilidad = ref(null)
 </script>
@@ -27,7 +28,7 @@ const menuAccesibilidad = ref(null)
       </button>
     </div>
 
-    <MenuAccesibilidad ref="menuAccesibilidad" />
+    <SisdaiMenuAccesibilidad ref="menuAccesibilidad" />
   </div>
 </template>
 

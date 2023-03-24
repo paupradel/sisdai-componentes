@@ -1,6 +1,6 @@
 <script setup>
 import opcionesDefault from './opcionesDefault'
-import { ref, toRefs, watch } from 'vue'
+import { ref, toRefs } from 'vue'
 
 const props = defineProps({
   opciones: {
@@ -11,6 +11,9 @@ const props = defineProps({
 
 const { opciones } = toRefs(props)
 
+/**
+ *
+ */
 const emits = defineEmits(['alSeleccionarOpcion'])
 
 /**
@@ -29,15 +32,10 @@ function alternarMenuAccesibilidadAbierto() {
   estaMenuAccesibilidadAbierto.value = !estaMenuAccesibilidadAbierto.value
 }
 
-watch(estaMenuAccesibilidadAbierto, nv => {
-  console.log('estaMenuAccesibilidadAbierto', nv)
-})
-
 /**
  *
  */
 function ejecutarAccionOpcion(accion) {
-  // console.log(accion)
   emits('alSeleccionarOpcion', accion)
   estaMenuAccesibilidadAbierto.value = false
 }

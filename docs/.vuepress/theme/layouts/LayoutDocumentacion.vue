@@ -24,6 +24,11 @@
                   NarrativaScroll</router-link
                 >
               </li>
+              <li>
+                <router-link to="/documentacion/accesibilidad">
+                  Accesibilidad
+                </router-link>
+              </li>
             </ul>
             <a
               href="https://github.com/salsa-community/sisdai-componentes"
@@ -62,13 +67,6 @@ const elementos = {
       id: 'seccion_2',
       titulo: 'NarrativaScroll',
       url: '/documentacion/narrativa_scroll',
-      clase: 'menu-routerlink',
-      icono: '',
-    },
-    {
-      id: 'seccion_3',
-      titulo: 'Accesibilidad',
-      url: '/documentacion/accesibilidad',
       clase: 'menu-routerlink',
       icono: '',
     },

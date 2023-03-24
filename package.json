@@ -6,6 +6,7 @@
   "main": "./dist/sisdai-componentes.umd.js",
   "files": [
     "src",
+    "dist",
     "README.md"
   ],
   "scripts": {
