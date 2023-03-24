@@ -47,21 +47,21 @@ defineExpose({ alternarMenuAccesibilidadAbierto })
 
 <template>
   <div
-    class="contenedor-a11y"
+    class="contenedor-a11y abierto"
     :class="{ abierto: estaMenuAccesibilidadAbierto }"
   >
     <button
       class="boton-a11y"
       @click="alternarMenuAccesibilidadAbierto"
     >
-      <span class="boton-a11y icono-accesibilidad icono-5" />
+      <span class="icono-accesibilidad icono-5" />
     </button>
 
     <menu class="menu-a11y">
-      <h6 class="menu-a11y titulo">Herramientas de accesibilidad</h6>
+      <h6 class="titulo">Herramientas de accesibilidad</h6>
 
       <button
-        class="menu-a11y opcion"
+        class="opcion"
         v-for="(opcion, idx) in opciones"
         :key="`opcion-a11y-${idx}`"
         @click="ejecutarAccionOpcion(opcion.accion)"

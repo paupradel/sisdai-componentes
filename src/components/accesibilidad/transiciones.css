@@ -23,7 +23,7 @@
     /* al abrir: inicia sin retraso */ 0s;
 }
 
-.contenedor-a11y > .menu-a11y {
+.contenedor-a11y .menu-a11y {
   max-height: 0px;
   width: 0px;
   margin: 0 16px 16px 24px;
@@ -45,7 +45,7 @@
       calc(var(--a11y-relacion-tiempo) * calc(var(--a11y-ancho) - 32));
 }
 
-.contenedor-a11y.abierto > .menu-a11y {
+.contenedor-a11y.abierto .menu-a11y {
   width: calc(var(--a11y-ancho) * 1px);
   max-height: 270px;
   margin-right: 0;
