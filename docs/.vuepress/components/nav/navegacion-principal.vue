@@ -16,17 +16,11 @@
           >Documentación</RouterLink
         >
       </li>
-      <li>
-        <RouterLink
-          class="nav-hipervinculo"
-          to="/ejemplos/"
-          >Ejemplos</RouterLink
-        >
-      </li>
+
       <li>
         <a
           class="nav-hipervinculo"
-          href="https://github.com/salsa-community/"
+          href="https://github.com/salsa-community/sisdai-componentes"
           >GitHub</a
         >
       </li>
