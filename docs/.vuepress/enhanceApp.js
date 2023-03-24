@@ -1,4 +1,4 @@
-import SisdaiComponentes from '../../src/index.js'
+import SisdaiComponentes from '../../src'
 
 // import './styles/index.scss';
 export default ({
@@ -12,6 +12,5 @@ export default ({
   //require('./theme/styles/index.scss'),
   require('./theme/styles/index.scss'),
     require('../../node_modules/sisdai-css/src/eni.scss')
-
   Vue.use(SisdaiComponentes)
 }
