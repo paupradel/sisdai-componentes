@@ -26,7 +26,7 @@
   width: 40px;
   border-radius: 50%;
   color: #1d74e6;
-  padding-left: 0;
+  padding-left: 0 !important;
 }
 
 .contenedor-a11y > .menu-a11y {
