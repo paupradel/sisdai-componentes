@@ -11,7 +11,7 @@
             class="nav-logo"
             width="130"
             height="38"
-            src="https://dev-dadsig-cdn.crip.conacyt.mx/sisdai-files/conacyt-azul.svg"
+            src="https://cdn.conacyt.mx/sisdai-archivos/conacyt-azul.svg"
             alt="Conacyt."
           />
         </a>
