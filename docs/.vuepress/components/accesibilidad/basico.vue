@@ -8,6 +8,20 @@ const menuAccesibilidad = ref(null)
 <template>
   <div class="contenerdor-panttalla-simulada">
     <div class="elementos-ejemplo">
+      <h1>Texto para ver el cambio de fuente</h1>
+
+      <ul>
+        <li>
+          <p>Párrafo</p>
+        </li>
+        <li>
+          <b>Negritas</b>
+        </li>
+        <li>
+          <i>Cursiva</i>
+        </li>
+      </ul>
+
       <button @click="menuAccesibilidad.alternarMenuAccesibilidadAbierto()">
         abrir/cerrar
       </button>
@@ -22,7 +36,7 @@ const menuAccesibilidad = ref(null)
   position: relative;
   border-right: solid gray 10px;
   border-bottom: solid #000 1px;
-  height: 350px;
+  /* height: 350px; */
   width: 100%;
   overflow-y: hidden;
 }
