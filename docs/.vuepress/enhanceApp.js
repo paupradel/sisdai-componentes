@@ -1,4 +1,4 @@
-import SisdaiComponentes from '../../src/index.js'
+import SisdaiComponentes from '../../src'
 
 export default ({
   Vue,

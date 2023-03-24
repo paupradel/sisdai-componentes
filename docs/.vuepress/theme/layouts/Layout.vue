@@ -2,7 +2,7 @@
   <div class="theme-container">
     <NavegacionGobMx />
 
-    <nav-NavegacionPrincipal></nav-NavegacionPrincipal>
+    <nav-navegacion-principal></nav-navegacion-principal>
 
     <main
       role="main"
