@@ -1,5 +1,8 @@
 <template>
-  <nav class="navegacion navegacion-conacyt navegacion-pegada">
+  <nav
+    class="navegacion navegacion-conacyt"
+    :class="{ 'navegacion-pegada': fija }"
+  >
     <div class="nav-contenedor-identidad">
       <slot name="identidad">
         <a
@@ -38,14 +41,14 @@
             <li>
               <a
                 class="nav-hipervinculo"
-                href="#"
+                href="/"
                 >Inicio</a
               >
             </li>
             <li>
               <a
                 class="nav-hipervinculo"
-                href="#"
+                href="/acerca-de"
                 >Acerca de</a
               >
             </li>
@@ -63,6 +66,10 @@ defineProps({
   navInformacion: {
     default: '',
     type: String,
+  },
+  fija: {
+    default: true,
+    type: Boolean,
   },
 })
 
