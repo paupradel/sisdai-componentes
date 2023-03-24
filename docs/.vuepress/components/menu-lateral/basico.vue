@@ -9,17 +9,15 @@
           <li>
             <a href="#anchore"> anchore link prueba </a>
           </li>
-          <li>
-            <ColapsableNavegacion
-              class="colapsable-navegacion"
-              :titulo="'este es el titulo del submenu'"
-            >
-              <template v-slot:listado-contenido>
-                <router-link to="#">Menú del submenu 1</router-link>
-                <a href="#">Menú del submenu 2</a>
-              </template>
-            </ColapsableNavegacion>
-          </li>
+          <ColapsableNavegacion
+            class="colapsable-navegacion"
+            :titulo="'este es el titulo del submenu'"
+          >
+            <template v-slot:listado-contenido>
+              <li><router-link to="#">Menú del submenu 1</router-link></li>
+              <li><a href="#">Menú del submenu 2</a></li>
+            </template>
+          </ColapsableNavegacion>
         </ul>
 
         <a
