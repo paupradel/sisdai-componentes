@@ -2,12 +2,12 @@
   <menu class="menu-lateral-contenedor">
     <div
       class="menu-mov"
-      @click="abrirMenu = !abrirMenu"
-      :class="{ abierto: abrirMenu }"
+      @click="menu_abierto = !menu_abierto"
+      :class="{ abierto: menu_abierto }"
     >
       <button class="boton-icono boton-menu">
         <span
-          v-if="abrirMenu"
+          v-if="menu_abierto"
           class="icono-angulo-doble-izquierda"
         ></span>
         <span
@@ -18,15 +18,16 @@
     </div>
     <div
       class="menu-colapsable"
-      :class="{ abierto: abrirMenu }"
+      :class="{ abierto: menu_abierto }"
     >
       <div class="menu-max-height">
         <slot name="contenido-menu-lateral">
           <router-link to="#routerlink"> router link prueba </router-link>
           <a href="#anchore"> anchore link prueba </a>
           <a
-            href="##"
+            href="https://github.com/salsa-community/sisdai-componentes"
             rel="noopener"
+            target="_blank"
           >
             <span class="icono-social-github"></span>
             ejemplo github
@@ -39,5 +40,5 @@
 
 <script setup>
 import { ref } from 'vue'
-const abrirMenu = ref(false)
+const menu_abierto = ref(false)
 </script>

@@ -1,25 +1,20 @@
 <template>
-  <div>
-    <ColapsableNavegacion
-      class="colapsable-navegacion"
-      :titulo="'este es el titulo del submenu'"
-    >
-      <template v-slot:listado-contenido>
-        <li>
-          <a
-            href="#"
-            class="nav-hipervinculo"
-            >Menú del submenu 1</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="nav-hipervinculo"
-            >Menú del submenu 2</a
-          >
-        </li>
-      </template>
-    </ColapsableNavegacion>
-  </div>
+  <ColapsableNavegacion :titulo="'Este es el título del colapsable'">
+    <template v-slot:listado-contenido>
+      <li>
+        <a
+          href="#"
+          class="nav-hipervinculo"
+          >Opción 1 desplegable</a
+        >
+      </li>
+      <li>
+        <a
+          href="#"
+          class="nav-hipervinculo"
+          >Opción 2 desplegable</a
+        >
+      </li>
+    </template>
+  </ColapsableNavegacion>
 </template>
