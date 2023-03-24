@@ -25,6 +25,11 @@
                 >
               </li>
               <li>
+                <router-link to="/documentacion/navegacion_gob_mx">
+                  NavegacionGobMx</router-link
+                >
+              </li>
+              <li>
                 <router-link to="/documentacion/narrativa_scroll">
                   NarrativaScroll</router-link
                 >
