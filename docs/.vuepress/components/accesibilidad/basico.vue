@@ -41,7 +41,7 @@ const menuAccesibilidad = ref(null)
   overflow-y: hidden;
 }
 
-.contenerdor-panttalla-simulada .contenedor-a11y {
+.contenerdor-panttalla-simulada .contenedor-accesibilidad {
   position: absolute;
 }
 </style>

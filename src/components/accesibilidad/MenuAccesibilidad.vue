@@ -47,7 +47,7 @@ defineExpose({ alternarMenuAccesibilidadAbierto })
 
 <template>
   <div
-    class="contenedor-accesibilidad abierto"
+    class="contenedor-accesibilidad"
     :class="{ abierto: estaMenuAccesibilidadAbierto }"
   >
     <button
