@@ -1,8 +1,8 @@
 /**
- * Lista de opciones por defecto del Menú de accesibilidad, cada opción es un objeto con la
- * siguiente estructura:
+ * Lista de opciones por defecto del Menú de accesibilidad, cada opción debe ser un objeto
+ * con los siguientes atributos:
  * - accion {`String`}: Nombre de la acción al dar click en la opción.
- * - icono {`String`}: Visible un costado del titulo.
+ * - icono {`String`}: Visible a un costado del titulo.
  * - titulo {`String`}: Visible en la lista del menú abierto.
  * @type Array
  */
