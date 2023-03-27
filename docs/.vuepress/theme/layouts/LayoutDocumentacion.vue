@@ -10,6 +10,16 @@
           <template slot="contenido-menu-lateral">
             <ul>
               <li>
+                <router-link to="/documentacion/pie-pagina-conacyt">
+                  PiePaginaConacyt</router-link
+                >
+              </li>
+              <li>
+                <router-link to="/documentacion/pie-pagina-gob-mx">
+                  PiePaginaGobMx</router-link
+                >
+              </li>
+              <li>
                 <router-link to="/documentacion/colapsable-navegacion">
                   Colapsable navegación</router-link
                 >
@@ -47,7 +57,7 @@
           </template>
         </MenuLateral>
       </div>
-      <div class="columna-12 columna-7-mov">
+      <div class="columna-12 columna-7-mov contenedor ancho-fijo">
         <Content />
       </div>
     </div>
