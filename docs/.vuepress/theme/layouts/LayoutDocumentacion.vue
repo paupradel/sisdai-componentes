@@ -10,6 +10,11 @@
           <template slot="contenido-menu-lateral">
             <ul>
               <li>
+                <router-link to="/documentacion/pie-pagina-conacyt">
+                  PiePaginaConacyt</router-link
+                >
+              </li>
+              <li>
                 <router-link to="/documentacion/pie-pagina-gob-mx">
                   PiePaginaGobMx</router-link
                 >

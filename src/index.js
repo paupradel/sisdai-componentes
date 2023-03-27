@@ -5,6 +5,7 @@ import {
   MenuLateral,
   NavegacionPrincipal,
   PiePaginaGobMx,
+  PiePaginaConacyt,
 } from './components'
 
 const plugin = {
@@ -15,6 +16,7 @@ const plugin = {
     Vue.use(MenuLateral)
     Vue.use(NavegacionPrincipal)
     Vue.use(PiePaginaGobMx)
+    Vue.use(PiePaginaConacyt)
   },
 }
 
