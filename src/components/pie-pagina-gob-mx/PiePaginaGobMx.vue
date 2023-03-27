@@ -172,7 +172,7 @@
   </footer>
 </template>
 
-<style scoped lang="scss">
+<style>
 .gobmx-piepagina {
   background-image: url('https://cdn.conacyt.mx/sisdai-archivos/gobmxpleca.svg');
   background-position: bottom;

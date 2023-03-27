@@ -108,7 +108,7 @@
   </footer>
 </template>
 
-<style scoped lang="scss">
+<style>
 .conacyt-piepagina {
   color: #fff;
   font-size: 14px;
