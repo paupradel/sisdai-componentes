@@ -28,13 +28,9 @@ Este componente no utiliza slots.
 
 ## Ejemplos
 
-<NavegacionGobMx />
+<utils-ejemplo-doc ruta="navegacion-gob-mx/basico.vue"/>
 
-```html
-<navegacion-gob-mx-basico />
-```
 
-<navegacion-gob-mx-basico />
 
 La barra de navegación del Gobierno de México sirve principalmente para:
 

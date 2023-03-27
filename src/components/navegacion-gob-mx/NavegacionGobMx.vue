@@ -11,7 +11,7 @@
           width="128"
           height="38"
           class="nav-logo"
-          src="https://dev-dadsig-cdn.crip.conacyt.mx/sisdai-files/gobmx.svg"
+          src="https://cdn.conacyt.mx/sisdai-archivos/gobmx.svg"
           alt="Gobierno de México."
         />
       </a>

@@ -1,3 +1,5 @@
 <template>
-  <NavegacionGobMx></NavegacionGobMx>
+  <div class="contenedor">
+    <NavegacionGobMx></NavegacionGobMx>
+  </div>
 </template>

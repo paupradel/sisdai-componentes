@@ -25,7 +25,7 @@
                 >
               </li>
               <li>
-                <router-link to="/documentacion/navegacion_gob_mx">
+                <router-link to="/documentacion/navegacion-gob-mx">
                   NavegacionGobMx</router-link
                 >
               </li>
