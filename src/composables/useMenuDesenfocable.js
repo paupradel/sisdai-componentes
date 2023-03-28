@@ -1,4 +1,29 @@
 import { onMounted, onUnmounted, ref, watch } from 'vue'
+
+/**
+ * @typedef { import("vue").Ref } Ref
+ */
+
+/**
+ * @typedef {Object} UseMenuDesenfocableObject
+ * @property {Ref<boolean>} menuEstaAbierto  Indica el estado del menu si esta abierto o no
+ * @property {function} abrirMenu  pone `menuEstaAbierto = true`
+ * @property {function} cerrarMenu  pone `menuEstaAbierto = false`
+ * @property {function} alternarMenu  pone `menuEstaAbierto =  !menuEstaAbierto`
+ */
+
+/**
+ *  Composable que maneja el estado de *abierto-cerrado* de un menu (en los menus colapsables), adicionalmente
+ *  administra los eventos *focus-blur* para cerrar el menu automaticamente al momento de que el menu pierda el foco
+ *
+ * @param {Ref<HTMLElement>} elementoMenuEnfocable Referecia del elemento html que contiene los elementos del menu colapsable `ref<HTMLElement>`
+ *
+ * @returns {UseMenuDesenfocableObject} Metodos y propiedades del composable
+ * - `menuEstaAbierto: ref<boolean>`
+ * - `abrirMenu: function`
+ * - `cerrarMenu: function`
+ * - `alternarMenu: function`
+ */
 export function useMenuDesenfocable(elementoMenuEnfocable) {
   const menuEstaAbierto = ref(false)
 
