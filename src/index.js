@@ -1,5 +1,5 @@
 import {
-  NarrativaScroll,
+  //NarrativaScroll,
   ComponenteVacio,
   ColapsableNavegacion,
   MenuLateral,
@@ -11,7 +11,7 @@ import {
 
 const plugin = {
   install: function (Vue) {
-    Vue.use(NarrativaScroll)
+    //Vue.use(NarrativaScroll)
     Vue.use(ComponenteVacio)
     Vue.use(ColapsableNavegacion)
     Vue.use(MenuLateral)
