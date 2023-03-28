@@ -16,7 +16,9 @@ import { onMounted, onUnmounted, ref, watch } from 'vue'
  *  Composable que maneja el estado de *abierto-cerrado* de un menu (en los menus colapsables), adicionalmente
  *  administra los eventos *focus-blur* para cerrar el menu automaticamente al momento de que el menu pierda el foco
  *
- * @param {Ref<HTMLElement>} elementoMenuEnfocable Referecia del elemento html que contiene los elementos del menu colapsable `ref<HTMLElement>`
+ * @param {Ref<HTMLElement>} elementoMenuEnfocable Referecia del elemento html que contiene los
+ * elementos del menu colapsable `ref<HTMLElement>`. Debe ser enfocable, si es un div o algun elemento que no
+ * tenga focus por si mismo, debe agregarse el atributo [tab-index](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex)
  *
  * @returns {UseMenuDesenfocableObject} Metodos y propiedades del composable
  * - `menuEstaAbierto: ref<boolean>`
@@ -28,7 +30,7 @@ export function useMenuDesenfocable(elementoMenuEnfocable) {
   const menuEstaAbierto = ref(false)
 
   function updateBlur() {
-    //revisa que no tengo foco ningun elemento hijo
+    //revisar que no tengo foco ningun elemento hijo
 
     if (menuEstaAbierto.value) {
       setTimeout(() => {
