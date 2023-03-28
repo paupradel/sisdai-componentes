@@ -16,18 +16,23 @@
         />
       </a>
       <button
-        @click="alternarMenuGob"
+        @click="alternarMenu"
         class="nav-boton-menu"
-        :class="{ abierto: navegacion_gobierno_abierta }"
+        :class="{ abierto: menuEstaAbierto }"
       >
         <span class="nav-icono-menu"></span>
       </button>
     </div>
     <div
       class="nav-menu-contedor"
-      :class="{ abierto: navegacion_gobierno_abierta }"
+      :class="{ abierto: menuEstaAbierto }"
     >
-      <div class="nav-menu-principal">
+      <div
+        class="nav-menu-principal"
+        tabindex="0"
+        ref="cuadroElementosMenu"
+        @click="alternarMenu"
+      >
         <ul class="nav-menu">
           <li>
             <a
@@ -82,11 +87,10 @@
 
 <script setup>
 import { ref } from 'vue'
+import { useMenuDesenfocable } from '../../composables/useMenuDesenfocable'
 
-const navegacion_gobierno_abierta = ref(false)
-
-function alternarMenuGob() {
-  // TODO: asegurarse de que otras navegaciones se cierren antes de abrir esta
-  navegacion_gobierno_abierta.value = !navegacion_gobierno_abierta.value
-}
+//Que el menu se pueda cerrar automaticamente al enfocar otra cosa
+const cuadroElementosMenu = ref(null)
+const { menuEstaAbierto, alternarMenu } =
+  useMenuDesenfocable(cuadroElementosMenu)
 </script>
