@@ -3,6 +3,7 @@ import ComponenteVacio from './componente-vacio'
 import ColapsableNavegacion from './colapsable-navegacion'
 import MenuLateral from './menu-lateral'
 import NavegacionPrincipal from './navegacion-principal'
+import IndiceDeContenido from './indice-de-contenido'
 import NavegacionGobMx from './navegacion-gob-mx'
 import PiePaginaGobMx from './pie-pagina-gob-mx'
 import PiePaginaConacyt from './pie-pagina-conacyt'
@@ -13,6 +14,7 @@ export {
   ColapsableNavegacion,
   MenuLateral,
   NavegacionPrincipal,
+  IndiceDeContenido,
   NavegacionGobMx,
   PiePaginaGobMx,
   PiePaginaConacyt,
