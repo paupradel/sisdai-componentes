@@ -1,3 +1,24 @@
+<script setup>
+import { defineProps, ref } from 'vue'
+import { useMenuDesenfocable } from '../../composables/useMenuDesenfocable'
+
+defineProps({
+  navInformacion: {
+    default: '',
+    type: String,
+  },
+  fija: {
+    default: true,
+    type: Boolean,
+  },
+})
+
+//Que el menu se pueda cerrar automaticamente al enfocar otra cosa
+const cuadroElementosMenu = ref(null)
+const { menuEstaAbierto, alternarMenu } =
+  useMenuDesenfocable(cuadroElementosMenu)
+</script>
+
 <template>
   <nav
     class="navegacion navegacion-conacyt"
@@ -22,7 +43,7 @@
       <button
         @click="alternarMenu"
         class="nav-boton-menu"
-        :class="{ abierto: navegacionPrincipalAbierta }"
+        :class="{ abierto: menuEstaAbierto }"
       >
         <span class="nav-icono-menu"></span>
       </button>
@@ -33,9 +54,14 @@
     </div>
     <div
       class="nav-menu-contedor"
-      :class="{ abierto: navegacionPrincipalAbierta }"
+      :class="{ abierto: menuEstaAbierto }"
     >
-      <div class="nav-menu-principal">
+      <div
+        class="nav-menu-principal"
+        tabindex="0"
+        ref="cuadroElementosMenu"
+        @click="alternarMenu"
+      >
         <slot>
           <ul class="nav-menu">
             <li>
@@ -58,25 +84,3 @@
     </div>
   </nav>
 </template>
-
-<script setup>
-import { defineProps, ref } from 'vue'
-
-defineProps({
-  navInformacion: {
-    default: '',
-    type: String,
-  },
-  fija: {
-    default: true,
-    type: Boolean,
-  },
-})
-
-const navegacionPrincipalAbierta = ref(false)
-
-function alternarMenu() {
-  //TODO: asegurarse de que otras navegaciones se cierren antes de abrir esta
-  navegacionPrincipalAbierta.value = !navegacionPrincipalAbierta.value
-}
-</script>

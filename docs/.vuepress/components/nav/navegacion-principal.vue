@@ -1,5 +1,7 @@
 <template>
-  <NavegacionPrincipal>
+  <NavegacionPrincipal
+    :nav-informacion="`Sección: <b>${$frontmatter.sectionName || ''}</b>`"
+  >
     <ul class="nav-menu">
       <li>
         <RouterLink
@@ -27,5 +29,3 @@
     </ul>
   </NavegacionPrincipal>
 </template>
-
-<script setup></script>

@@ -1,6 +1,6 @@
 <template>
   <div class="theme-container">
-    <nav-NavegacionGobMx></nav-NavegacionGobMx>
+    <NavegacionGobMx />
 
     <nav-navegacion-principal></nav-navegacion-principal>
 
@@ -9,6 +9,16 @@
         <MenuLateral>
           <template slot="contenido-menu-lateral">
             <ul>
+              <li>
+                <router-link to="/documentacion/pie-pagina-conacyt">
+                  PiePaginaConacyt</router-link
+                >
+              </li>
+              <li>
+                <router-link to="/documentacion/pie-pagina-gob-mx">
+                  PiePaginaGobMx</router-link
+                >
+              </li>
               <li>
                 <router-link to="/documentacion/colapsable-navegacion">
                   Colapsable navegación</router-link
@@ -22,6 +32,11 @@
               <li>
                 <router-link to="/documentacion/navegacion-principal">
                   NavegacionPrincipal</router-link
+                >
+              </li>
+              <li>
+                <router-link to="/documentacion/navegacion-gob-mx">
+                  NavegacionGobMx</router-link
                 >
               </li>
               <li>
@@ -47,7 +62,7 @@
           </template>
         </MenuLateral>
       </div>
-      <div class="columna-12 columna-7-mov">
+      <div class="columna-12 columna-7-mov contenedor ancho-fijo">
         <Content />
       </div>
     </div>
