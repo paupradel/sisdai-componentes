@@ -4,6 +4,7 @@ const propiedades = {
    * Lista de opciones que se tendrá el Menú de accesibilidad, cada opción debe ser un objeto
    * con los siguientes atributos:
    * - accion {`String`}: Nombre de la acción al dar click en la opción.
+   * - claseCss: {`String`}: Nombre de la clase css de la opción.
    * - icono {`String`}: Visible a un costado del titulo.
    * - titulo {`String`}: Visible en la lista del menú abierto.
    */
@@ -15,8 +16,8 @@ const propiedades = {
 
 const eventos = {
   /**
-   *
-   * @param {String} accion Indica si la carga no ha presentado error.
+   * Se ejecuta al dar click en una opción del munú de accesibilidad.
+   * @param {String} accion Nombre de la acción seleccionada al dar click en la opción.
    */
   alSeleccionarOpcion: 'alSeleccionarOpcion',
 }
@@ -36,15 +37,15 @@ const emits = defineEmits(Object.values(eventos))
  * - Cerrado: `false`
  * @type Boolean
  */
-const estaMenuAccesibilidadAbierto = ref(false)
+const menuAccesibilidadEstaAbierto = ref(false)
 
 /**
- *
+ * Desencadena el emit 'alSeleccionarOpcion' al mismo tiempo que cierra el menú.
  * @param {String} Acción que ejecuta la opción.
  */
 function ejecutarAccionOpcion(accion) {
   emits(eventos.alSeleccionarOpcion, accion)
-  estaMenuAccesibilidadAbierto.value = false
+  menuAccesibilidadEstaAbierto.value = false
 }
 
 /**
@@ -52,7 +53,7 @@ function ejecutarAccionOpcion(accion) {
  * Menú de accesibilidad.
  */
 function alternarMenuAccesibilidadAbierto() {
-  estaMenuAccesibilidadAbierto.value = !estaMenuAccesibilidadAbierto.value
+  menuAccesibilidadEstaAbierto.value = !menuAccesibilidadEstaAbierto.value
 }
 
 defineExpose({ alternarMenuAccesibilidadAbierto })
@@ -61,7 +62,7 @@ defineExpose({ alternarMenuAccesibilidadAbierto })
 <template>
   <div
     class="contenedor-accesibilidad"
-    :class="{ abierto: estaMenuAccesibilidadAbierto }"
+    :class="{ abierto: menuAccesibilidadEstaAbierto }"
   >
     <button
       class="boton-accesibilidad"
@@ -77,7 +78,7 @@ defineExpose({ alternarMenuAccesibilidadAbierto })
         class="opcion-accesibilidad"
         v-for="(opcion, idx) in opciones"
         :key="`opcion-accesibilidad-${idx}`"
-        @click="ejecutarAccionOpcion(opcion.accion)"
+        @click="ejecutarAccionOpcion(opcion)"
       >
         <span
           class="icono-4"

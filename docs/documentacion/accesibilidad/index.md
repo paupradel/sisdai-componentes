@@ -9,13 +9,7 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet amet eius fuga
 Uso:
 
 ```html
-<script setup>
-  import MenuAccesibilidad from 'sisdai-componentes/accesibilidad'
-</script>
-
-<template>
-  <MenuAccesibilidad />
-</template>
+<MenuAccesibilidad></MenuAccesibilidad>
 ```
 
 ## API
@@ -65,7 +59,11 @@ Uso:
 
 ### Eventos
 
-- **alSeleccionarOpcion**
+- **@alSeleccionarOpcion**
+  Se ejecuta al dar click en una opción del munú de accesibilidad.
+
+  Parametros:
+  - `String`: Nombre de la acción seleccionada al dar click en la opción.
 
 ### Slots
 
@@ -75,7 +73,9 @@ Este componente no permite contenido con slots
 
 ## Ejemplos
 
-Usando las opciones por default
+#### Opciones por default
 
-<accesibilidad-basico />
+<utils-ejemplo-doc ruta="menu-accesibilidad/basico.vue"/>
+
+#### Agregando opciones de accesibilidad
 
