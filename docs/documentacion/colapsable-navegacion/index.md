@@ -44,41 +44,12 @@ A continuación se enlistan las propiedades que admite el componente
 
 Así se renderiza el componente sin especificar `:titulo` ni slot
 
-<ColapsableNavegacion/>
-
-y se expresa únicamente como
-
-```html
-<ColapsableNavegacion />
-```
+<utils-ejemplo-doc ruta="colapsable-navegacion/default.vue"/>
 
 **Titulo y slot**
 
 Así se renderiza cuando especificamos un `:titulo` y su slot
 
-<colapsable-navegacion-basico/>
-
-y se expresa obtiene de la siguiente forma
-
-```html
-<ColapsableNavegacion :titulo="'Este es el título del colapsable'">
-  <template v-slot:listado-contenido>
-    <li>
-      <a
-        href="#"
-        class="nav-hipervinculo"
-        >Opción 1 desplegable</a
-      >
-    </li>
-    <li>
-      <a
-        href="#"
-        class="nav-hipervinculo"
-        >Opción 2 desplegable</a
-      >
-    </li>
-  </template>
-</ColapsableNavegacion>
-```
+<utils-ejemplo-doc ruta="colapsable-navegacion/slot.vue"/>
 
 **Observación:** Este componente `<ColapsableNavegacion/>` tiene un estilo definido para el componente `<MenuLateral/>`. Puedes consultar la sección de dicho componente para ver como pueden convivir

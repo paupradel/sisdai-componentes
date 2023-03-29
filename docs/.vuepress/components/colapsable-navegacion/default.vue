@@ -1,0 +1,3 @@
+<template>
+  <ColapsableNavegacion> </ColapsableNavegacion>
+</template>

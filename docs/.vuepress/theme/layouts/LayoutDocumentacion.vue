@@ -25,6 +25,11 @@
                 >
               </li>
               <li>
+                <router-link to="/documentacion/indice-de-contenido">
+                  Índice de contenido</router-link
+                >
+              </li>
+              <li>
                 <router-link to="/documentacion/narrativa_scroll">
                   NarrativaScroll</router-link
                 >
