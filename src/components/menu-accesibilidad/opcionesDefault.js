@@ -12,7 +12,7 @@ export default [
     accion: 'alternarTipografiaAccesible',
     claseCss: 'a11y-tipografia',
     icono: 'icono-cambio-tipografia',
-    titulo: 'Tipografia accesible',
+    titulo: 'Tipografía accesible',
   },
   {
     accion: 'alternarVistaSimplificada',

@@ -2,13 +2,13 @@
 layout: LayoutDocumentacion
 ---
 
-# Accesibilidad
+# MenuAccesibilidad
 
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet amet eius fuga facilis fugit, nobis totam molestiae accusantium corrupti consequatur recusandae! Ducimus excepturi sequi quis amet, eius cupiditate blanditiis minus.
+El menú de accesibilidad permite ejecutar a las funciones que agregan reglas de accesibilidad al sitio web. Consulte la [sección de accesibilidad del Sisdai](https://sisdai.conacyt.mx/accesibilidad/introduccion) para más información.
 
 El componente cuenta con tres opciones de accesibilidad predeterminadas:
 
-- Tipografia accesible
+- Tipografía accesible
 - Vista simplificada
 - Enlaces subrayados
 
@@ -46,7 +46,7 @@ Uso:
 ### Eventos
 
 - **@alSeleccionarOpcion**
-  Se ejecuta al dar click en una opción del munú de accesibilidad.
+  Se ejecuta al dar click en una opción del menú de accesibilidad.
 
   Parametros:
 
@@ -61,16 +61,16 @@ Este componente no permite contenido con slots
 
 ### Store
 
-Este componente cuenta con un modulo de store en estructura de vuex con variables y mutaciones para cada una de las opciones predeterminadas:
+Este componente cuenta con un modulo de store en estructura de [Vuex](https://vuex.vuejs.org/) con variables y mutaciones para cada una de las opciones predeterminadas:
 
-- Tipografia accesible
-  - Variable: `tipografia_accesible` (de tipo bolleano en `false` por defecto).
+- Tipografía accesible
+  - Variable: `tipografia_accesible` (de tipo boleano en `false` por defecto).
   - Mutación: `alternarTipografiaAccesible`.
 - Vista simplificada
-  - Variable: `vista_simplificada` (de tipo bolleano en `false` por defecto).
+  - Variable: `vista_simplificada` (de tipo boleano en `false` por defecto).
   - Mutación: `alternarVistaSimplificada`.
 - Enlaces subrayados
-  - Variable: `enlaces_subrayados` (de tipo bolleano en `false` por defecto).
+  - Variable: `enlaces_subrayados` (de tipo boleano en `false` por defecto).
   - Mutación: `alternarEnlacesSubrayados`.
 
 Además de una mutación extra que restablece los valores de todas las variables:
@@ -97,10 +97,54 @@ export default new Vuex.Store({
 
 #### Opciones por default
 
+Para que se apliquen las reglas de accesibilidad definidas por la biblioteca sisdai-css, es necesario agregar las clases a11y en el contenedor de las vistas. Para proyectos con [Vue](https://vuejs.org/) se sugiere hacerlo en el archivo `src/App.vue` de la siguiente manera:
+
 <utils-ejemplo-doc ruta="menu-accesibilidad/basico.vue"/>
 
 #### Agregando opciones de accesibilidad
 
+Junto con el uso de la propiedad `agregarOpciones` para añadir reglas de accesibilidad, también es necesario declarar las reglas css de los elementos html que se deseen afectar:
+
 <utils-ejemplo-doc ruta="menu-accesibilidad/agregando-opciones.vue"/>
 
-#### Conectando componente con store
+#### Conectar con store
+
+Guardar el estado de las variables de accesibilidad en el store, permite que interactúen con la reactividad de componentes complejos que estén a un nivel profundo en la organización del proyecto.
+
+Por ejemplo, si en una visualización se requiere que la vista muestre una configuración definida cuando se active la "Vista simplificada", se puede acceder al estado de esa variable importando el modulo de accesibilidad del store.
+
+Para conectar el menú de accesibilidad con el store [Vuex](https://vuex.vuejs.org/), se puede usar la siguiente configuración:
+
+```html
+<script setup>
+import { computed } from 'vue'
+import store from '@/store/index.js'
+
+const clasesAccesibles = computed(() => ({
+  'a11y-tipografia': store.state.sisdaiAccesibilidad.tipografia_accesible,
+  'a11y-simplificada': store.state.sisdaiAccesibilidad.vista_simplificada,
+  'a11y-hipervinculos': store.state.sisdaiAccesibilidad.enlaces_subrayados,
+}))
+
+function mutarAccesibilidad({ accion }) {
+  store.commit(`sisdaiAccesibilidad/${accion}`)
+}
+
+function limpiarClasesAccesibles() {
+  store.commit('sisdaiAccesibilidad/limpiarClasesAccesibles')
+}
+</script>
+
+<template>
+  <div
+    class="contenerdor-panttalla"
+    :class="clasesAccesibles"
+  >
+    <SisdaiMenuAccesibilidad
+      @alSeleccionarOpcion="mutarAccesibilidad"
+      @restablecer="limpiarClasesAccesibles"
+    />
+    ...
+  </div>
+</template>
+```
