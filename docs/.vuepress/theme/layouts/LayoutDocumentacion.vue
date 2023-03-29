@@ -1,6 +1,6 @@
 <template>
   <div class="theme-container">
-    <nav-NavegacionGobMx></nav-NavegacionGobMx>
+    <NavegacionGobMx />
 
     <nav-navegacion-principal></nav-navegacion-principal>
 
@@ -32,6 +32,11 @@
               <li>
                 <router-link to="/documentacion/navegacion-principal">
                   NavegacionPrincipal</router-link
+                >
+              </li>
+              <li>
+                <router-link to="/documentacion/navegacion-gob-mx">
+                  NavegacionGobMx</router-link
                 >
               </li>
               <li>

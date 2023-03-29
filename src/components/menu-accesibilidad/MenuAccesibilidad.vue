@@ -65,7 +65,7 @@ defineExpose({ alternarMenuAccesibilidadAbierto })
     :class="{ abierto: menuAccesibilidadEstaAbierto }"
   >
     <button
-      class="boton-accesibilidad"
+      class="icono-boton-accesibilidad"
       @click="alternarMenuAccesibilidadAbierto"
     >
       <span class="icono-accesibilidad icono-5" />

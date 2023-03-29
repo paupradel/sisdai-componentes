@@ -4,6 +4,7 @@ import ColapsableNavegacion from './colapsable-navegacion'
 import MenuLateral from './menu-lateral'
 import MenuAccesibilidad from './menu-accesibilidad'
 import NavegacionPrincipal from './navegacion-principal'
+import NavegacionGobMx from './navegacion-gob-mx'
 import PiePaginaGobMx from './pie-pagina-gob-mx'
 import PiePaginaConacyt from './pie-pagina-conacyt'
 
@@ -14,6 +15,7 @@ export {
   MenuLateral,
   MenuAccesibilidad,
   NavegacionPrincipal,
+  NavegacionGobMx,
   PiePaginaGobMx,
   PiePaginaConacyt,
 }
