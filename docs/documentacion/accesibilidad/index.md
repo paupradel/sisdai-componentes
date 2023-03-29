@@ -117,22 +117,22 @@ Para conectar el menú de accesibilidad con el store [Vuex](https://vuex.vuejs.o
 
 ```html
 <script setup>
-import { computed } from 'vue'
-import store from '@/store/index.js'
+  import { computed } from 'vue'
+  import store from '@/store/index.js'
 
-const clasesAccesibles = computed(() => ({
-  'a11y-tipografia': store.state.sisdaiAccesibilidad.tipografia_accesible,
-  'a11y-simplificada': store.state.sisdaiAccesibilidad.vista_simplificada,
-  'a11y-hipervinculos': store.state.sisdaiAccesibilidad.enlaces_subrayados,
-}))
+  const clasesAccesibles = computed(() => ({
+    'a11y-tipografia': store.state.sisdaiAccesibilidad.tipografia_accesible,
+    'a11y-simplificada': store.state.sisdaiAccesibilidad.vista_simplificada,
+    'a11y-hipervinculos': store.state.sisdaiAccesibilidad.enlaces_subrayados,
+  }))
 
-function mutarAccesibilidad({ accion }) {
-  store.commit(`sisdaiAccesibilidad/${accion}`)
-}
+  function mutarAccesibilidad({ accion }) {
+    store.commit(`sisdaiAccesibilidad/${accion}`)
+  }
 
-function limpiarClasesAccesibles() {
-  store.commit('sisdaiAccesibilidad/limpiarClasesAccesibles')
-}
+  function limpiarClasesAccesibles() {
+    store.commit('sisdaiAccesibilidad/limpiarClasesAccesibles')
+  }
 </script>
 
 <template>
