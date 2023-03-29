@@ -7,6 +7,7 @@ layout: LayoutDocumentacion
 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet amet eius fuga facilis fugit, nobis totam molestiae accusantium corrupti consequatur recusandae! Ducimus excepturi sequi quis amet, eius cupiditate blanditiis minus.
 
 El componente cuenta con tres opciones de accesibilidad predeterminadas:
+
 - Tipografia accesible
 - Vista simplificada
 - Enlaces subrayados
@@ -23,6 +24,7 @@ Uso:
 
 - **agregarOpciones**
   Lista de opciones que se agregará al Menú de accesibilidad, cada opción debe ser un objeto con los siguientes atributos:
+
   ```js
   {
     accion: <String> 'Nombre de la acción al dar click en la opción.',
@@ -47,6 +49,7 @@ Uso:
   Se ejecuta al dar click en una opción del munú de accesibilidad.
 
   Parametros:
+
   - `String`: Objeto que contiene los atributos de la opción seleccionada al dar click.
 
 - **@restablecer**
@@ -59,6 +62,7 @@ Este componente no permite contenido con slots
 ### Store
 
 Este componente cuenta con un modulo de store en estructura de vuex con variables y mutaciones para cada una de las opciones predeterminadas:
+
 - Tipografia accesible
   - Variable: `tipografia_accesible` (de tipo bolleano en `false` por defecto).
   - Mutación: `alternarTipografiaAccesible`.
@@ -70,6 +74,7 @@ Este componente cuenta con un modulo de store en estructura de vuex con variable
   - Mutación: `alternarEnlacesSubrayados`.
 
 Además de una mutación extra que restablece los valores de todas las variables:
+
 - `limpiarClasesAccesibles`:
   Cambia el valor de todas las variables de accesibilidad a `false`.
 

@@ -32,7 +32,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, ".componente-vacio{max-width:300px;disp
 
 /***/ }),
 
-/***/ 22:
+/***/ 162:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59,6 +59,48 @@ ___CSS_LOADER_EXPORT___.push([module.id, "", ""]);
 
 /***/ }),
 
+/***/ 660:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_cli_service_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(481);
+/* harmony import */ var _node_modules_vue_cli_service_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_cli_service_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_vue_cli_service_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(400);
+/* harmony import */ var _node_modules_vue_cli_service_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_cli_service_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_vue_cli_service_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_vue_cli_service_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".conacyt-piepagina{color:#fff;font-size:14px}", ""]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ 230:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_cli_service_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(481);
+/* harmony import */ var _node_modules_vue_cli_service_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_cli_service_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_vue_cli_service_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(400);
+/* harmony import */ var _node_modules_vue_cli_service_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_cli_service_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_vue_cli_service_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_vue_cli_service_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".gobmx-piepagina{background-image:url(https://cdn.conacyt.mx/sisdai-archivos/gobmxpleca.svg);background-position:bottom;background-repeat:repeat-x;background-size:auto 50px;color:#fff;font-size:14px}", ""]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ 13:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -72,7 +114,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "", ""]);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_vue_cli_service_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_vue_cli_service_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".contenedor-accesibilidad{position:fixed;z-index:4;margin:0}.contenedor-accesibilidad>.boton-accesibilidad{background:transparent;border-radius:50%;border:none;display:block;height:40px;width:40px;padding:0;margin:0 0 -16px!important}.contenedor-accesibilidad>.boton-accesibilidad:focus,.contenedor-accesibilidad>.boton-accesibilidad:hover{box-shadow:0 0 0 5px rgba(29,116,230,.25)}.boton-accesibilidad .icono-accesibilidad{background-color:#fff;height:40px;width:40px;border-radius:50%;color:#1d74e6;padding-left:0!important}.contenedor-accesibilidad .menu-accesibilidad{background:#f6f6f6;box-shadow:1px 1px 2px 0 var(--sombra);padding:0;overflow:hidden}.menu-accesibilidad .titulo{text-align:left;font-weight:600;padding:8px 16px;margin:0}.menu-accesibilidad .opcion-accesibilidad{background:transparent;border:none;display:flex;gap:8px;width:100%;font-size:.75rem;font-weight:600;text-align:left;padding:8px 16px;margin-right:0}.menu-accesibilidad .opcion-accesibilidad:focus,.menu-accesibilidad .opcion-accesibilidad:hover{background:#ddd}.opcion-accesibilidad .icono-4{padding:0}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".contenedor-accesibilidad{position:fixed;z-index:4;margin:0}.contenedor-accesibilidad>.icono-boton-accesibilidad{background:transparent;border-radius:50%;border:none;display:block;height:40px;width:40px;padding:0;margin:0 0 -16px!important}.contenedor-accesibilidad>.icono-boton-accesibilidad:focus,.contenedor-accesibilidad>.icono-boton-accesibilidad:hover{box-shadow:0 0 0 5px rgba(29,116,230,.25)}.icono-boton-accesibilidad .icono-accesibilidad{background-color:#fff;height:40px;width:40px;border-radius:50%;color:#1d74e6;padding-left:0!important}.contenedor-accesibilidad .menu-accesibilidad{background:#f6f6f6;box-shadow:1px 1px 2px 0 var(--sombra);padding:0;overflow:hidden}.menu-accesibilidad .titulo{text-align:left;font-weight:600;padding:8px 16px;margin:0}.menu-accesibilidad .opcion-accesibilidad{background:transparent;border:none;display:flex;gap:8px;width:100%;font-size:.75rem;font-weight:600;text-align:left;padding:8px 16px;margin-right:0}.menu-accesibilidad .opcion-accesibilidad:focus,.menu-accesibilidad .opcion-accesibilidad:hover{background:#ddd}.opcion-accesibilidad .icono-4{padding:0}", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["Z"] = (___CSS_LOADER_EXPORT___);
 
@@ -662,19 +704,51 @@ var update = add("074cf345", content, true, {"sourceMap":false,"shadowMode":fals
 
 /***/ }),
 
-/***/ 782:
+/***/ 945:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(22);
+var content = __webpack_require__(162);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.id, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var add = (__webpack_require__(402)/* ["default"] */ .Z)
-var update = add("5e45fa4d", content, true, {"sourceMap":false,"shadowMode":false});
+var update = add("d3d4f5d2", content, true, {"sourceMap":false,"shadowMode":false});
+
+/***/ }),
+
+/***/ 76:
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(660);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.id, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = (__webpack_require__(402)/* ["default"] */ .Z)
+var update = add("22eadc42", content, true, {"sourceMap":false,"shadowMode":false});
+
+/***/ }),
+
+/***/ 430:
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(230);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.id, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = (__webpack_require__(402)/* ["default"] */ .Z)
+var update = add("fff518c6", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
@@ -1070,7 +1144,7 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-;// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"28dd9c77-vue-loader-template"}!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/narrativa-scroll/NarrativaScroll.vue?vue&type=template&id=5a0dc24e&scoped=true&
+;// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"bba7e926-vue-loader-template"}!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/narrativa-scroll/NarrativaScroll.vue?vue&type=template&id=5a0dc24e&scoped=true&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
@@ -1325,7 +1399,7 @@ const narrativa_scroll_plugin = {
   }
 };
 /* harmony default export */ var narrativa_scroll = (narrativa_scroll_plugin);
-;// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"28dd9c77-vue-loader-template"}!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/componente-vacio/ComponenteVacio.vue?vue&type=template&id=a6444270&
+;// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"bba7e926-vue-loader-template"}!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/componente-vacio/ComponenteVacio.vue?vue&type=template&id=a6444270&
 var ComponenteVaciovue_type_template_id_a6444270_render = function render() {
   var _vm = this,
     _c = _vm._self._c,
@@ -1388,7 +1462,7 @@ const componente_vacio_plugin = {
   }
 };
 /* harmony default export */ var componente_vacio = (componente_vacio_plugin);
-;// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"28dd9c77-vue-loader-template"}!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/colapsable-navegacion/ColapsableNavegacion.vue?vue&type=template&id=369561f0&
+;// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"bba7e926-vue-loader-template"}!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/colapsable-navegacion/ColapsableNavegacion.vue?vue&type=template&id=369561f0&
 var ColapsableNavegacionvue_type_template_id_369561f0_render = function render() {
   var _vm = this,
     _c = _vm._self._c,
@@ -1481,7 +1555,7 @@ const colapsable_navegacion_plugin = {
   }
 };
 /* harmony default export */ var colapsable_navegacion = (colapsable_navegacion_plugin);
-;// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"28dd9c77-vue-loader-template"}!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/menu-lateral/MenuLateral.vue?vue&type=template&id=7b6a071d&
+;// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"bba7e926-vue-loader-template"}!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/menu-lateral/MenuLateral.vue?vue&type=template&id=7b6a071d&
 var MenuLateralvue_type_template_id_7b6a071d_render = function render() {
   var _vm = this,
     _c = _vm._self._c,
@@ -1582,18 +1656,18 @@ const menu_lateral_plugin = {
   }
 };
 /* harmony default export */ var menu_lateral = (menu_lateral_plugin);
-;// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"28dd9c77-vue-loader-template"}!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/menu-accesibilidad/MenuAccesibilidad.vue?vue&type=template&id=1a7f1cfc&
-var MenuAccesibilidadvue_type_template_id_1a7f1cfc_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"bba7e926-vue-loader-template"}!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/menu-accesibilidad/MenuAccesibilidad.vue?vue&type=template&id=acc9f5fc&
+var MenuAccesibilidadvue_type_template_id_acc9f5fc_render = function render() {
   var _vm = this,
     _c = _vm._self._c,
     _setup = _vm._self._setupProxy;
   return _c('div', {
     staticClass: "contenedor-accesibilidad",
     class: {
-      abierto: _setup.estaMenuAccesibilidadAbierto
+      abierto: _setup.menuAccesibilidadEstaAbierto
     }
   }, [_c('button', {
-    staticClass: "boton-accesibilidad",
+    staticClass: "icono-boton-accesibilidad",
     on: {
       "click": _setup.alternarMenuAccesibilidadAbierto
     }
@@ -1609,67 +1683,96 @@ var MenuAccesibilidadvue_type_template_id_1a7f1cfc_render = function render() {
       staticClass: "opcion-accesibilidad",
       on: {
         "click": function ($event) {
-          return _setup.ejecutarAccionOpcion(opcion.accion);
+          return _setup.seleccionarOpcion(opcion);
         }
       }
     }, [_c('span', {
       staticClass: "icono-4",
       class: opcion.icono
     }), _vm._v(" " + _vm._s(opcion.titulo) + " ")]);
-  })], 2)]);
+  }), _c('button', {
+    staticClass: "opcion-accesibilidad",
+    on: {
+      "click": _setup.restablecer
+    }
+  }, [_c('span', {
+    staticClass: "icono-4 icono-restablecer"
+  }), _vm._v(" Restablecer ")])], 2)]);
 };
-var MenuAccesibilidadvue_type_template_id_1a7f1cfc_staticRenderFns = [];
+var MenuAccesibilidadvue_type_template_id_acc9f5fc_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ./src/components/menu-accesibilidad/opcionesDefault.js
 /**
- * Lista de opciones por defecto del Menú de accesibilidad, cada opción es un objeto con la
- * siguiente estructura:
+ * Lista de opciones por defecto del Menú de accesibilidad, cada opción debe ser un objeto
+ * con los siguientes atributos:
  * - accion {`String`}: Nombre de la acción al dar click en la opción.
- * - icono {`String`}: Visible un costado del titulo.
+ * - claseCss: {`String`}: Nombre de la clase css de la opción.
+ * - icono {`String`}: Visible a un costado del titulo.
  * - titulo {`String`}: Visible en la lista del menú abierto.
  * @type Array
  */
 /* harmony default export */ var opcionesDefault = ([{
   accion: 'alternarTipografiaAccesible',
+  claseCss: 'a11y-tipografia',
   icono: 'icono-cambio-tipografia',
   titulo: 'Tipografia accesible'
 }, {
   accion: 'alternarVistaSimplificada',
+  claseCss: 'a11y-simplificada',
   icono: 'icono-vista-simplificada',
   titulo: 'Vista simplificada'
 }, {
   accion: 'alternarEnlacesSubrayados',
+  claseCss: 'a11y-hipervinculos',
   icono: 'icono-enlace-subrayado',
   titulo: 'Enlaces subrayados'
-}, {
-  accion: 'limpiarClasesAccesibles',
-  icono: 'icono-restablecer',
-  titulo: 'Restablecer'
 }]);
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/menu-accesibilidad/MenuAccesibilidad.vue?vue&type=script&setup=true&lang=js&
 
 
+const propiedades = {
+  /**
+   * Lista de opciones que se agregará al Menú de accesibilidad, cada opción debe ser un objeto
+   * con los siguientes atributos:
+   * - accion {`String`}: Nombre de la acción al dar click en la opción.
+   * - claseCss: {`String`}: Nombre de la clase css de la opción.
+   * - icono {`String`}: Visible a un costado del titulo.
+   * - titulo {`String`}: Visible en la lista del menú abierto.
+   */
+  agregarOpciones: {
+    type: Array,
+    default: () => []
+  }
+};
+const eventos = {
+  /**
+   * Se ejecuta al dar click en una opción del munú de accesibilidad.
+   * @param {Object} opcion Objeto que contiene los atributos de la opción seleccionada al dar
+   * click.
+   */
+  alSeleccionarOpcion: 'alSeleccionarOpcion',
+  /**
+   * Se ejecuta cuanso se ha dado click en el botón "Restablecer".
+   */
+  restablecer: 'restablecer'
+};
 /* harmony default export */ var MenuAccesibilidadvue_type_script_setup_true_lang_js_ = ({
   __name: 'MenuAccesibilidad',
-  props: {
-    opciones: {
-      type: Array,
-      default: () => opcionesDefault
-    }
-  },
-  emits: ['alSeleccionarOpcion'],
+  props: propiedades,
+  emits: Object.values(eventos),
   setup(__props, {
     expose,
     emit: emits
   }) {
     const props = __props;
     const {
-      opciones
+      agregarOpciones
     } = (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toRefs)(props);
 
     /**
-     *
+     * Opciones que se mostrarán en el menú de accesibilidad.
      */
+    const opciones = (0,external_commonjs_vue_commonjs2_vue_root_Vue_.computed)(() => [...opcionesDefault, ...agregarOpciones.value]);
 
     /**
      * Indica si el Menú de accesibilidad está abierto.
@@ -1677,42 +1780,55 @@ var MenuAccesibilidadvue_type_template_id_1a7f1cfc_staticRenderFns = [];
      * - Cerrado: `false`
      * @type Boolean
      */
-    const estaMenuAccesibilidadAbierto = (0,external_commonjs_vue_commonjs2_vue_root_Vue_.ref)(false);
+    const menuAccesibilidadEstaAbierto = (0,external_commonjs_vue_commonjs2_vue_root_Vue_.ref)(false);
+
+    /**
+     * Desencadena el emit 'alSeleccionarOpcion' al mismo tiempo que cierra el menú.
+     * @param {Object} Opcion seleccionada.
+     */
+    function seleccionarOpcion(opcion) {
+      emits(eventos.alSeleccionarOpcion, opcion);
+      menuAccesibilidadEstaAbierto.value = false;
+    }
+
+    /**
+     *
+     */
+    function restablecer() {
+      emits(eventos.restablecer);
+      menuAccesibilidadEstaAbierto.value = false;
+    }
 
     /**
      * Cambia el estado (contrario de su valor actual al ejecutar el evento, abierto o cerrado) del
      * Menú de accesibilidad.
      */
     function alternarMenuAccesibilidadAbierto() {
-      estaMenuAccesibilidadAbierto.value = !estaMenuAccesibilidadAbierto.value;
-    }
-
-    /**
-     *
-     */
-    function ejecutarAccionOpcion(accion) {
-      emits('alSeleccionarOpcion', accion);
-      estaMenuAccesibilidadAbierto.value = false;
+      menuAccesibilidadEstaAbierto.value = !menuAccesibilidadEstaAbierto.value;
     }
     expose({
       alternarMenuAccesibilidadAbierto
     });
     return {
       __sfc: true,
+      propiedades,
+      eventos,
       props,
-      opciones,
       emits,
-      estaMenuAccesibilidadAbierto,
-      alternarMenuAccesibilidadAbierto,
-      ejecutarAccionOpcion
+      agregarOpciones,
+      opciones,
+      menuAccesibilidadEstaAbierto,
+      seleccionarOpcion,
+      restablecer,
+      alternarMenuAccesibilidadAbierto
     };
   }
 });
 ;// CONCATENATED MODULE: ./src/components/menu-accesibilidad/MenuAccesibilidad.vue?vue&type=script&setup=true&lang=js&
  /* harmony default export */ var menu_accesibilidad_MenuAccesibilidadvue_type_script_setup_true_lang_js_ = (MenuAccesibilidadvue_type_script_setup_true_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js??clonedRuleSet-54.use[0]!./node_modules/@vue/cli-service/node_modules/css-loader/dist/cjs.js??clonedRuleSet-54.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/@vue/cli-service/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-54.use[2]!./node_modules/@vue/cli-service/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-54.use[3]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/menu-accesibilidad/MenuAccesibilidad.vue?vue&type=style&index=0&id=1a7f1cfc&prod&lang=css&
-var MenuAccesibilidadvue_type_style_index_0_id_1a7f1cfc_prod_lang_css_ = __webpack_require__(782);
-;// CONCATENATED MODULE: ./src/components/menu-accesibilidad/MenuAccesibilidad.vue?vue&type=style&index=0&id=1a7f1cfc&prod&lang=css&
+// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js??clonedRuleSet-54.use[0]!./node_modules/@vue/cli-service/node_modules/css-loader/dist/cjs.js??clonedRuleSet-54.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/@vue/cli-service/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-54.use[2]!./node_modules/@vue/cli-service/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-54.use[3]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/menu-accesibilidad/MenuAccesibilidad.vue?vue&type=style&index=0&id=acc9f5fc&prod&lang=css&
+var MenuAccesibilidadvue_type_style_index_0_id_acc9f5fc_prod_lang_css_ = __webpack_require__(945);
+;// CONCATENATED MODULE: ./src/components/menu-accesibilidad/MenuAccesibilidad.vue?vue&type=style&index=0&id=acc9f5fc&prod&lang=css&
 
 ;// CONCATENATED MODULE: ./src/components/menu-accesibilidad/MenuAccesibilidad.vue
 
@@ -1725,8 +1841,8 @@ var MenuAccesibilidadvue_type_style_index_0_id_1a7f1cfc_prod_lang_css_ = __webpa
 
 var MenuAccesibilidad_component = normalizeComponent(
   menu_accesibilidad_MenuAccesibilidadvue_type_script_setup_true_lang_js_,
-  MenuAccesibilidadvue_type_template_id_1a7f1cfc_render,
-  MenuAccesibilidadvue_type_template_id_1a7f1cfc_staticRenderFns,
+  MenuAccesibilidadvue_type_template_id_acc9f5fc_render,
+  MenuAccesibilidadvue_type_template_id_acc9f5fc_staticRenderFns,
   false,
   null,
   null,
@@ -1743,8 +1859,8 @@ const menu_accesibilidad_plugin = {
   }
 };
 /* harmony default export */ var menu_accesibilidad = (menu_accesibilidad_plugin);
-;// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"28dd9c77-vue-loader-template"}!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/navegacion-principal/NavegacionPrincipal.vue?vue&type=template&id=d418c0fc&
-var NavegacionPrincipalvue_type_template_id_d418c0fc_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"bba7e926-vue-loader-template"}!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/navegacion-principal/NavegacionPrincipal.vue?vue&type=template&id=ac94e6b8&
+var NavegacionPrincipalvue_type_template_id_ac94e6b8_render = function render() {
   var _vm = this,
     _c = _vm._self._c,
     _setup = _vm._self._setupProxy;
@@ -1760,7 +1876,7 @@ var NavegacionPrincipalvue_type_template_id_d418c0fc_render = function render() 
   }), _c('button', {
     staticClass: "nav-boton-menu",
     class: {
-      abierto: _setup.navegacionPrincipalAbierta
+      abierto: _setup.menuEstaAbierto
     },
     on: {
       "click": _setup.alternarMenu
@@ -1775,15 +1891,22 @@ var NavegacionPrincipalvue_type_template_id_d418c0fc_render = function render() 
   })], 2), _c('div', {
     staticClass: "nav-menu-contedor",
     class: {
-      abierto: _setup.navegacionPrincipalAbierta
+      abierto: _setup.menuEstaAbierto
     }
   }, [_c('div', {
-    staticClass: "nav-menu-principal"
+    ref: "cuadroElementosMenu",
+    staticClass: "nav-menu-principal",
+    attrs: {
+      "tabindex": "0"
+    },
+    on: {
+      "click": _setup.alternarMenu
+    }
   }, [_vm._t("default", function () {
     return [_vm._m(1)];
   })], 2)])]);
 };
-var NavegacionPrincipalvue_type_template_id_d418c0fc_staticRenderFns = [function () {
+var NavegacionPrincipalvue_type_template_id_ac94e6b8_staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c,
     _setup = _vm._self._setupProxy;
@@ -1821,9 +1944,79 @@ var NavegacionPrincipalvue_type_template_id_d418c0fc_staticRenderFns = [function
   }, [_vm._v("Acerca de")])])]);
 }];
 
-;// CONCATENATED MODULE: ./src/components/navegacion-principal/NavegacionPrincipal.vue?vue&type=template&id=d418c0fc&
+;// CONCATENATED MODULE: ./src/components/navegacion-principal/NavegacionPrincipal.vue?vue&type=template&id=ac94e6b8&
 
+;// CONCATENATED MODULE: ./src/composables/useMenuDesenfocable.js
+
+
+/**
+ * @typedef { import("vue").Ref } Ref
+ */
+
+/**
+ * @typedef {Object} UseMenuDesenfocableObject
+ * @property {Ref<boolean>} menuEstaAbierto  Indica el estado del menu si esta abierto o no
+ * @property {function} abrirMenu  pone `menuEstaAbierto = true`
+ * @property {function} cerrarMenu  pone `menuEstaAbierto = false`
+ * @property {function} alternarMenu  pone `menuEstaAbierto =  !menuEstaAbierto`
+ */
+
+/**
+ *  Composable que maneja el estado de *abierto-cerrado* de un menu (en los menus colapsables), adicionalmente
+ *  administra los eventos *focus-blur* para cerrar el menu automaticamente al momento de que el menu pierda el foco
+ *
+ * @param {Ref<HTMLElement>} elementoMenuEnfocable Referecia del elemento html que contiene los
+ * elementos del menu colapsable `ref<HTMLElement>`. Debe ser enfocable, si es un div o algun elemento que no
+ * tenga focus por si mismo, debe agregarse el atributo [tab-index](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex)
+ *
+ * @returns {UseMenuDesenfocableObject} Metodos y propiedades del composable
+ * - `menuEstaAbierto: ref<boolean>`
+ * - `abrirMenu: function`
+ * - `cerrarMenu: function`
+ * - `alternarMenu: function`
+ */
+function useMenuDesenfocable(elementoMenuEnfocable) {
+  const menuEstaAbierto = (0,external_commonjs_vue_commonjs2_vue_root_Vue_.ref)(false);
+  function updateBlur() {
+    //revisar que no tengo foco ningun elemento hijo
+
+    if (menuEstaAbierto.value) {
+      setTimeout(() => {
+        if (elementoMenuEnfocable.value && !elementoMenuEnfocable.value.contains(document.activeElement)) {
+          menuEstaAbierto.value = false;
+        }
+      }, 200);
+    }
+  }
+  (0,external_commonjs_vue_commonjs2_vue_root_Vue_.onMounted)(() => {
+    if (elementoMenuEnfocable.value) elementoMenuEnfocable.value.addEventListener('blur', updateBlur);
+  });
+  function abrirMenu() {
+    menuEstaAbierto.value = true;
+  }
+  function cerrarMenu() {
+    menuEstaAbierto.value = false;
+  }
+  function alternarMenu() {
+    menuEstaAbierto.value = !menuEstaAbierto.value;
+  }
+  (0,external_commonjs_vue_commonjs2_vue_root_Vue_.watch)(menuEstaAbierto, menuEstaAbierto => {
+    if (menuEstaAbierto) {
+      elementoMenuEnfocable.value.focus();
+    }
+  });
+  (0,external_commonjs_vue_commonjs2_vue_root_Vue_.onUnmounted)(() => {
+    if (elementoMenuEnfocable.value) elementoMenuEnfocable.value.removeEventListener('blur', updateBlur);
+  });
+  return {
+    menuEstaAbierto,
+    abrirMenu,
+    cerrarMenu,
+    alternarMenu
+  };
+}
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/navegacion-principal/NavegacionPrincipal.vue?vue&type=script&setup=true&lang=js&
+
 
 /* harmony default export */ var NavegacionPrincipalvue_type_script_setup_true_lang_js_ = ({
   __name: 'NavegacionPrincipal',
@@ -1838,14 +2031,16 @@ var NavegacionPrincipalvue_type_template_id_d418c0fc_staticRenderFns = [function
     }
   },
   setup(__props) {
-    const navegacionPrincipalAbierta = (0,external_commonjs_vue_commonjs2_vue_root_Vue_.ref)(false);
-    function alternarMenu() {
-      //TODO: asegurarse de que otras navegaciones se cierren antes de abrir esta
-      navegacionPrincipalAbierta.value = !navegacionPrincipalAbierta.value;
-    }
+    //Que el menu se pueda cerrar automaticamente al enfocar otra cosa
+    const cuadroElementosMenu = (0,external_commonjs_vue_commonjs2_vue_root_Vue_.ref)(null);
+    const {
+      menuEstaAbierto,
+      alternarMenu
+    } = useMenuDesenfocable(cuadroElementosMenu);
     return {
       __sfc: true,
-      navegacionPrincipalAbierta,
+      cuadroElementosMenu,
+      menuEstaAbierto,
       alternarMenu
     };
   }
@@ -1862,8 +2057,8 @@ var NavegacionPrincipalvue_type_template_id_d418c0fc_staticRenderFns = [function
 ;
 var NavegacionPrincipal_component = normalizeComponent(
   navegacion_principal_NavegacionPrincipalvue_type_script_setup_true_lang_js_,
-  NavegacionPrincipalvue_type_template_id_d418c0fc_render,
-  NavegacionPrincipalvue_type_template_id_d418c0fc_staticRenderFns,
+  NavegacionPrincipalvue_type_template_id_ac94e6b8_render,
+  NavegacionPrincipalvue_type_template_id_ac94e6b8_staticRenderFns,
   false,
   null,
   null,
@@ -1880,7 +2075,501 @@ const navegacion_principal_plugin = {
   }
 };
 /* harmony default export */ var navegacion_principal = (navegacion_principal_plugin);
+;// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"bba7e926-vue-loader-template"}!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/navegacion-gob-mx/NavegacionGobMx.vue?vue&type=template&id=21fb4e6e&
+var NavegacionGobMxvue_type_template_id_21fb4e6e_render = function render() {
+  var _vm = this,
+    _c = _vm._self._c,
+    _setup = _vm._self._setupProxy;
+  return _c('nav', {
+    staticClass: "navegacion navegacion-gobmx"
+  }, [_c('div', {
+    staticClass: "nav-contenedor-identidad"
+  }, [_vm._m(0), _c('button', {
+    staticClass: "nav-boton-menu",
+    class: {
+      abierto: _setup.menuEstaAbierto
+    },
+    on: {
+      "click": _setup.alternarMenu
+    }
+  }, [_c('span', {
+    staticClass: "nav-icono-menu"
+  })])]), _c('div', {
+    staticClass: "nav-menu-contedor",
+    class: {
+      abierto: _setup.menuEstaAbierto
+    }
+  }, [_c('div', {
+    ref: "cuadroElementosMenu",
+    staticClass: "nav-menu-principal",
+    attrs: {
+      "tabindex": "0"
+    },
+    on: {
+      "click": _setup.alternarMenu
+    }
+  }, [_vm._m(1)])])]);
+};
+var NavegacionGobMxvue_type_template_id_21fb4e6e_staticRenderFns = [function () {
+  var _vm = this,
+    _c = _vm._self._c,
+    _setup = _vm._self._setupProxy;
+  return _c('a', {
+    staticClass: "nav-hiperviculo-logo",
+    attrs: {
+      "href": "https://www.gob.mx/",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_c('img', {
+    staticClass: "nav-logo",
+    attrs: {
+      "width": "128",
+      "height": "38",
+      "src": "https://cdn.conacyt.mx/sisdai-archivos/gobmx.svg",
+      "alt": "Gobierno de México."
+    }
+  })]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c,
+    _setup = _vm._self._setupProxy;
+  return _c('ul', {
+    staticClass: "nav-menu"
+  }, [_c('li', [_c('a', {
+    staticClass: "nav-hipervinculo",
+    attrs: {
+      "href": "https://mivacuna.salud.gob.mx/index.php",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_vm._v("Registro para vacunación")])]), _c('li', [_c('a', {
+    staticClass: "nav-hipervinculo",
+    attrs: {
+      "href": "https://coronavirus.gob.mx/",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_vm._v("Información sobre COVID-19")])]), _c('li', [_c('a', {
+    staticClass: "nav-hipervinculo",
+    attrs: {
+      "href": "https://www.gob.mx/tramites",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_vm._v("Trámites")])]), _c('li', [_c('a', {
+    staticClass: "nav-hipervinculo",
+    attrs: {
+      "href": "https://www.gob.mx/gobierno",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_vm._v("Gobierno")])]), _c('li', [_c('a', {
+    staticClass: "nav-hipervinculo",
+    attrs: {
+      "href": "https://www.gob.mx/busqueda",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_c('span', {
+    staticClass: "icono-buscar"
+  })])])]);
+}];
+
+;// CONCATENATED MODULE: ./src/components/navegacion-gob-mx/NavegacionGobMx.vue?vue&type=template&id=21fb4e6e&
+
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/navegacion-gob-mx/NavegacionGobMx.vue?vue&type=script&setup=true&lang=js&
+
+
+
+//Que el menu se pueda cerrar automaticamente al enfocar otra cosa
+
+/* harmony default export */ var NavegacionGobMxvue_type_script_setup_true_lang_js_ = ({
+  __name: 'NavegacionGobMx',
+  setup(__props) {
+    const cuadroElementosMenu = (0,external_commonjs_vue_commonjs2_vue_root_Vue_.ref)(null);
+    const {
+      menuEstaAbierto,
+      alternarMenu
+    } = useMenuDesenfocable(cuadroElementosMenu);
+    return {
+      __sfc: true,
+      cuadroElementosMenu,
+      menuEstaAbierto,
+      alternarMenu
+    };
+  }
+});
+;// CONCATENATED MODULE: ./src/components/navegacion-gob-mx/NavegacionGobMx.vue?vue&type=script&setup=true&lang=js&
+ /* harmony default export */ var navegacion_gob_mx_NavegacionGobMxvue_type_script_setup_true_lang_js_ = (NavegacionGobMxvue_type_script_setup_true_lang_js_); 
+;// CONCATENATED MODULE: ./src/components/navegacion-gob-mx/NavegacionGobMx.vue
+
+
+
+
+
+/* normalize component */
+;
+var NavegacionGobMx_component = normalizeComponent(
+  navegacion_gob_mx_NavegacionGobMxvue_type_script_setup_true_lang_js_,
+  NavegacionGobMxvue_type_template_id_21fb4e6e_render,
+  NavegacionGobMxvue_type_template_id_21fb4e6e_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var NavegacionGobMx = (NavegacionGobMx_component.exports);
+;// CONCATENATED MODULE: ./src/components/navegacion-gob-mx/index.js
+
+const navegacion_gob_mx_plugin = {
+  install: function (Vue) {
+    Vue.component('NavegacionGobMx', NavegacionGobMx);
+  }
+};
+/* harmony default export */ var navegacion_gob_mx = (navegacion_gob_mx_plugin);
+;// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"bba7e926-vue-loader-template"}!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/pie-pagina-gob-mx/PiePaginaGobMx.vue?vue&type=template&id=b0f1391e&
+var PiePaginaGobMxvue_type_template_id_b0f1391e_render = function render() {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _vm._m(0);
+};
+var PiePaginaGobMxvue_type_template_id_b0f1391e_staticRenderFns = [function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c('footer', {
+    staticClass: "contenedor gobmx-fondo-oscuro-1 piepagina-gobmx gobmx-piepagina p-t-4 p-b-10"
+  }, [_c('div', {
+    staticClass: "flex flex-wrap"
+  }, [_c('div', {
+    staticClass: "columna-8 columna-4-esc"
+  }, [_c('img', {
+    attrs: {
+      "src": "https://cdn.conacyt.mx/sisdai-archivos/gobmx.svg",
+      "alt": "Gobierno de México",
+      "width": "200px",
+      "height": "60px"
+    }
+  })]), _c('nav', {
+    staticClass: "columna-8 columna-4-esc"
+  }, [_c('p', {
+    staticClass: "titulo-lista"
+  }, [_vm._v("Enlaces")]), _c('ul', {
+    staticClass: "lista-plana"
+  }, [_c('li', [_c('a', {
+    staticClass: "hipervinculo-gobmx",
+    attrs: {
+      "href": "https://participa.gob.mx/",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_vm._v("Participa")])]), _c('li', [_c('a', {
+    staticClass: "hipervinculo-gobmx",
+    attrs: {
+      "href": "https://www.gob.mx/publicaciones",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_vm._v("Publicaciones Oficiales")])]), _c('li', [_c('a', {
+    staticClass: "hipervinculo-gobmx",
+    attrs: {
+      "href": "http://www.ordenjuridico.gob.mx/",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_vm._v("Marco Jurídico")])]), _c('li', [_c('a', {
+    staticClass: "hipervinculo-gobmx",
+    attrs: {
+      "href": "https://consultapublicamx.inai.org.mx/vut-web/faces/view/consultaPublica.xhtml",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_vm._v("Plataforma Nacional de Transparencia")])])])]), _c('nav', {
+    staticClass: "columna-8 columna-4-esc"
+  }, [_c('p', {
+    staticClass: "titulo-lista"
+  }, [_vm._v("¿Qué es gob.mx?")]), _c('p', [_c('span', [_vm._v("Es el portal único de trámites, información y participación ciudadana. ")]), _c('a', {
+    staticClass: "hipervinculo-gobmx",
+    attrs: {
+      "href": "https://www.gob.mx/que-es-gobmx",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_vm._v("Leer más")])]), _c('ul', {
+    staticClass: "lista-plana"
+  }, [_c('li', [_c('a', {
+    staticClass: "hipervinculo-gobmx",
+    attrs: {
+      "href": "https://datos.gob.mx/",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_vm._v("Portal de datos abiertos")])]), _c('li', [_c('a', {
+    staticClass: "hipervinculo-gobmx",
+    attrs: {
+      "href": "https://www.gob.mx/accesibilidad",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_vm._v("Declaración de accesibilidad")])]), _c('li', [_c('a', {
+    staticClass: "hipervinculo-gobmx",
+    attrs: {
+      "href": "https://www.gob.mx/aviso_de_privacidad",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_vm._v("Aviso de privacidad integral")])]), _c('li', [_c('a', {
+    staticClass: "hipervinculo-gobmx",
+    attrs: {
+      "href": "https://www.gob.mx/privacidadsimplificado",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_vm._v("Aviso de privacidad simplificado")])]), _c('li', [_c('a', {
+    staticClass: "hipervinculo-gobmx",
+    attrs: {
+      "href": "https://www.gob.mx/terminos",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_vm._v("Términos y Condiciones")])]), _c('li', [_c('a', {
+    staticClass: "hipervinculo-gobmx",
+    attrs: {
+      "href": "https://www.gob.mx/terminos#medidas-seguridad-informacion",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_vm._v("Política de seguridad")])]), _c('li', [_c('a', {
+    staticClass: "hipervinculo-gobmx",
+    attrs: {
+      "href": "https://www.gob.mx/sitemap",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_vm._v("Mapa de sitio")])])])]), _c('nav', {
+    staticClass: "columna-8 columna-4-esc"
+  }, [_c('p', [_c('a', {
+    staticClass: "hipervinculo-gobmx",
+    attrs: {
+      "href": "https://www.gob.mx/tramites/ficha/presentacion-de-quejas-y-denuncias-en-la-sfp/SFP54",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_vm._v("Denuncia contra servidores públicos")])]), _c('p', {
+    staticClass: "titulo-lista"
+  }, [_vm._v(" Síguenos en "), _c('span', {
+    staticClass: "a11y-solo-lectura"
+  }, [_vm._v("nuestras redes sociales:")])]), _c('p', [_c('a', {
+    staticClass: "hipervinculo-gobmx m-r-3",
+    attrs: {
+      "href": "https://www.facebook.com/gobmx",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_c('span', {
+    staticClass: "icono-social-facebook icono-3"
+  }), _c('span', {
+    staticClass: "a11y-solo-lectura"
+  }, [_vm._v("feisbuk")])]), _c('a', {
+    staticClass: "hipervinculo-gobmx",
+    attrs: {
+      "href": "https://twitter.com/gobmx",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_c('span', {
+    staticClass: "icono-social-twitter icono-3"
+  }), _c('span', {
+    staticClass: "a11y-solo-lectura"
+  }, [_vm._v("y tuiter.")])])])])])]);
+}];
+
+;// CONCATENATED MODULE: ./src/components/pie-pagina-gob-mx/PiePaginaGobMx.vue?vue&type=template&id=b0f1391e&
+
+// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js??clonedRuleSet-54.use[0]!./node_modules/@vue/cli-service/node_modules/css-loader/dist/cjs.js??clonedRuleSet-54.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/@vue/cli-service/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-54.use[2]!./node_modules/@vue/cli-service/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-54.use[3]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/pie-pagina-gob-mx/PiePaginaGobMx.vue?vue&type=style&index=0&id=b0f1391e&prod&lang=css&
+var PiePaginaGobMxvue_type_style_index_0_id_b0f1391e_prod_lang_css_ = __webpack_require__(430);
+;// CONCATENATED MODULE: ./src/components/pie-pagina-gob-mx/PiePaginaGobMx.vue?vue&type=style&index=0&id=b0f1391e&prod&lang=css&
+
+;// CONCATENATED MODULE: ./src/components/pie-pagina-gob-mx/PiePaginaGobMx.vue
+
+var script = {}
+;
+
+
+/* normalize component */
+
+var PiePaginaGobMx_component = normalizeComponent(
+  script,
+  PiePaginaGobMxvue_type_template_id_b0f1391e_render,
+  PiePaginaGobMxvue_type_template_id_b0f1391e_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var PiePaginaGobMx = (PiePaginaGobMx_component.exports);
+;// CONCATENATED MODULE: ./src/components/pie-pagina-gob-mx/index.js
+
+const pie_pagina_gob_mx_plugin = {
+  install: function (Vue) {
+    Vue.component('PiePaginaGobMx', PiePaginaGobMx);
+  }
+};
+/* harmony default export */ var pie_pagina_gob_mx = (pie_pagina_gob_mx_plugin);
+;// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"bba7e926-vue-loader-template"}!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/pie-pagina-conacyt/PiePaginaConacyt.vue?vue&type=template&id=31cc8ef3&
+var PiePaginaConacytvue_type_template_id_31cc8ef3_render = function render() {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _vm._m(0);
+};
+var PiePaginaConacytvue_type_template_id_31cc8ef3_staticRenderFns = [function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c('footer', {
+    staticClass: "contenedor conacyt-fondo-degradado conacyt-texto-claro-1 conacyt-piepagina p-y-4"
+  }, [_c('div', {
+    staticClass: "flex flex-wrap"
+  }, [_c('div', {
+    staticClass: "columna-8 columna-8-esc"
+  }, [_c('img', {
+    staticStyle: {
+      "filter": "brightness(0) invert(100)"
+    },
+    attrs: {
+      "src": "https://cdn.conacyt.mx/sisdai-archivos/conacyt-azul.svg",
+      "alt": "Conacyt",
+      "width": "200px",
+      "height": "60px"
+    }
+  }), _c('p', [_vm._v("Consejo Nacional de Ciencia y Tecnología")]), _c('p', [_vm._v(" Av. Insurgentes Sur 1582, Col. Crédito Constructor,"), _c('br'), _vm._v(" Alcaldía Benito Juárez, C.P. 03940, Ciudad de México"), _c('br'), _vm._v(" Tel: (55) 5322-7700 ")]), _c('p', [_vm._v("©2021 Conacyt Derechos Reservados")])]), _c('nav', {
+    staticClass: "columna-8 columna-4-esc"
+  }, [_c('p', {
+    staticClass: "titulo-lista"
+  }, [_vm._v("Enlaces")]), _c('ul', {
+    staticClass: "lista-plana"
+  }, [_c('li', [_c('a', {
+    staticClass: "hipervinculo-conacyt",
+    attrs: {
+      "href": "https://conacyt.mx/conacyt/directorio/",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_vm._v("Directorio")])]), _c('li', [_c('a', {
+    staticClass: "hipervinculo-conacyt",
+    attrs: {
+      "href": "https://conacyt.mx/soporte-tecnico/",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_vm._v("Soporte Técnico")])]), _c('li', [_c('a', {
+    staticClass: "hipervinculo-conacyt",
+    attrs: {
+      "href": "https://conacyt.mx/aviso-de-privacidad/",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_vm._v("Política de Privacidad")])]), _c('li', [_c('a', {
+    staticClass: "hipervinculo-conacyt",
+    attrs: {
+      "href": "http://comunidad.conacyt.mx/",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_vm._v("Intranet Conacyt")])])])]), _c('nav', {
+    staticClass: "columna-8 columna-4-esc"
+  }, [_c('p', {
+    staticClass: "titulo-lista"
+  }, [_vm._v(" Síguenos en "), _c('span', {
+    staticClass: "a11y-solo-lectura"
+  }, [_vm._v("nuestras redes sociales:")])]), _c('p', [_c('a', {
+    staticClass: "hipervinculo-conacyt m-r-3",
+    attrs: {
+      "href": "https://www.facebook.com/ConacytMX/",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_c('span', {
+    staticClass: "icono-social-facebook icono-3"
+  }), _c('span', {
+    staticClass: "a11y-solo-lectura"
+  }, [_vm._v("feisbuk,")])]), _c('a', {
+    staticClass: "hipervinculo-conacyt m-r-3",
+    attrs: {
+      "href": "https://twitter.com/Conacyt_MX",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_c('span', {
+    staticClass: "icono-social-twitter icono-3"
+  }), _c('span', {
+    staticClass: "a11y-solo-lectura"
+  }, [_vm._v("tuiter,")])]), _c('a', {
+    staticClass: "hipervinculo-conacyt m-r-3",
+    attrs: {
+      "href": "https://www.instagram.com/conacyt_mx/",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_c('span', {
+    staticClass: "icono-social-instagram icono-3"
+  }), _c('span', {
+    staticClass: "a11y-solo-lectura"
+  }, [_vm._v("instagram ")])]), _c('a', {
+    staticClass: "hipervinculo-conacyt",
+    attrs: {
+      "href": "https://www.youtube.com/channel/UClcVyko0ESwMc_6Lu1bXmIQ",
+      "target": "_blank",
+      "rel": "noopener"
+    }
+  }, [_c('span', {
+    staticClass: "icono-social-youtube icono-3"
+  }), _c('span', {
+    staticClass: "a11y-solo-lectura"
+  }, [_vm._v("y yutub")])])])])])]);
+}];
+
+;// CONCATENATED MODULE: ./src/components/pie-pagina-conacyt/PiePaginaConacyt.vue?vue&type=template&id=31cc8ef3&
+
+// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js??clonedRuleSet-54.use[0]!./node_modules/@vue/cli-service/node_modules/css-loader/dist/cjs.js??clonedRuleSet-54.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/@vue/cli-service/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-54.use[2]!./node_modules/@vue/cli-service/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-54.use[3]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/pie-pagina-conacyt/PiePaginaConacyt.vue?vue&type=style&index=0&id=31cc8ef3&prod&lang=css&
+var PiePaginaConacytvue_type_style_index_0_id_31cc8ef3_prod_lang_css_ = __webpack_require__(76);
+;// CONCATENATED MODULE: ./src/components/pie-pagina-conacyt/PiePaginaConacyt.vue?vue&type=style&index=0&id=31cc8ef3&prod&lang=css&
+
+;// CONCATENATED MODULE: ./src/components/pie-pagina-conacyt/PiePaginaConacyt.vue
+
+var PiePaginaConacyt_script = {}
+;
+
+
+/* normalize component */
+
+var PiePaginaConacyt_component = normalizeComponent(
+  PiePaginaConacyt_script,
+  PiePaginaConacytvue_type_template_id_31cc8ef3_render,
+  PiePaginaConacytvue_type_template_id_31cc8ef3_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var PiePaginaConacyt = (PiePaginaConacyt_component.exports);
+;// CONCATENATED MODULE: ./src/components/pie-pagina-conacyt/index.js
+
+const pie_pagina_conacyt_plugin = {
+  install: function (Vue) {
+    Vue.component('PiePaginaConacyt', PiePaginaConacyt);
+  }
+};
+/* harmony default export */ var pie_pagina_conacyt = (pie_pagina_conacyt_plugin);
 ;// CONCATENATED MODULE: ./src/components/index.js
+
+
+
 
 
 
@@ -1898,6 +2587,9 @@ const src_plugin = {
     Vue.use(menu_lateral);
     Vue.use(menu_accesibilidad);
     Vue.use(navegacion_principal);
+    Vue.use(navegacion_gob_mx);
+    Vue.use(pie_pagina_gob_mx);
+    Vue.use(pie_pagina_conacyt);
   }
 };
 /* harmony default export */ var src_0 = (src_plugin);
