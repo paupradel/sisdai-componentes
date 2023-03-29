@@ -116,8 +116,3 @@ defineExpose({ alternarMenuAccesibilidadAbierto })
     </menu>
   </div>
 </template>
-
-<style>
-@import './accesibilidad.css';
-@import './transiciones.css';
-</style>
