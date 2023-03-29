@@ -26,10 +26,4 @@ export default [
     icono: 'icono-enlace-subrayado',
     titulo: 'Enlaces subrayados',
   },
-  {
-    accion: 'limpiarClasesAccesibles',
-    claseCss: '',
-    icono: 'icono-restablecer',
-    titulo: 'Restablecer',
-  },
 ]
