@@ -3,6 +3,7 @@ import {
   ComponenteVacio,
   ColapsableNavegacion,
   MenuLateral,
+  MenuAccesibilidad,
   NavegacionPrincipal,
   IndiceDeContenido,
   NavegacionGobMx,
@@ -16,6 +17,7 @@ const plugin = {
     Vue.use(ComponenteVacio)
     Vue.use(ColapsableNavegacion)
     Vue.use(MenuLateral)
+    Vue.use(MenuAccesibilidad)
     Vue.use(NavegacionPrincipal)
     Vue.use(IndiceDeContenido)
     Vue.use(NavegacionGobMx)

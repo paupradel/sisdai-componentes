@@ -45,6 +45,11 @@
                 >
               </li>
               <li>
+                <router-link to="/documentacion/accesibilidad">
+                  Accesibilidad
+                </router-link>
+              </li>
+              <li>
                 <router-link to="/documentacion/narrativa_scroll">
                   NarrativaScroll</router-link
                 >
