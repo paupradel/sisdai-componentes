@@ -1,4 +1,4 @@
-//import NarrativaScroll from './narrativa-scroll'
+import NarrativaScroll from './narrativa-scroll'
 import ComponenteVacio from './componente-vacio'
 import ColapsableNavegacion from './colapsable-navegacion'
 import MenuLateral from './menu-lateral'
@@ -8,7 +8,7 @@ import PiePaginaGobMx from './pie-pagina-gob-mx'
 import PiePaginaConacyt from './pie-pagina-conacyt'
 
 export {
-  //NarrativaScroll,
+  NarrativaScroll,
   ComponenteVacio,
   ColapsableNavegacion,
   MenuLateral,

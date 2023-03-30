@@ -1,11 +1,11 @@
-import Vue from 'vue'
 import { createPopper } from '@popperjs/core'
 
 const GLOBAL_NAME = '__VTOOLTIP__'
 
 globalThis[GLOBAL_NAME] = globalThis[GLOBAL_NAME] || {}
 
-Vue.directive('tooltip', {
+const tooltip = {
+  name: 'tooltip',
   bind(el, binding) {
     const unique_id = Math.random().toString(36).substring(4)
     el.setAttribute('host-tooltip-id', unique_id)
@@ -65,9 +65,10 @@ Vue.directive('tooltip', {
     el.removeEventListener('mouseenter', props.mouseEnterListener)
     el.removeEventListener('mouseleave', props.mouseLeaveListener)
   },
-})
+}
 
-Vue.directive('tooltip-info', {
+const tooltip_info = {
+  name: 'tooltip-info',
   bind(el, binding) {
     const unique_id = 'info-' + Math.random().toString(36).substring(4)
     el.setAttribute('host-tooltip-id', unique_id)
@@ -127,7 +128,7 @@ Vue.directive('tooltip-info', {
     el.removeEventListener('mouseenter', props.mouseEnterListener)
     el.removeEventListener('mouseleave', props.mouseLeaveListener)
   },
-})
+}
 
 const addMouseEnterListenerTooltip = (el, unique_id) => {
   const fn = () => {
@@ -242,3 +243,5 @@ function getTooltipElement(id, value, classTooltip) {
   document.body.appendChild(tooltip)
   return tooltip
 }
+
+export { tooltip, tooltip_info }

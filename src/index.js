@@ -1,5 +1,5 @@
 import {
-  //NarrativaScroll,
+  NarrativaScroll,
   ComponenteVacio,
   ColapsableNavegacion,
   MenuLateral,
@@ -9,9 +9,11 @@ import {
   PiePaginaConacyt,
 } from './components'
 
+import { tooltips } from './directivas'
+
 const plugin = {
   install: function (Vue) {
-    //Vue.use(NarrativaScroll)
+    Vue.use(NarrativaScroll)
     Vue.use(ComponenteVacio)
     Vue.use(ColapsableNavegacion)
     Vue.use(MenuLateral)
@@ -19,6 +21,7 @@ const plugin = {
     Vue.use(NavegacionGobMx)
     Vue.use(PiePaginaGobMx)
     Vue.use(PiePaginaConacyt)
+    Vue.use(tooltips)
   },
 }
 
