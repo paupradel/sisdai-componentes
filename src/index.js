@@ -4,6 +4,7 @@ import {
   ColapsableNavegacion,
   MenuLateral,
   MenuAccesibilidad,
+  BotonFlotante,
   NavegacionPrincipal,
   IndiceDeContenido,
   NavegacionGobMx,
@@ -18,6 +19,7 @@ const plugin = {
     Vue.use(ColapsableNavegacion)
     Vue.use(MenuLateral)
     Vue.use(MenuAccesibilidad)
+    Vue.use(BotonFlotante)
     Vue.use(NavegacionPrincipal)
     Vue.use(IndiceDeContenido)
     Vue.use(NavegacionGobMx)
