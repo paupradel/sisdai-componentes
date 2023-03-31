@@ -5,8 +5,7 @@
   "description": "Biblioteca de componentes de Vue reutilizables",
   "main": "./dist/sisdai-componentes.umd.js",
   "files": [
-    "src/componentes",
-    "src/stores",
+    "src",
     "dist",
     "README.md"
   ],
