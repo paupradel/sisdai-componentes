@@ -2,13 +2,6 @@
 import ElementosParaVerAccesibilidad from './elementos-para-ver-accesibilidad.vue'
 import { ref } from 'vue'
 
-const nuevaOpcion = {
-  accion: 'alternarCursivaDestacada',
-  claseCss: 'a11y-cursiva-destacada',
-  icono: 'icono-estrella',
-  titulo: 'Cursiva destacada',
-}
-
 const clasesAccesibles = ref([])
 
 function eliminarClase(claseCss) {
@@ -23,6 +16,13 @@ function agregarClases({ accion, claseCss }) {
   } else {
     eliminarClase(claseCss)
   }
+}
+
+const nuevaOpcion = {
+  accion: 'alternarCursivaDestacada',
+  claseCss: 'a11y-cursiva-destacada',
+  icono: 'icono-estrella',
+  titulo: 'Cursiva destacada',
 }
 </script>
 
@@ -42,12 +42,6 @@ function agregarClases({ accion, claseCss }) {
 </template>
 
 <style>
-.contenerdor-panttalla-simulada.agregando-opcion
-  .contenedor-accesibilidad.abierto
-  .menu-accesibilidad {
-  max-height: 320px;
-}
-
 .contenerdor-panttalla-simulada.agregando-opcion.a11y-cursiva-destacada i {
   background-color: tomato;
 }
