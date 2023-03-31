@@ -10,7 +10,7 @@ import {
   NavegacionGobMx,
   PiePaginaGobMx,
   PiePaginaConacyt,
-} from './components'
+} from './componentes'
 
 const plugin = {
   install: function (Vue) {
