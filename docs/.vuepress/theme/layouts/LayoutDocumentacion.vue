@@ -10,6 +10,11 @@
           <template slot="contenido-menu-lateral">
             <ul>
               <li>
+                <router-link to="/documentacion/info-de-despliegue">
+                  InfoDeDespliegue</router-link
+                >
+              </li>
+              <li>
                 <router-link to="/documentacion/pie-pagina-conacyt">
                   PiePaginaConacyt</router-link
                 >
@@ -72,46 +77,12 @@
           <div class="columna-12 contenedor ancho-fijo">
             <Content />
           </div>
-          <div class="columna-4">
-            <!--<IndiceDeContenido class="indice-contenido-documentacion">
-              <template slot="contenido-indice-de-contenido">
-                <ul>
-                  <li
-                    v-for="(elemento, i) in lista_elementos"
-                    :key="i"
-                  >
-                    <a :href="'#' + elemento.id"> {{ elemento.texto }}</a>
-                  </li>
-                </ul>
-              </template>
-            </IndiceDeContenido>
-            -->
-          </div>
+          <div class="columna-4"></div>
         </div>
       </div>
     </div>
   </div>
 </template>
-<!--
-<script setup>
-import { ref, onMounted } from 'vue'
-const lista_elementos = ref([])
-
-onMounted(() => {
-  let elementos = []
-  document.querySelectorAll('div.content__default h2').forEach(el => {
-    console.log(el.id)
-    if (el.id) {
-      elementos.push({
-        id: el.id,
-        texto: el.innerText,
-      })
-    }
-  })
-  lista_elementos.value = elementos
-})
-</script>
--->
 
 <style src="prismjs/themes/prism-tomorrow.css"></style>
 <style>

@@ -8,6 +8,7 @@ import IndiceDeContenido from './indice-de-contenido'
 import NavegacionGobMx from './navegacion-gob-mx'
 import PiePaginaGobMx from './pie-pagina-gob-mx'
 import PiePaginaConacyt from './pie-pagina-conacyt'
+import InfoDeDespliegue from './info-de-despliegue'
 
 export {
   NarrativaScroll,
@@ -20,4 +21,5 @@ export {
   NavegacionGobMx,
   PiePaginaGobMx,
   PiePaginaConacyt,
+  InfoDeDespliegue,
 }
