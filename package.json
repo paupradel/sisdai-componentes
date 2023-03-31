@@ -1,11 +1,12 @@
 {
   "name": "sisdai-componentes",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "private": true,
   "description": "Biblioteca de componentes de Vue reutilizables",
   "main": "./dist/sisdai-componentes.umd.js",
   "files": [
-    "src",
+    "src/componentes",
+    "src/stores",
     "dist",
     "README.md"
   ],

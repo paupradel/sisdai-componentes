@@ -9,7 +9,8 @@ import {
   NavegacionGobMx,
   PiePaginaGobMx,
   PiePaginaConacyt,
-} from './components'
+  InfoDeDespliegue,
+} from './componentes'
 
 const plugin = {
   install: function (Vue) {
@@ -23,6 +24,7 @@ const plugin = {
     Vue.use(NavegacionGobMx)
     Vue.use(PiePaginaGobMx)
     Vue.use(PiePaginaConacyt)
+    Vue.use(InfoDeDespliegue)
   },
 }
 

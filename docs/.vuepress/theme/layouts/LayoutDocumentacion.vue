@@ -10,6 +10,11 @@
           <template slot="contenido-menu-lateral">
             <ul>
               <li>
+                <router-link to="/documentacion/info-de-despliegue">
+                  InfoDeDespliegue</router-link
+                >
+              </li>
+              <li>
                 <router-link to="/documentacion/pie-pagina-conacyt">
                   PiePaginaConacyt</router-link
                 >
