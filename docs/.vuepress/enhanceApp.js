@@ -1,4 +1,5 @@
 import SisdaiComponentes from '../../src'
+import pageComponents from '@internal/page-components'
 
 export default ({
   Vue,
@@ -12,4 +13,8 @@ export default ({
   require('../../node_modules/sisdai-css/src/eni.scss')
 
   Vue.use(SisdaiComponentes)
+
+  for (const [name, component] of Object.entries(pageComponents)) {
+    Vue.component(name, component)
+  }
 }

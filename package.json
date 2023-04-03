@@ -1,12 +1,15 @@
 {
   "name": "sisdai-componentes",
-  "version": "0.5.0",
+  "version": "0.8.0",
   "private": true,
   "description": "Biblioteca de componentes de Vue reutilizables",
   "main": "./dist/sisdai-componentes.umd.js",
   "files": [
-    "dist/*",
-    "src/*"
+    "src/*",
+    "src/componentes",
+    "src/stores",
+    "dist",
+    "README.md"
   ],
   "scripts": {
     "docs": "vuepress dev docs",
@@ -20,7 +23,7 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "scrollama": "^3.2.0",
-    "sisdai-css": "github:salsa-community/sisdai-css",
+    "sisdai-css": "github:salsa-community/sisdai-css#develop",
     "vue": "^2.7.14"
   },
   "devDependencies": {
@@ -31,16 +34,17 @@
     "@vue/cli-plugin-eslint": "^5.0.8",
     "@vue/cli-service": "^5.0.8",
     "eslint": "^8.36.0",
-    "eslint-config-prettier": "^8.7.0",
+    "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-html": "^7.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.8.0",
     "lint-staged": "^13.2.0",
-    "prettier": "^2.8.2",
+    "prettier": "^2.8.6",
     "raw-loader": "^4.0.2",
     "sass": "^1.57.1",
     "sass-loader": "^10.4.1",
     "vue-template-compiler": "^2.7.14",
+    "vue2-helpers": "^2.1.1",
     "vuepress": "^1.9.8",
     "vuepress-html-webpack-plugin": "^3.2.0"
   },

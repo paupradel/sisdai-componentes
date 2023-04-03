@@ -3,11 +3,14 @@ import {
   ComponenteVacio,
   ColapsableNavegacion,
   MenuLateral,
+  MenuAccesibilidad,
   NavegacionPrincipal,
+  IndiceDeContenido,
   NavegacionGobMx,
   PiePaginaGobMx,
   PiePaginaConacyt,
-} from './components'
+  InfoDeDespliegue,
+} from './componentes'
 
 import { GlobosInformacion } from './directivas'
 
@@ -17,11 +20,14 @@ const plugin = {
     Vue.use(ComponenteVacio)
     Vue.use(ColapsableNavegacion)
     Vue.use(MenuLateral)
+    Vue.use(MenuAccesibilidad)
     Vue.use(NavegacionPrincipal)
+    Vue.use(IndiceDeContenido)
     Vue.use(NavegacionGobMx)
     Vue.use(PiePaginaGobMx)
     Vue.use(PiePaginaConacyt)
     Vue.use(GlobosInformacion)
+    Vue.use(InfoDeDespliegue)
   },
 }
 
