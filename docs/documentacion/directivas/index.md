@@ -2,86 +2,84 @@
 layout: LayoutDocumentacion
 ---
 
-
 # Directivas
 
+## Globos información
 
-## Tooltips
-Tooltips que funcionan para cualquier elemento html o componente de vue, agregando la directiva `v-tooltip` o `v-tooltip-info`.
+Comunmente conocidos como Tooltips , estas directivas funcionan para cualquier elemento html o componente de vue, agregando la directiva `v-globo-informacion` o `v-globo-informacion-extendido`.
 
 Uso
 
-**Tooltip pequeño** 
+**Globo informacion**
 
 ```html
-<HTMLElement v-tooltip:[position] = "content | options" />
+<HTMLElement v-globo-informacion:[posicion]="contenido | opciones" />
 ```
 
-
-**Tooltip informativo** (para contenido mas largo)
+**Globo de informacion extendido** (para contenido mas largo)
 
 ```html
-<HTMLElement v-tooltip-info:[position].[interactable] = "content | options" />
+<HTMLElement
+  v-globo-informacion-extendido:[posicion].[interactivo]="contenido | opciones"
+/>
 ```
-
 
 ### Cosas que debes saber al usar esta directiva
 
-
 - Para el posicionamiento de los tooltips se utiliza la dependencia [Popper js](https://www.npmjs.com/package/@popperjs/core), deberas instalar esta dependencia en tu proyecto para que los tooltips funcionen correctamente
-- La posicion del tooltip es definida por el parametro `position` (top,left,bottom, etc.). Pero al final, la asignación de la misma, dependera de la disponibilidad de espacio en pantalla y de la posicion del scroll.
+- La posicion del tooltip es definida por el parametro `posicion` (top,left,bottom, etc.). Pero al final, la asignación de la misma, dependera de la disponibilidad de espacio en pantalla y de la posicion del scroll.
+- Cuando un elemento de formulario, como por ejemplo un `button`, tiene activado el atributo `disabled` algunos eventos de tipo `mouseenter` y `mouseleave` dejan de ser detectados por javascript, por tal motivo la directiva podria no funcionar correctamente. Se recomienda no cambiar el atributo `disabled` mientras el tooltip este pasando por el ciclo de aparecer/desaparecer.
 
 ### API
 
-
 #### Parametros
-La posición de los parametros es la siguiente
+
+La estructura de los parametros es la siguiente
 
 ```
-v-tooltip:[position] = [content | options]
+v-globo-informacion:[posicion] = [contenido | opciones]
 
-v-tooltip-info:[position].[interactable] = [content | options]
+v-globo-informacion-extendido:[posicion].[interactivo] = [contenido | opciones]
 ```
 
 Donde:
-- **position** Posicion del tooltip respecto al elemento
 
-  - **Valores aceptados:** top | right | bottom | left | top-start | top-end  | right-start | right-end | bottom-start | bottom-end | left-start | left-end  
-  - **Valor por default:** right
+- **posicion** Posición del globo de información respecto al elemento
 
-- **interactable** Indica si el tooltip tiene algun elemento para interactuar, util cuando se agregan enlaces al tooltip
+  - **Valores aceptados:** arriba-inicio | arriba | arriba-final | abajo-inicio | abajo | abajo-final | derecha-inicio | derecha | derecha-final | izquierda-inicio | izquierda | izquierda-final
+  - **Valor por default:** derecha
+
+- **interactivo** Indica si el globo de información tiene algun elemento para interactuar, util cuando se agregan enlaces al globo de información
 
   - **Valores aceptados:** Si existe es `true`, si no existe es `false`
   - **Valor por default:** `false`
 
-- **content** El contenido del tooltip, acepta html
+- **contenido** El contenido del globo de información, acepta html
 
   - **Tipo:** `string`
   - **Valor por default:** `""`
 
-- **options** Opciones que modifican el tooltip
+- **opciones** Opciones que modifican al globo de información
 
-  - **Tipo:** Object - `{content:string, offset:[number,number], designateToElement:string|HTMLElement}`
-  - **Valor por default:** 
-    - content: `''`
-    - offset: `[12,0]` o `[0,12]` segun la direccion del tooltip
-    - designateToElement: `undefined`
+  - **Tipo:** Object - `{contenido:string, desfase:[number,number], asignadoAElemento:string}`
+  - **Valor por default:**
+    - contenido: `''`
+    - desfase: `[0,12]`
+    - asignadoAElemento: `undefined`
 
-  Donde **content** es el contenido del tooltip (acepta html), **offset** es el desplazamiento que el tooltip puede tener respecto al elemento origen, siempre en valores positivos, puedes ver  [cómo funciona esto en popper js](https://popper.js.org/docs/v2/modifiers/offset/). Y **designateToElement** es el elemento origen al que se le puede asignar el tooltip, regularmente es un elemento padre del elemento al que se le aplica la directiva, si no se especifica , por default se usara  el elemento al que se le aplico la directiva
-
-
-
+  Donde **contenido** es el contenido del globo de información (acepta html), **desfase** es el desplazamiento que el globo de información puede tener respecto al elemento origen, siempre en valores positivos, esta es lo equivalente a la propiedad [offset en Popper js](https://popper.js.org/docs/v2/modifiers/offset/). Y **asignadoAElemento** es el [selector css](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors) del elemento origen al que se le puede asignar el globo de información, regularmente es un elemento padre del elemento al que se le aplica la directiva, si no se especifica , por default se usara el elemento al que se le aplico la directiva
 
 ### Ejemplos
 
-<utils-ejemplo-doc ruta="directivas/tooltip-basico.vue"/>
+<utils-ejemplo-doc ruta="directivas/globo-informacion-basico.vue"/>
 
-<utils-ejemplo-doc ruta="directivas/tooltip-en-elemento-padre.vue"/>
+<utils-ejemplo-doc ruta="directivas/globo-informacion-elemento-padre.vue"/>
 
-
+<utils-ejemplo-doc ruta="directivas/globo-informacion-dinamico.vue"/>
 
 ### Instalar Popper js
-Previo a usar los tooltips en el proyecto deberas instalar Popper js
+
+Previo a usar los globos de informacion en el proyecto deberas instalar Popper js
 
 ```
 npm i @popperjs/core

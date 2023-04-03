@@ -1,3 +1,3 @@
-import tooltips from './tooltips'
+import GlobosInformacion from './tooltips'
 
-export { tooltips }
+export { GlobosInformacion }

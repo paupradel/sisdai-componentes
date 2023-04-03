@@ -9,7 +9,7 @@ import {
   PiePaginaConacyt,
 } from './components'
 
-import { tooltips } from './directivas'
+import { GlobosInformacion } from './directivas'
 
 const plugin = {
   install: function (Vue) {
@@ -21,7 +21,7 @@ const plugin = {
     Vue.use(NavegacionGobMx)
     Vue.use(PiePaginaGobMx)
     Vue.use(PiePaginaConacyt)
-    Vue.use(tooltips)
+    Vue.use(GlobosInformacion)
   },
 }
 
