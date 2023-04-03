@@ -27,7 +27,7 @@ const globo_informacion = {
       value: binding.value,
       mouseEnterListener: addMouseEnterListenerTooltip(el, unique_id),
       mouseLeaveListener: addMouseLeaveListenerTooltip(el, unique_id),
-      classTooltip: 'contenedor-tooltip-normal',
+      classTooltip: 'contenedor-globo-info',
       interactable: interactable,
     }
   },
@@ -82,7 +82,7 @@ const globo_informacion_extendido = {
       value: binding.value,
       mouseEnterListener: addMouseEnterListenerTooltip(el, unique_id),
       mouseLeaveListener: addMouseLeaveListenerTooltip(el, unique_id),
-      classTooltip: 'contenedor-tooltip-info',
+      classTooltip: 'contenedor-globo-info-ext',
       interactable: interactable,
     }
   },
@@ -248,7 +248,7 @@ function getTooltipElement(id, value, classTooltip) {
 
   tooltip.classList.add(classTooltip)
   let contenido = typeof value === 'object' ? value['contenido'] : value
-  tooltip.innerHTML = `<div class="cuerpo-tooltip">${contenido}</div>`
+  tooltip.innerHTML = `<div class="cuerpo-globo-info">${contenido}</div>`
   document.body.appendChild(tooltip)
   return tooltip
 }
@@ -258,7 +258,7 @@ function updateTooltipElement(id, value) {
   if (document.querySelector("[tooltip-id='" + id + "']")) {
     const tooltip = document.querySelector("[tooltip-id='" + id + "']")
     let contenido = typeof value === 'object' ? value['contenido'] : value
-    tooltip.innerHTML = `<div class="cuerpo-tooltip">${contenido}</div>`
+    tooltip.innerHTML = `<div class="cuerpo">${contenido}</div>`
   }
 }
 
