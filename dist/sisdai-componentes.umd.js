@@ -521,6 +521,8 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ entry_lib; }
 });
 
+// UNUSED EXPORTS: ColapsableNavegacion, GlobosInformacion, IndiceDeContenido, InfoDeDespliegue, MenuAccesibilidad, MenuLateral, NarrativaScroll, NavegacionGobMx, NavegacionPrincipal, PiePaginaConacyt, PiePaginaGobMx
+
 ;// CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
 /* eslint-disable no-var */
 // This file is imported into lib/wc client bundles.
@@ -538,7 +540,7 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-;// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"45d542e8-vue-loader-template"}!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/componentes/narrativa-scroll/NarrativaScroll.vue?vue&type=template&id=077fb80c&scoped=true&
+;// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"45d542e8-vue-loader-template"}!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/componentes/narrativa-scroll/NarrativaScroll.vue?vue&type=template&id=5b18b828&scoped=true&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
@@ -641,7 +643,7 @@ var scrollama_default = /*#__PURE__*/__webpack_require__.n(scrollama);
       this.paso = response.index;
       this.step.forEach((d, i) => i === response.index ? d.classList.add('activo') : d.classList.remove('activo'));
       this.fondo_portada.querySelectorAll(`.contenedor-fondo`).forEach(d => d.style.opacity = 0);
-      console.log(this.fondo_portada);
+      //console.log(this.fondo_portada)
       for (var i = 0; i < this.bullets.length; i++) {
         if (this.paso === i) {
           this.fondo_portada.querySelector(`.contenedor-fondo.fondo-${this.paso}`).style.opacity = 1;
@@ -662,10 +664,10 @@ var scrollama_default = /*#__PURE__*/__webpack_require__.n(scrollama);
 });
 ;// CONCATENATED MODULE: ./src/componentes/narrativa-scroll/NarrativaScroll.vue?vue&type=script&lang=js&
  /* harmony default export */ var narrativa_scroll_NarrativaScrollvue_type_script_lang_js_ = (NarrativaScrollvue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/@vue/cli-service/node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/@vue/cli-service/node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/@vue/cli-service/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/componentes/narrativa-scroll/NarrativaScroll.vue?vue&type=style&index=0&id=077fb80c&prod&scoped=true&lang=scss&
+;// CONCATENATED MODULE: ./node_modules/@vue/cli-service/node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/@vue/cli-service/node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/@vue/cli-service/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/cache-loader/dist/cjs.js??ruleSet[0].use[0]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/componentes/narrativa-scroll/NarrativaScroll.vue?vue&type=style&index=0&id=5b18b828&prod&scoped=true&lang=scss&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/componentes/narrativa-scroll/NarrativaScroll.vue?vue&type=style&index=0&id=077fb80c&prod&scoped=true&lang=scss&
+;// CONCATENATED MODULE: ./src/componentes/narrativa-scroll/NarrativaScroll.vue?vue&type=style&index=0&id=5b18b828&prod&scoped=true&lang=scss&
 
 ;// CONCATENATED MODULE: ./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/runtime/componentNormalizer.js
 /* globals __VUE_SSR_CONTEXT__ */
@@ -780,7 +782,7 @@ var component = normalizeComponent(
   staticRenderFns,
   false,
   null,
-  "077fb80c",
+  "5b18b828",
   null
   
 )
@@ -2406,19 +2408,24 @@ const tooltips_plugin = {
 
 const src_plugin = {
   install: function (Vue) {
-    Vue.use(narrativa_scroll);
-    Vue.use(colapsable_navegacion);
-    Vue.use(menu_lateral);
-    Vue.use(menu_accesibilidad);
-    Vue.use(navegacion_principal);
-    Vue.use(indice_de_contenido);
+    //UI base
     Vue.use(navegacion_gob_mx);
+    Vue.use(navegacion_principal);
     Vue.use(pie_pagina_gob_mx);
     Vue.use(pie_pagina_conacyt);
-    Vue.use(tooltips);
+    Vue.use(colapsable_navegacion);
+    Vue.use(menu_lateral);
+    Vue.use(indice_de_contenido);
     Vue.use(info_de_despliegue);
+    //accesibilidad
+    Vue.use(menu_accesibilidad);
+    //auxiliares
+    Vue.use(tooltips);
+    //otros
+    Vue.use(narrativa_scroll);
   }
 };
+
 /* harmony default export */ var src_0 = (src_plugin);
 ;// CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
