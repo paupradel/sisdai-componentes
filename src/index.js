@@ -12,6 +12,8 @@ import {
   InfoDeDespliegue,
 } from './componentes'
 
+import { GlobosInformacion } from './directivas'
+
 const plugin = {
   install: function (Vue) {
     Vue.use(NarrativaScroll)
@@ -24,6 +26,7 @@ const plugin = {
     Vue.use(NavegacionGobMx)
     Vue.use(PiePaginaGobMx)
     Vue.use(PiePaginaConacyt)
+    Vue.use(GlobosInformacion)
     Vue.use(InfoDeDespliegue)
   },
 }

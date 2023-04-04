@@ -59,6 +59,11 @@
                   NarrativaScroll</router-link
                 >
               </li>
+              <li>
+                <router-link to="/documentacion/directivas">
+                  Directivas</router-link
+                >
+              </li>
             </ul>
             <a
               href="https://github.com/salsa-community/sisdai-componentes"
