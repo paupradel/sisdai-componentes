@@ -56,7 +56,7 @@ export default {
         .querySelector(`#${this.id_scroll}`)
         .querySelectorAll('.bullet')
       var alpha = 1 - this.y_scrolleado_normalizado / bullets.length
-      console.log(alpha, this.y_scrolleado_normalizado / bullets.length)
+      //console.log(alpha, this.y_scrolleado_normalizado / bullets.length)
       bullets[0].style.background =
         'linear-gradient(transparent,rgba(0,0,0,' + y_bullet_1 + '))'
       bullets[1].style.background =

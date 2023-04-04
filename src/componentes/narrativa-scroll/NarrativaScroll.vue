@@ -111,7 +111,7 @@ export default {
       this.fondo_portada
         .querySelectorAll(`.contenedor-fondo`)
         .forEach(d => (d.style.opacity = 0))
-      console.log(this.fondo_portada)
+      //console.log(this.fondo_portada)
       for (var i = 0; i < this.bullets.length; i++) {
         if (this.paso === i) {
           this.fondo_portada.querySelector(
