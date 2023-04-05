@@ -28,10 +28,21 @@ import "sisdai-css/src/eni.scss"
 
 O si su proyecto solo acepta css plano:
 
-```js
-//Esta es una tarea pendiente, preguntar al equipo si esta de acuerdo en 
-//dar esto desde sisdai-css
+```html
+<link href="https://cdn.jsdelivr.net/gh/conacyt-dai/dadsig-css/dist/eni.min.css" rel="stylesheet">
 ```
+
+Adicionalmente  debera agregarse las fuentes e iconos en el encabezado del documento HTML base de su proyecto:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link href="https://file.myfontastic.com/JS4TgqY9L4s8WsKQDkt5qA/icons.css" rel="stylesheet">
+```
+
+**Uso de los componentes**
 
 Una vez instalada la biblioteca y los estilos hay varias maneras de empezar a usar los componentes en su proyecto:
 
