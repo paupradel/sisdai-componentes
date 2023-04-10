@@ -106,7 +106,7 @@ import SisdaiComponentes from 'sisdai-componentes'
 Vue.use(SisdaiComponentes)
 ```
 
-Aunque esta forma es la mas  limpia en el codigo (porque se ahorra dar de alta cada componente), solo es  recomendable si se tiene claro que se estan usando todos los componentes y directivas de la biblioteca en su proyecto. Hacerlo de esta manera requiere tener en cuenta los prerequisitos que algunos componentes o directivas pueden tener para su funcionamiento, por ejemplo, el uso de las directivas [Globo de informacion](/documentacion/directivas/) requiere la instalacion de [Popper js](https://www.npmjs.com/package/@popperjs/core) para que pueda funcionar correctamente.
+Aunque esta forma es la mas  limpia en el codigo (porque se ahorra dar de alta cada componente), solo es  recomendable si se tiene claro que se estan usando todos los componentes y directivas de la biblioteca en su proyecto. 
 
 
 #### Instalar a partir del paquete de distibucion
@@ -127,5 +127,3 @@ import SisdaiComponentes from 'sisdai-componentes/dist/sisdai-componentes.umd.js
 ```html
 <script src="sisdai-componentes/dist/sisdai-componentes.umd.min.js"></script>
 ```
-
-Tenga en cuenta que usar la biblioteca de esta manera es similar a usarla de la manera en que se explica en la "Opcion 3" de la seccion anterior, y seguramente sera necesario instalar prerequisitos como, por ejemplo, en el caso de las directivas [Globo de informacion](/documentacion/directivas/).
