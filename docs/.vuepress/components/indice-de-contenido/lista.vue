@@ -1,6 +1,6 @@
 <template>
   <div>
-    <IndiceDeContenido>
+    <IndiceDeContenido id_indice="indice-lista">
       <template slot="contenido-indice-de-contenido">
         <ul>
           <li>
