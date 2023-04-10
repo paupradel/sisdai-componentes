@@ -1,5 +1,5 @@
 <template>
   <div>
-    <BotonFlotante />
+    <BotonFlotante> este es el contenido </BotonFlotante>
   </div>
 </template>
