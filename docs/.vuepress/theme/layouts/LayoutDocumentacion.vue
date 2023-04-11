@@ -31,7 +31,7 @@
               </li>
               <li>
                 <router-link to="/documentacion/menu-lateral">
-                  Menú lateral</router-link
+                  MenuLateral</router-link
                 >
               </li>
               <li>
@@ -46,7 +46,7 @@
               </li>
               <li>
                 <router-link to="/documentacion/indice-de-contenido">
-                  Índice de contenido</router-link
+                  IndiceDeContenido</router-link
                 >
               </li>
               <li>
@@ -55,7 +55,7 @@
                 </router-link>
               </li>
               <li>
-                <router-link to="/documentacion/narrativa_scroll">
+                <router-link to="/documentacion/narrativa-scroll">
                   NarrativaScroll</router-link
                 >
               </li>
@@ -78,11 +78,11 @@
         </MenuLateral>
       </div>
       <div class="columna-12 columna-7-mov">
-        <div class="flex">
+        <div class="flex contenedor-indice-y-content">
           <div class="columna-12 contenedor ancho-fijo">
             <Content />
           </div>
-          <div class="columna-4">
+          <div class="columna-4 columna-8-mov">
             <IndiceDeContenido
               class="indice-contenido-documentacion"
               :id_indice="'indice-template'"
@@ -150,5 +150,10 @@ function actualizaContenidoIndice() {
   position: sticky;
   top: 50px;
   padding: 28px 0;
+}
+@media (max-width: 768px) {
+  .contenedor-indice-y-content {
+    flex-direction: column-reverse;
+  }
 }
 </style>
