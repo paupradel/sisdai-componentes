@@ -3,7 +3,7 @@
   "version": "0.10.0",
   "private": true,
   "description": "Biblioteca de componentes de Vue reutilizables",
-  "main": "./dist/sisdai-componentes.umd.js",
+  "main": "./src/index.js",
   "files": [
     "src/*",
     "src/componentes",
@@ -23,12 +23,12 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "sisdai-css": "github:salsa-community/sisdai-css#develop",
-    "vue": "^2.7.14"
+    "vue": "^2.7.14",
+    "@popperjs/core": "^2.11.7"
   },
   "devDependencies": {
     "@babel/core": "^7.21.3",
     "@babel/eslint-parser": "^7.21.3",
-    "@popperjs/core": "^2.11.7",
     "@vue/cli-plugin-babel": "^5.0.8",
     "@vue/cli-plugin-eslint": "^5.0.8",
     "@vue/cli-service": "^5.0.8",

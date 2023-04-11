@@ -26,7 +26,7 @@ Uso
 
 ### Cosas que debes saber al usar esta directiva
 
-- Para el posicionamiento de los tooltips se utiliza la dependencia [Popper js](https://www.npmjs.com/package/@popperjs/core), deberas instalar esta dependencia en tu proyecto para que los tooltips funcionen correctamente
+- Para el posicionamiento de los tooltips se utiliza la dependencia [Popper js](https://www.npmjs.com/package/@popperjs/core), no es necesario instalarla, se instala junto con las dependencias de esta biblioteca
 - La posicion del tooltip es definida por el parametro `posicion` (top,left,bottom, etc.). Pero al final, la asignación de la misma, dependera de la disponibilidad de espacio en pantalla y de la posicion del scroll.
 - Cuando un elemento de formulario, como por ejemplo un `button`, tiene activado el atributo `disabled` algunos eventos de tipo `mouseenter` y `mouseleave` dejan de ser detectados por javascript, por tal motivo la directiva podria no funcionar correctamente. Se recomienda no cambiar el atributo `disabled` mientras el tooltip este pasando por el ciclo de aparecer/desaparecer.
 
@@ -77,10 +77,4 @@ Donde:
 
 <utils-ejemplo-doc ruta="directivas/globo-informacion-dinamico.vue"/>
 
-### Instalar Popper js
 
-Previo a usar los globos de informacion en el proyecto deberas instalar Popper js
-
-```
-npm i @popperjs/core
-```
