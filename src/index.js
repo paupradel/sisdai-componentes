@@ -1,36 +1,52 @@
 import {
-  NarrativaScroll,
-  ComponenteVacio,
-  ColapsableNavegacion,
-  MenuLateral,
-  MenuAccesibilidad,
-  BotonFlotante,
-  NavegacionPrincipal,
-  IndiceDeContenido,
   NavegacionGobMx,
+  NavegacionPrincipal,
   PiePaginaGobMx,
   PiePaginaConacyt,
+  ColapsableNavegacion,
+  MenuLateral,
+  IndiceDeContenido,
   InfoDeDespliegue,
+  MenuAccesibilidad,
+  NarrativaScroll,
+  BotonFlotante,
 } from './componentes'
 
 import { GlobosInformacion } from './directivas'
 
 const plugin = {
   install: function (Vue) {
-    Vue.use(NarrativaScroll)
-    Vue.use(ComponenteVacio)
-    Vue.use(ColapsableNavegacion)
-    Vue.use(MenuLateral)
-    Vue.use(MenuAccesibilidad)
-    Vue.use(BotonFlotante)
-    Vue.use(NavegacionPrincipal)
-    Vue.use(IndiceDeContenido)
+    //UI base
     Vue.use(NavegacionGobMx)
+    Vue.use(NavegacionPrincipal)
     Vue.use(PiePaginaGobMx)
     Vue.use(PiePaginaConacyt)
-    Vue.use(GlobosInformacion)
+    Vue.use(ColapsableNavegacion)
+    Vue.use(MenuLateral)
+    Vue.use(IndiceDeContenido)
     Vue.use(InfoDeDespliegue)
+    //accesibilidad
+    Vue.use(MenuAccesibilidad)
+    //auxiliares
+    Vue.use(GlobosInformacion)
+    //otros
+    Vue.use(NarrativaScroll)
+    Vue.use(BotonFlotante)
   },
+}
+
+export {
+  NavegacionGobMx,
+  NavegacionPrincipal,
+  PiePaginaGobMx,
+  PiePaginaConacyt,
+  ColapsableNavegacion,
+  MenuLateral,
+  IndiceDeContenido,
+  InfoDeDespliegue,
+  MenuAccesibilidad,
+  GlobosInformacion,
+  NarrativaScroll,
 }
 
 export default plugin
