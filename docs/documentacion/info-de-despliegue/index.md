@@ -26,6 +26,8 @@ En la vista simplificada la información de despliegue no se modifica en diseño
 
 Es importante mencionar que el componente solo se mostrará cuando se despliegue únicamente en el ambiente de desarrollo y pruebas, no en producción.
 
+<section id="api">
+
 ## API
 
 ### Propiedades
@@ -113,8 +115,14 @@ Este componente no dispara eventos externos.
 
 Este componente no utiliza slots.
 
+</section>
+
+<section id="ejemplos">
+
 ## Ejemplos
 
 A continuación se presenta el componente usando las propiedades computadas de manera local, sin embargo es recomendable que esas propiedades se obtengan de las variables de entorno como se mencionó anteriormente.
 
 <utils-ejemplo-doc ruta="info-de-despliegue/basico.vue"/>
+
+</section>

@@ -4,6 +4,8 @@ layout: LayoutDocumentacion
 
 # Directivas
 
+<section id="globos-informacion">
+
 ## Globos información
 
 Comunmente conocidos como Tooltips , estas directivas funcionan para cualquier elemento html o componente de vue, agregando la directiva `v-globo-informacion` o `v-globo-informacion-extendido`.
@@ -77,4 +79,4 @@ Donde:
 
 <utils-ejemplo-doc ruta="directivas/globo-informacion-dinamico.vue"/>
 
-
+</section>

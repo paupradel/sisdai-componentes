@@ -12,6 +12,8 @@ Uso:
 <IndiceDeContenido> ...contenido </IndiceDeContenido>
 ```
 
+<section id="api">
+
 ## API
 
 ### Propiedades
@@ -31,6 +33,10 @@ Uso:
 
 - `'contenido-indice-de-contenido'`: Este es el único slot que tiene este componente. En él se deben introducir elementos de enlaces como `<a></a>` o `<router-link>`. Los enlaces que se introducen deben contener el id del elemento al que se quiere navegar, y a su vez, este elemento debe existir en el documento.
 
+</section>
+
+<section id="ejemplos">
+
 ## Ejemplos
 
 Este ejemplo usa enlaces a elementos existentes en el documento. Se ejemplifica usando un elemento `<router-link>` y un elemento`<a></a>`. Al dar click en los enlaces, puedes observar como la vista se desplaza a dichos elementos
@@ -39,3 +45,5 @@ Este ejemplo usa enlaces a elementos existentes en el documento. Se ejemplifica 
 
 Este ejemplo es análogo al anterior. La diferencia es que los enlaces se ingresan mediante una lista no ordenada
 <utils-ejemplo-doc ruta="indice-de-contenido/lista.vue"/>
+
+</section>

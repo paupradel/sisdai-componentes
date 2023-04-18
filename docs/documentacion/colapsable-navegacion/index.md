@@ -10,6 +10,8 @@ Su funcionalidad consiste en que al dar click al botón se pude agregar una clas
 
 Los elementos de lista se especifican mediante `slots`.
 
+<section id="api">
+
 ## API
 
 Este componente admite propiedades y slots.
@@ -36,6 +38,10 @@ A continuación se enlistan las propiedades que admite el componente
 </li>
 ```
 
+</section>
+
+<section id="api">
+
 ## Ejemplos
 
 **_Default_**
@@ -51,3 +57,5 @@ Así se renderiza cuando especificamos un `:titulo` y su slot
 <utils-ejemplo-doc ruta="colapsable-navegacion/slot.vue"/>
 
 **Observación:** Este componente `<ColapsableNavegacion/>` tiene un estilo definido para el componente `<MenuLateral/>`. Puedes consultar la sección de dicho componente para ver como pueden convivir
+
+</section>

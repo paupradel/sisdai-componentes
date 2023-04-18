@@ -28,6 +28,8 @@ Vista simplificada
 
 En la vista simplificada el pie de página del CONACYT no se modifica en diseño ni en comportamiento.
 
+<section id="api">
+
 ## API
 
 ### Propiedades
@@ -46,8 +48,13 @@ Este componente no dispara eventos externos.
 
 Este componente no utiliza slots.
 
+</section>
+<section id="ejemplos">
+
 ## Ejemplos
 
 Usando el contenido por defecto.
 
 <utils-ejemplo-doc ruta="pie-pagina-conacyt/basico.vue"/>
+
+</section>
