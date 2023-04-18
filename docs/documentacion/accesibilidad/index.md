@@ -18,6 +18,8 @@ Uso:
 <MenuAccesibilidad></MenuAccesibilidad>
 ```
 
+<section id="api">
+
 ## API
 
 ### Propiedades
@@ -93,6 +95,9 @@ export default new Vuex.Store({
 })
 ```
 
+</section>
+<section id="ejemplos">
+
 ## Ejemplos
 
 #### Opciones por default
@@ -148,3 +153,5 @@ Para conectar el menú de accesibilidad con el store [Vuex](https://vuex.vuejs.o
   </div>
 </template>
 ```
+
+</section>

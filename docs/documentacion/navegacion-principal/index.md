@@ -12,6 +12,8 @@ Uso:
 <NavegacionPrincipal> ...contenido </NavegacionPrincipal>
 ```
 
+<section id="api">
+
 ## API
 
 ### Propiedades
@@ -94,6 +96,10 @@ Se recomienda usar las clases css de Sisdaicss
 </NavegacionPrincipal>
 ```
 
+</section>
+
+<section id="ejemplos">
+
 ## Ejemplos
 
 Usando el contenido por default
@@ -103,3 +109,5 @@ Usando el contenido por default
 Agregando contenido personalizado
 
 <utils-ejemplo-doc ruta="navegacion-principal/contenido-personalizado.vue"/>
+
+</section>

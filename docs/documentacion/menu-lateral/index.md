@@ -8,6 +8,7 @@ Este componente consiste en un elemento `menu.menu-lateral-contenedor` que usual
 
 <menu-lateral-basico/>
 
+<section id="api">
 ## API
 
 Este componente sólo admite slots.
@@ -33,6 +34,10 @@ Por _default_ el contenido del slot es el siguiente:
 </a>
 ```
 
+</section>
+
+<section id="ejemplos">
+
 ## Ejemplos
 
 **_Default_**
@@ -52,3 +57,5 @@ En el siguiente ejemplo usamos `router-link` y un `<a></a>` para ilustrar alguno
 El siguiente ejemplo contiene los mismos enlaces que el anterior, sin embargo, su estructura es un poco más ordenada pues los enlaces están dentro de los elementos de lista de una lista no ordenada. Además se integró el componente `<ColapsableNavegacion/>`, que a su vez tiene otros enlaces que se introducen mediante un slot propio.
 
 <utils-ejemplo-doc ruta="menu-lateral/colapsable.vue"/>
+
+</section>

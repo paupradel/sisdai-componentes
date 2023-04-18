@@ -12,6 +12,8 @@ Uso:
 <NarrativaScroll></NarrativaScroll>
 ```
 
+<section id="api">
+
 ## API
 
 - `id_scroll`: (_String_) Identificar único del componente
@@ -58,6 +60,9 @@ Uso:
 
 -`scroleando` Es la función que se ejecuta cada que se hace un scroll para detectar la posición de la narrativa y ejecutar transiciones según se indique
 
+</section>
+<section id="ejemplos">
+
 ## Ejemplos
 
 A continuación podrás observar un ejemplo muy básico del uso por default. Podrás observar que los bullets no tienen estilo predeterminado, sino que este tendrá que ser definido por la persona usuaria, tal como se muestra en el segundo ejemplo
@@ -65,3 +70,5 @@ A continuación podrás observar un ejemplo muy básico del uso por default. Pod
 
 El siguiente ejemplo es algo más elaborado, pero combina de manera ilustrativa la mayoría de las propiedades. Mueve el slider para modificar la altura del depurador. Se agregaron bordes verdes a las secciones para ilustrar los momentos de la transición de imágenes y estilos a los bullets
 <utils-ejemplo-doc ruta="narrativa-scroll/ejemplo-elaborado.vue"/>
+
+</section>
