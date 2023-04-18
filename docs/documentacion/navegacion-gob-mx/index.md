@@ -12,6 +12,8 @@ Uso:
 <NavegacionGobMx />
 ```
 
+<section id="api">
+
 ## API
 
 ### Propiedades
@@ -25,6 +27,10 @@ Este componente utiliza el método de `alternarMenuGob()` para abrir y cerrar la
 ### Slots
 
 Este componente no utiliza slots.
+
+</section>
+
+<section id="ejemplos">
 
 ## Ejemplos
 
@@ -40,3 +46,5 @@ Al tratarse de un componente institucional se deben respetar los lineamientos de
 La barra de navegación de gobierno aparece siempre en la primera vista de un ENI, capítulo y subcapítulo, una vez que se hace scroll-down desaparece.
 
 En la vista simplificada la barra de navegación del gobierno de México no se modifica en diseño ni en comportamiento.
+
+</section>
