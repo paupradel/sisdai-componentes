@@ -14,9 +14,16 @@ const icono = computed(() => ({
 </script>
 
 <template>
-  <div class="boton-flotante">
+  <div
+    class="contenedor-boton-flotante"
+    :class="{ abierto: botonFlotanteEstaAbierto }"
+  >
     <button
-      class="boton-flotante-alternar"
+      class="boton-flotante-alternador borde-r-redondeado-20"
+      :class="{
+        'borde-l-redondeado-0': botonFlotanteEstaAbierto,
+        'borde-l-redondeado-20': !botonFlotanteEstaAbierto,
+      }"
       @click="alternarBotonFlotante"
     >
       <span
@@ -24,41 +31,59 @@ const icono = computed(() => ({
         :class="icono"
       />
     </button>
-    <div class="boton-flotante-contenido">
+
+    <div
+      class="boton-flotante-contenido borde-l-redondeado-20"
+      :class="{ 'borde-l': botonFlotanteEstaAbierto }"
+    >
       <slot />
     </div>
   </div>
 </template>
 
 <style>
-.boton-flotante {
+.contenedor-boton-flotante {
   position: fixed;
-  z-index: 3;
+  z-index: 99;
   margin: 0;
+  display: inline-flex;
+  bottom: 24px;
+  left: 24px;
 }
 
-.boton-flotante .boton-flotante-alternar {
-  background: transparent;
-  border-radius: 50%;
+.contenedor-boton-flotante .boton-flotante-alternador {
+  background: black;
   border: none;
-  display: block;
   width: 40px;
   height: 40px;
   padding: 0;
-  margin: 0 0 -16px !important;
+  margin: 0;
+  /* display: inline-flex; */
+  justify-content: center;
 }
 
-.boton-flotante .boton-flotante-alternar .icono {
-  background-color: #fff;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  color: #1d74e6;
+.contenedor-boton-flotante .boton-flotante-alternador .icono {
+  padding: 0;
+  color: #fff;
 }
 
-.boton-flotante .boton-flotante-contenido {
-  width: 0;
+.contenedor-boton-flotante .boton-flotante-contenido {
+  max-width: 0;
+  height: 40px !important;
   padding: 0;
   overflow: hidden;
+  color: #fff;
+  background: black;
+  border-color: #fff;
+  display: inline-flex;
+  align-items: center;
+}
+
+.contenedor-boton-flotante.abierto .boton-flotante-contenido {
+  max-width: 200px;
+}
+
+.contenedor-boton-flotante.abierto .boton-flotante-contenido > * {
+  height: 100%;
 }
 </style>
