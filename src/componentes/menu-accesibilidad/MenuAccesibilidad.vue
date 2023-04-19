@@ -88,7 +88,7 @@ const alturaMenuAbierto = computed(
 
 <template>
   <div
-    class="contenedor-accesibilidad"
+    class="contenedor-menu-accesibilidad"
     :class="{ abierto: menuAccesibilidadEstaAbierto }"
   >
     <button
@@ -126,7 +126,7 @@ const alturaMenuAbierto = computed(
 </template>
 
 <style>
-.contenedor-accesibilidad.abierto .menu-accesibilidad {
+.contenedor-menu-accesibilidad.abierto .menu-accesibilidad {
   max-height: v-bind('alturaMenuAbierto') !important;
 }
 </style>

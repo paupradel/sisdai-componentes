@@ -53,7 +53,7 @@
 </template>
 
 <style>
-.contenerdor-panttalla-simulada .contenedor-accesibilidad,
+.contenerdor-panttalla-simulada .contenedor-menu-accesibilidad,
 .contenerdor-panttalla-simulada .contenedor-boton-flotante {
   position: absolute;
 }
