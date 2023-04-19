@@ -55,9 +55,13 @@ Este componente no permite contenido con slots
 
 #### Enlaces con fondo de color
 
+El color de fondo de cada enlace es transparente por defecto, si se desea agregar un color, se puede sobreescribir el estilo agregando una clase en cada elemento de la siguiente manera.
+
 <utils-ejemplo-doc ruta="boton-flotante/basico.vue"/>
 
 #### Enlace con documento resaltado
+
+Para este ejemplo se hace uso de la clase `icono-resaltado` la cual ejecuta la animación `animacionResaltada` para resaltar el icono asignado.
 
 <utils-ejemplo-doc ruta="boton-flotante/decreto.vue"/>
 
