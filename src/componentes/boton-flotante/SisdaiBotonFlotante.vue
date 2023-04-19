@@ -10,11 +10,7 @@ const propiedades = {
    */
   enlaces: {
     type: Array,
-    default: () => [
-      {
-        contenido: 'Enlace externo',
-      },
-    ],
+    required: true,
   },
 }
 </script>
@@ -81,7 +77,7 @@ defineExpose({ alternarEstado })
             icono === undefined ? 'icono-flecha-arriba-derecha' : icono
           }`"
         />
-        {{ contenido }}
+        {{ contenido === undefined ? 'Enlace externo' : contenido }}
       </a>
     </div>
   </div>
@@ -141,6 +137,14 @@ defineExpose({ alternarEstado })
   padding: 0 8px 0 0;
 }
 
+.contenedor-boton-flotante
+  .boton-flotante-contenido
+  a.enlace.icono-resaltado
+  .icono {
+  position: relative;
+  animation: animacionResaltada 2s ease-in-out infinite;
+}
+
 @keyframes animacionResaltada {
   0% {
     opacity: 0.25;
@@ -173,5 +177,29 @@ defineExpose({ alternarEstado })
 .contenedor-boton-flotante.abierto .boton-flotante-contenido {
   max-width: 500px;
   transition-delay: 0.27s !important;
+}
+
+/* A C C E S I B I L I D A D */
+.a11y-simplificada .contenedor-boton-flotante {
+  position: static !important;
+}
+
+.a11y-simplificada .contenedor-boton-flotante .boton-flotante-alternador {
+  display: none;
+}
+
+.a11y-simplificada
+  .contenedor-boton-flotante
+  .boton-flotante-contenido
+  a.enlace {
+  color: black;
+}
+
+.a11y-simplificada
+  .contenedor-boton-flotante
+  .boton-flotante-contenido
+  a.enlace.icono-resaltado
+  .icono {
+  animation: none;
 }
 </style>
