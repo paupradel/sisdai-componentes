@@ -1,9 +1,5 @@
-<script setup>
-import './index.css'
-</script>
-
 <template>
-  <div class="contenerdor-panttalla-simulada">
+  <div class="contenerdor-ejemplo-boton-flotante">
     <SisdaiBotonFlotante
       :enlaces="[
         {
