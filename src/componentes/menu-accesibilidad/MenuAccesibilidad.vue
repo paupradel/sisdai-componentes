@@ -60,7 +60,7 @@ function seleccionarOpcion(opcion) {
 }
 
 /**
- *
+ * Desencadena el emit 'restablecer' al mismo tiempo que cierra el menú.
  */
 function restablecer() {
   emits(eventos.restablecer)
@@ -71,21 +71,29 @@ function restablecer() {
  * Cambia el estado (contrario de su valor actual al ejecutar el evento, abierto o cerrado) del
  * Menú de accesibilidad.
  */
-function alternarMenuAccesibilidadAbierto() {
+function alternarEstado() {
   menuAccesibilidadEstaAbierto.value = !menuAccesibilidadEstaAbierto.value
 }
 
-defineExpose({ alternarMenuAccesibilidadAbierto })
+defineExpose({ alternarEstado })
+
+/**
+ * Altura en pixeles del menú abierto, se calcula dando 50 pixeles a cada opción sumando la
+ * opción de restablecer y el titulo del menú.
+ */
+const alturaMenuAbierto = computed(
+  () => `${(opciones.value.length + 1) * 50 + 60}px`
+)
 </script>
 
 <template>
   <div
-    class="contenedor-accesibilidad"
+    class="contenedor-menu-accesibilidad"
     :class="{ abierto: menuAccesibilidadEstaAbierto }"
   >
     <button
       class="icono-boton-accesibilidad"
-      @click="alternarMenuAccesibilidadAbierto"
+      @click="alternarEstado"
     >
       <span class="icono-accesibilidad icono-5" />
     </button>
@@ -116,3 +124,9 @@ defineExpose({ alternarMenuAccesibilidadAbierto })
     </menu>
   </div>
 </template>
+
+<style>
+.contenedor-menu-accesibilidad.abierto .menu-accesibilidad {
+  max-height: v-bind('alturaMenuAbierto') !important;
+}
+</style>

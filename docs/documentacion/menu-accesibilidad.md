@@ -4,7 +4,7 @@ layout: LayoutDocumentacion
 
 # MenuAccesibilidad
 
-El menú de accesibilidad permite ejecutar a las funciones que agregan reglas de accesibilidad al sitio web. Consulte la [sección de accesibilidad del Sisdai](https://sisdai.conacyt.mx/accesibilidad/introduccion) para más información.
+El Menú de accesibilidad permite ejecutar a las funciones que agregan reglas de accesibilidad al sitio web. Consulte la [sección de accesibilidad del Sisdai](https://sisdai.conacyt.mx/accesibilidad/introduccion) para más información.
 
 El componente cuenta con tres opciones de accesibilidad predeterminadas:
 
@@ -42,7 +42,7 @@ Uso:
 
 ### Metodos
 
-- **alternarMenuAccesibilidadAbierto**
+- **alternarEstado**
   Cambia el estado (contrario de su valor actual al ejecutar el evento, abierto o cerrado) del Menú de accesibilidad.
 
 ### Eventos
@@ -96,6 +96,7 @@ export default new Vuex.Store({
 ```
 
 </section>
+
 <section id="ejemplos">
 
 ## Ejemplos

@@ -11,3 +11,13 @@ code {
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important;
   }
 }
+
+.contenerdor-ejemplo-boton-flotante {
+  position: relative;
+  min-height: 88px;
+  width: 100%;
+
+  .contenedor-boton-flotante {
+    position: absolute;
+  }
+}

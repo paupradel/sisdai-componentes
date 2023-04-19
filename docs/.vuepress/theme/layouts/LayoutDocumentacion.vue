@@ -50,8 +50,13 @@
                 >
               </li>
               <li>
-                <router-link to="/documentacion/accesibilidad">
-                  Accesibilidad
+                <router-link to="/documentacion/menu-accesibilidad">
+                  MenuAccesibilidad
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/documentacion/boton-flotante">
+                  Botonflotante
                 </router-link>
               </li>
               <li>

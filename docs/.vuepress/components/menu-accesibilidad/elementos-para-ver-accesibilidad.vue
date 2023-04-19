@@ -1,5 +1,5 @@
 <template>
-  <div class="elementos-ejemplo m-x-2">
+  <div class="elementos-ejemplo m-x-2 p-b-8">
     <!-- <h2 class="m-t-0">Elementos para ver cambios</h2> -->
 
     <div class="tarjeta m-b-2">
@@ -41,11 +41,20 @@
         enlace con estilo de botón
       </a>
     </p>
+
+    <SisdaiBotonFlotante
+      :enlaces="[
+        {
+          clasesCss: 'icono-resaltado',
+        },
+      ]"
+    />
   </div>
 </template>
 
 <style>
-.contenerdor-panttalla-simulada .contenedor-accesibilidad {
+.contenerdor-panttalla-simulada .contenedor-menu-accesibilidad,
+.contenerdor-panttalla-simulada .contenedor-boton-flotante {
   position: absolute;
 }
 
