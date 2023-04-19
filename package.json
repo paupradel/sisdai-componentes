@@ -19,10 +19,10 @@
     "format-lint": "npm run format && npm run lint"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.7",
     "core-js": "^3.6.5",
-    "sisdai-css": "github:salsa-community/sisdai-css#develop",
-    "vue": "^2.7.14",
-    "@popperjs/core": "^2.11.7"
+    "sisdai-css": "github:salsa-community/sisdai-css#v0.37.0",
+    "vue": "^2.7.14"
   },
   "devDependencies": {
     "@babel/core": "^7.21.3",
