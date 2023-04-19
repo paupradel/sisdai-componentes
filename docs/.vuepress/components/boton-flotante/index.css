@@ -1,9 +1,0 @@
-.contenerdor-panttalla-simulada .contenedor-boton-flotante {
-  position: absolute;
-}
-
-.contenerdor-panttalla-simulada {
-  position: relative;
-  min-height: 88px;
-  width: 100%;
-}

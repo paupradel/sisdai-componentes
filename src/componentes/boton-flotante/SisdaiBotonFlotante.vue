@@ -113,7 +113,6 @@ defineExpose({ alternarEstado })
 }
 
 .contenedor-boton-flotante .boton-flotante-contenido {
-  max-width: 0;
   height: 40px !important;
   padding: 0;
   overflow: hidden;
@@ -122,10 +121,6 @@ defineExpose({ alternarEstado })
   border-color: #fff;
   display: inline-flex;
   align-items: center;
-}
-
-.contenedor-boton-flotante.abierto .boton-flotante-contenido {
-  max-width: 500px;
 }
 
 .contenedor-boton-flotante .boton-flotante-contenido a.enlace {
@@ -159,5 +154,24 @@ defineExpose({ alternarEstado })
     opacity: 0.25;
     top: 2px;
   }
+}
+
+/* T R A N S I C I O N E S */
+.contenedor-boton-flotante .boton-flotante-alternador {
+  transition: border-radius 0.27s linear 0.6s !important;
+}
+
+.contenedor-boton-flotante.abierto .boton-flotante-alternador {
+  transition-delay: 0s !important;
+}
+
+.contenedor-boton-flotante .boton-flotante-contenido {
+  max-width: 0;
+  transition: max-width 0.6s linear 0s !important;
+}
+
+.contenedor-boton-flotante.abierto .boton-flotante-contenido {
+  max-width: 500px;
+  transition-delay: 0.27s !important;
 }
 </style>
