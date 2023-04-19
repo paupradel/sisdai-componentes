@@ -1,16 +1,3 @@
-<template>
-  <div class="ejemplo">
-    <div class="contenedor-ejemplo">
-      <component
-        class="componente"
-        :is="componenteEjemplo"
-      ></component>
-    </div>
-
-    <pre class="language-html"><code v-html="codigoResaltado"></code></pre>
-  </div>
-</template>
-
 <script setup>
 import Prism from 'prismjs'
 import { onMounted, defineProps, ref, defineAsyncComponent } from 'vue'
@@ -35,6 +22,19 @@ onMounted(async () => {
   )
 })
 </script>
+
+<template>
+  <div class="ejemplo">
+    <div class="contenedor-ejemplo">
+      <component
+        class="componente"
+        :is="componenteEjemplo"
+      />
+    </div>
+
+    <pre class="language-html"><code v-html="codigoResaltado" /></pre>
+  </div>
+</template>
 
 <style scoped>
 .ejemplo {
