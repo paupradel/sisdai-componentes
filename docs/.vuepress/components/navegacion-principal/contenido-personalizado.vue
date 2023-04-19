@@ -1,6 +1,6 @@
 <template>
   <div class="contenedor">
-    <NavegacionPrincipal>
+    <SisdaiNavegacionPrincipal>
       <!--Definiendo el logo del sitio-->
       <template #identidad>
         <a
@@ -35,6 +35,6 @@
           >
         </li>
       </ul>
-    </NavegacionPrincipal>
+    </SisdaiNavegacionPrincipal>
   </div>
 </template>

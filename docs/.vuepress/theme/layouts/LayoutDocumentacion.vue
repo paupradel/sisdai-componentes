@@ -1,12 +1,12 @@
 <template>
   <div class="theme-container">
-    <NavegacionGobMx />
+    <SisdaiNavegacionGobMx />
 
     <nav-navegacion-principal></nav-navegacion-principal>
 
     <div class="flex">
       <div class="columna-4 columna-1-mov menu-fondo">
-        <MenuLateral>
+        <SisdaiMenuLateral>
           <template slot="contenido-menu-lateral">
             <ul>
               <li>
@@ -80,7 +80,7 @@
               <span> ir a github</span>
             </a>
           </template>
-        </MenuLateral>
+        </SisdaiMenuLateral>
       </div>
       <div class="columna-12 columna-7-mov">
         <div class="flex contenedor-indice-y-content">
@@ -88,7 +88,7 @@
             <Content />
           </div>
           <div class="columna-4 columna-8-mov">
-            <IndiceDeContenido
+            <SisdaiIndiceDeContenido
               class="indice-contenido-documentacion"
               :id_indice="'indice-template'"
               ref="componenteIndice"
@@ -103,7 +103,7 @@
                   </li>
                 </ul>
               </template>
-            </IndiceDeContenido>
+            </SisdaiIndiceDeContenido>
           </div>
         </div>
       </div>

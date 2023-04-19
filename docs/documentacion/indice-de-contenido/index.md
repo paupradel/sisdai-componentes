@@ -9,7 +9,7 @@ Este componente se utiliza como un menú de navegación para el contenido de una
 Uso:
 
 ```html
-<IndiceDeContenido> ...contenido </IndiceDeContenido>
+<SisdaiIndiceDeContenido> ...contenido </SisdaiIndiceDeContenido>
 ```
 
 <section id="api">

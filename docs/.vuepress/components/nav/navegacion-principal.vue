@@ -1,5 +1,5 @@
 <template>
-  <NavegacionPrincipal
+  <SisdaiNavegacionPrincipal
     :nav-informacion="`Sección: <b>${$frontmatter.sectionName || ''}</b>`"
   >
     <ul class="nav-menu">
@@ -27,5 +27,5 @@
         >
       </li>
     </ul>
-  </NavegacionPrincipal>
+  </SisdaiNavegacionPrincipal>
 </template>

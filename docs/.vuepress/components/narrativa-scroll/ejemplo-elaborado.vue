@@ -14,7 +14,7 @@ const altura = ref(0.2)
         v-model="altura"
       />
     </div>
-    <NarrativaScroll
+    <SisdaiNarrativaScroll
       :id_scroll="'ejemplo-elaborado-narrativa-scroll'"
       :depurador="true"
       :altura_sensor="altura"
@@ -46,7 +46,7 @@ const altura = ref(0.2)
           imagen: 'https://placekitten.com/1000/1042',
         },
       ]"
-    ></NarrativaScroll>
+    ></SisdaiNarrativaScroll>
   </div>
 </template>
 

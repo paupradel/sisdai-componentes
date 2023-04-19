@@ -1,8 +1,8 @@
-import MenuLateral from './MenuLateral.vue'
+import SisdaiMenuLateral from './SisdaiMenuLateral.vue'
 
 const plugin = {
   install: function (Vue) {
-    Vue.component('MenuLateral', MenuLateral)
+    Vue.component('SisdaiMenuLateral', SisdaiMenuLateral)
   },
 }
 

@@ -1,8 +1,8 @@
-import ColapsableNavegacion from './ColapsableNavegacion.vue'
+import SisdaiColapsableNavegacion from './SisdaiColapsableNavegacion.vue'
 
 const plugin = {
   install: function (Vue) {
-    Vue.component('ColapsableNavegacion', ColapsableNavegacion)
+    Vue.component('SisdaiColapsableNavegacion', SisdaiColapsableNavegacion)
   },
 }
 

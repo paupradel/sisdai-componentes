@@ -1,6 +1,6 @@
 <template>
   <div>
-    <MenuLateral>
+    <SisdaiMenuLateral>
       <template slot="contenido-menu-lateral">
         <ul>
           <li>
@@ -9,12 +9,14 @@
           <li>
             <router-link to="#slots"> Slots</router-link>
           </li>
-          <ColapsableNavegacion :titulo="'<ColapsableNavegacion> :D'">
+          <SisdaiColapsableNavegacion
+            :titulo="'<SisdaiColapsableNavegacion> :D'"
+          >
             <template v-slot:listado-contenido>
               <li><router-link to="#ejemplos"> Ejemplos </router-link></li>
               <li><a href="#menu-lateral"> El mero inicio </a></li>
             </template>
-          </ColapsableNavegacion>
+          </SisdaiColapsableNavegacion>
         </ul>
         <a
           href="##"
@@ -25,6 +27,6 @@
           <span> ir a github</span>
         </a>
       </template>
-    </MenuLateral>
+    </SisdaiMenuLateral>
   </div>
 </template>

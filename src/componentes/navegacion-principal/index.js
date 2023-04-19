@@ -1,8 +1,8 @@
-import NavegacionPrincipal from './NavegacionPrincipal.vue'
+import SisdaiNavegacionPrincipal from './SisdaiNavegacionPrincipal.vue'
 
 const plugin = {
   install: function (Vue) {
-    Vue.component('NavegacionPrincipal', NavegacionPrincipal)
+    Vue.component('SisdaiNavegacionPrincipal', SisdaiNavegacionPrincipal)
   },
 }
 

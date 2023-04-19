@@ -1,3 +1,3 @@
 <template>
-  <ColapsableNavegacion> </ColapsableNavegacion>
+  <SisdaiColapsableNavegacion> </SisdaiColapsableNavegacion>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div class="theme-container">
-    <NavegacionGobMx />
+    <SisdaiNavegacionGobMx />
 
     <nav-navegacion-principal></nav-navegacion-principal>
 

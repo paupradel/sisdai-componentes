@@ -1,5 +1,5 @@
 <template>
   <div class="contenedor">
-    <NavegacionPrincipal></NavegacionPrincipal>
+    <SisdaiNavegacionPrincipal></SisdaiNavegacionPrincipal>
   </div>
 </template>

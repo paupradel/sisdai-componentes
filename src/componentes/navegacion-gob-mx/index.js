@@ -1,8 +1,8 @@
-import NavegacionGobMx from './NavegacionGobMx.vue'
+import SisdaiNavegacionGobMx from './SisdaiNavegacionGobMx.vue'
 
 const plugin = {
   install: function (Vue) {
-    Vue.component('NavegacionGobMx', NavegacionGobMx)
+    Vue.component('SisdaiNavegacionGobMx', SisdaiNavegacionGobMx)
   },
 }
 
