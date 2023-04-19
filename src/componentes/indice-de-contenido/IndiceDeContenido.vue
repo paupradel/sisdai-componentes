@@ -52,6 +52,7 @@ function scroleando() {
       d.y_min = d.elemento.offsetTop
       d.y_max = d.elemento.offsetTop + d.elemento.offsetHeight
     } else {
+      // eslint-disable-next-line
       console.warn(
         'Los href que introdujiste en el slot "contenido-indice-de-contenido" no hacen referencia a ningún id de esta vista'
       )
