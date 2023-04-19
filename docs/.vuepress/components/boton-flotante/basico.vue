@@ -7,14 +7,14 @@ import './index.css'
     <SisdaiBotonFlotante
       :enlaces="[
         {
-          enlace: 'https://eni.conacyt.mx/',
-          contenido: 'Ir a ENI',
           clasesCss: 'eni',
+          contenido: 'Ir a ENI',
+          enlace: 'https://eni.conacyt.mx/',
         },
         {
-          enlace: 'https://gema.conacyt.mx/',
-          contenido: 'Ir a GEMA',
           clasesCss: 'gema',
+          contenido: 'Ir a GEMA',
+          enlace: 'https://gema.conacyt.mx/',
         },
       ]"
     />

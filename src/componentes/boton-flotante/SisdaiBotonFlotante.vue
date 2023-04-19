@@ -1,5 +1,13 @@
 <script>
 const propiedades = {
+  /**
+   * Lista de enlaces que se mostrarán en el Botón flotante abierto, cada opción debe ser un
+   * objeto con los siguientes atributos:
+   * - clasesCss {`String`}: Nombre de la clase css de la opción.
+   * - contenido: {`String`}: Contenido en texto que se mostrará en la interfaz.
+   * - enlace {`String`}: Dirección url a la que dirigirá el botón.
+   * - icono {`String`}: Visible al costado izquierdo del contenido.
+   */
   enlaces: {
     type: Array,
     default: () => [
@@ -12,21 +20,28 @@ const propiedades = {
 </script>
 
 <script setup>
-import { computed, ref, toRefs } from 'vue'
+import { ref, toRefs } from 'vue'
 
 const props = defineProps(propiedades)
 const { enlaces } = toRefs(props)
 
+/**
+ * Indica si el Botón flotante está abierto.
+ * - Abierto: `true`
+ * - Cerrado: `false`
+ * @type Boolean
+ */
 const botonFlotanteEstaAbierto = ref(true)
 
-function alternarBotonFlotante() {
+/**
+ * Cambia el estado (contrario de su valor actual al ejecutar el evento, abierto o cerrado) del
+ * Botón flotante.
+ */
+function alternarEstado() {
   botonFlotanteEstaAbierto.value = !botonFlotanteEstaAbierto.value
 }
 
-const icono = computed(() => ({
-  'icono-restar': botonFlotanteEstaAbierto.value,
-  'icono-agregar': !botonFlotanteEstaAbierto.value,
-}))
+defineExpose({ alternarEstado })
 </script>
 
 <template>
@@ -35,16 +50,15 @@ const icono = computed(() => ({
     :class="{ abierto: botonFlotanteEstaAbierto }"
   >
     <button
-      class="boton-flotante-alternador borde-r-redondeado-20"
-      :class="{
-        'borde-l-redondeado-0': botonFlotanteEstaAbierto,
-        'borde-l-redondeado-20': !botonFlotanteEstaAbierto,
-      }"
-      @click="alternarBotonFlotante"
+      :class="`boton-flotante-alternador borde-r-redondeado-20 borde-l-redondeado-${
+        botonFlotanteEstaAbierto ? '' : '2'
+      }0`"
+      @click="alternarEstado"
     >
       <span
-        class="icono icono-3"
-        :class="icono"
+        :class="`icono ${
+          botonFlotanteEstaAbierto ? 'icono-restar' : 'icono-agregar'
+        } icono-3`"
       />
     </button>
 

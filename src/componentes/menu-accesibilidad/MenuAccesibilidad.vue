@@ -71,11 +71,11 @@ function restablecer() {
  * Cambia el estado (contrario de su valor actual al ejecutar el evento, abierto o cerrado) del
  * Menú de accesibilidad.
  */
-function alternarMenuAccesibilidadAbierto() {
+function alternarEstado() {
   menuAccesibilidadEstaAbierto.value = !menuAccesibilidadEstaAbierto.value
 }
 
-defineExpose({ alternarMenuAccesibilidadAbierto })
+defineExpose({ alternarEstado })
 
 /**
  * Altura en pixeles del menú abierto, se calcula dando 50 pixeles a cada opción sumando la
@@ -93,7 +93,7 @@ const alturaMenuAbierto = computed(
   >
     <button
       class="icono-boton-accesibilidad"
-      @click="alternarMenuAccesibilidadAbierto"
+      @click="alternarEstado"
     >
       <span class="icono-accesibilidad icono-5" />
     </button>

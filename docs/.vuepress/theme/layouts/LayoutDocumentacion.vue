@@ -51,12 +51,12 @@
               </li>
               <li>
                 <router-link to="/documentacion/menu-accesibilidad">
-                  Menú Accesibilidad
+                  MenuAccesibilidad
                 </router-link>
               </li>
               <li>
                 <router-link to="/documentacion/boton-flotante">
-                  Botón flotante
+                  Botonflotante
                 </router-link>
               </li>
               <li>
