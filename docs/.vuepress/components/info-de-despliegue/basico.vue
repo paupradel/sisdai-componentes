@@ -1,17 +1,17 @@
 <template>
   <div class="contenerdor-panttalla-simulada">
-    <InfoDeDespliegue
+    <SisdaiInfoDeDespliegue
       :entornoProyecto="entornoProyecto"
       :versionProyecto="versionProyecto"
       :actualizacionProyecto="actualizacionProyecto"
     />
 
-    <ElementosParaVerInfoDeDespliegue />
+    <ElementosParaVerSisdaiInfoDeDespliegue />
   </div>
 </template>
 
 <script setup>
-import ElementosParaVerInfoDeDespliegue from './elementos-para-ver-info-de-despliegue.vue'
+import ElementosParaVerSisdaiInfoDeDespliegue from './elementos-para-ver-info-de-despliegue.vue'
 import { computed } from 'vue'
 
 const version = require('../../../../package.json').version

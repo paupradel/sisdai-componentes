@@ -6,7 +6,7 @@ import {
   ColapsableNavegacion,
   MenuLateral,
   IndiceDeContenido,
-  InfoDeDespliegue,
+  SisdaiInfoDeDespliegue,
   MenuAccesibilidad,
   NarrativaScroll,
 } from './componentes'
@@ -23,7 +23,7 @@ const plugin = {
     Vue.use(ColapsableNavegacion)
     Vue.use(MenuLateral)
     Vue.use(IndiceDeContenido)
-    Vue.use(InfoDeDespliegue)
+    Vue.use(SisdaiInfoDeDespliegue)
     //accesibilidad
     Vue.use(MenuAccesibilidad)
     //auxiliares
@@ -41,7 +41,7 @@ export {
   ColapsableNavegacion,
   MenuLateral,
   IndiceDeContenido,
-  InfoDeDespliegue,
+  SisdaiInfoDeDespliegue,
   MenuAccesibilidad,
   GlobosInformacion,
   NarrativaScroll,

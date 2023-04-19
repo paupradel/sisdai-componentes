@@ -11,7 +11,7 @@
             <ul>
               <li>
                 <router-link to="/documentacion/info-de-despliegue">
-                  InfoDeDespliegue</router-link
+                  SisdaiInfoDeDespliegue</router-link
                 >
               </li>
               <li>
