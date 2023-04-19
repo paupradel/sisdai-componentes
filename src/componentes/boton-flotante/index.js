@@ -1,8 +1,8 @@
-import BotonFlotante from './BotonFlotante.vue'
+import BotonFlotante from './SisdaiBotonFlotante'
 
 const plugin = {
   install: function (Vue) {
-    Vue.component('BotonFlotante', BotonFlotante)
+    Vue.component('SisdaiBotonFlotante', BotonFlotante)
   },
 }
 
