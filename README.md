@@ -18,7 +18,7 @@ Para instalar las dependencias del ambiente de desarrollo:
 npm docs:install
 ```
 
-### Compilar ambiente de desarrollo en local:
+### Compilar ambiente de desarrollo en local
 
 Este comando levanta la baseweb para que quien desarrolle pueda hacer pruebas
 
@@ -92,9 +92,9 @@ sisdai-componentes/
     ├── componentes
     │   ├── componente-nuevo
     │   │   ├── ComponenteNuevo.vue
-    │   │   └── index.js 		#index de componente-nuevo/
-    │   └── index.js 			#index de componentes/
-    └── index.js 				#index de src/
+    │   │   └── index.js   #index de componente-nuevo/
+    │   └── index.js    #index de componentes/
+    └── index.js     #index de src/
 
 
 ```
@@ -172,10 +172,10 @@ Cada componente agregado en la libreria tambien debe ser agregado en la carpeta 
 
 **1.-** Se creara una carpeta `docs/documentacion/nombre-nuevo-componente` y dentro de la misma se agregara un archivo index.md en donde se agregara toda la documentacion necesaria del componente y sus ejemplos.
 
-**2.-** Dentro del archivo `docs/.vuepress/theme/LayoutDocumentacion.vue` debe agregarse el enlace a la pagina de documentacion del componente que se este trabajando. Lo anterior dentro del componente `MenuLateral`
+**2.-** Dentro del archivo `docs/.vuepress/theme/LayoutDocumentacion.vue` debe agregarse el enlace a la pagina de documentacion del componente que se este trabajando. Lo anterior dentro del componente `SisdaiMenuLateral`
 
 ```html
-<MenuLateral>
+<SisdaiMenuLateral>
   <template slot="contenido-menu-lateral">
     <ul>
       ... enlaces ya existentes de documentacion de componentes
@@ -186,7 +186,7 @@ Cada componente agregado en la libreria tambien debe ser agregado en la carpeta 
       </li>
     </ul>
   </template>
-</MenuLateral>
+</SisdaiMenuLateral>
 ```
 
 **3.-** Los ejemplos del componente se realizaran en archivos `.vue` y depositaran en una carpeta nueva: `docs/.vuepress/components/nombre-nuevo-componente/`. Se agregaran todos los que se considere necesarios.

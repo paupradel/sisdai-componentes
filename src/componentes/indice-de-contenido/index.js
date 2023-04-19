@@ -1,8 +1,8 @@
-import IndiceDeContenido from './IndiceDeContenido.vue'
+import SisdaiIndiceDeContenido from './SisdaiIndiceDeContenido.vue'
 
 const plugin = {
   install: function (Vue) {
-    Vue.component('IndiceDeContenido', IndiceDeContenido)
+    Vue.component('SisdaiIndiceDeContenido', SisdaiIndiceDeContenido)
   },
 }
 

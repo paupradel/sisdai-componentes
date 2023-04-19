@@ -1,14 +1,14 @@
 import {
-  NavegacionGobMx,
-  NavegacionPrincipal,
-  PiePaginaGobMx,
-  PiePaginaConacyt,
-  ColapsableNavegacion,
-  MenuLateral,
-  IndiceDeContenido,
+  SisdaiNavegacionGobMx,
+  SisdaiNavegacionPrincipal,
+  SisdaiPiePaginaGobMx,
+  SisdaiPiePaginaConacyt,
+  SisdaiColapsableNavegacion,
+  SisdaiMenuLateral,
+  SisdaiIndiceDeContenido,
   SisdaiInfoDeDespliegue,
-  MenuAccesibilidad,
-  NarrativaScroll,
+  SisdaiMenuAccesibilidad,
+  SisdaiNarrativaScroll,
   BotonFlotante,
 } from './componentes'
 
@@ -17,36 +17,36 @@ import { GlobosInformacion } from './directivas'
 const plugin = {
   install: function (Vue) {
     //UI base
-    Vue.use(NavegacionGobMx)
-    Vue.use(NavegacionPrincipal)
-    Vue.use(PiePaginaGobMx)
-    Vue.use(PiePaginaConacyt)
-    Vue.use(ColapsableNavegacion)
-    Vue.use(MenuLateral)
-    Vue.use(IndiceDeContenido)
+    Vue.use(SisdaiNavegacionGobMx)
+    Vue.use(SisdaiNavegacionPrincipal)
+    Vue.use(SisdaiPiePaginaGobMx)
+    Vue.use(SisdaiPiePaginaConacyt)
+    Vue.use(SisdaiColapsableNavegacion)
+    Vue.use(SisdaiMenuLateral)
+    Vue.use(SisdaiIndiceDeContenido)
     Vue.use(SisdaiInfoDeDespliegue)
     //accesibilidad
-    Vue.use(MenuAccesibilidad)
+    Vue.use(SisdaiMenuAccesibilidad)
     //auxiliares
     Vue.use(GlobosInformacion)
     //otros
-    Vue.use(NarrativaScroll)
+    Vue.use(SisdaiNarrativaScroll)
     Vue.use(BotonFlotante)
   },
 }
 
 export {
-  NavegacionGobMx,
-  NavegacionPrincipal,
-  PiePaginaGobMx,
-  PiePaginaConacyt,
-  ColapsableNavegacion,
-  MenuLateral,
-  IndiceDeContenido,
+  SisdaiNavegacionGobMx,
+  SisdaiNavegacionPrincipal,
+  SisdaiPiePaginaGobMx,
+  SisdaiPiePaginaConacyt,
+  SisdaiColapsableNavegacion,
+  SisdaiMenuLateral,
+  SisdaiIndiceDeContenido,
   SisdaiInfoDeDespliegue,
-  MenuAccesibilidad,
+  SisdaiMenuAccesibilidad,
   GlobosInformacion,
-  NarrativaScroll,
+  SisdaiNarrativaScroll,
 }
 
 export default plugin

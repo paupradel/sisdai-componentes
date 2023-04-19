@@ -1,8 +1,8 @@
-import MenuAccesibilidad from './MenuAccesibilidad.vue'
+import SisdaiMenuAccesibilidad from './SisdaiMenuAccesibilidad.vue'
 
 const plugin = {
   install: function (Vue) {
-    Vue.component('MenuAccesibilidad', MenuAccesibilidad)
+    Vue.component('SisdaiMenuAccesibilidad', SisdaiMenuAccesibilidad)
   },
 }
 

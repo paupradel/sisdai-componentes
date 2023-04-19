@@ -9,13 +9,14 @@ Este componente consiste en un elemento `menu.menu-lateral-contenedor` que usual
 <menu-lateral-basico/>
 
 <section id="api">
+
 ## API
 
 Este componente sólo admite slots.
 
 ### Slots
 
--`'contenido-menu-lateral'`: Este es el único slot que contiene el componente. En el se pueden incluir elementos de navegación como `<a></a>` o `<router-link>  </router-link>` en el caso de que que el proyecto esté usando [Vue Router](https://router.vuejs.org/). También se pueden agregar dichos enlaces contenidos en los elementos de lista `<li>` de una lista no ordenada `<ul/>`, así como incluir el componente `<ColapsableNavegacion/>`
+-`'contenido-menu-lateral'`: Este es el único slot que contiene el componente. En el se pueden incluir elementos de navegación como `<a></a>` o `<router-link>  </router-link>` en el caso de que que el proyecto esté usando [Vue Router](https://router.vuejs.org/). También se pueden agregar dichos enlaces contenidos en los elementos de lista `<li>` de una lista no ordenada `<ul/>`, así como incluir el componente `<SisdaiColapsableNavegacion/>`
 
 Para este componente, el uso de [Vue Router](https://router.vuejs.org/) es altamente recomendado, entre otras cosas, por los estilos que asigna a los enlaces dentro de este componente.
 
@@ -54,7 +55,7 @@ En el siguiente ejemplo usamos `router-link` y un `<a></a>` para ilustrar alguno
 
 **Slot como lista no ordenada y colapsable**
 
-El siguiente ejemplo contiene los mismos enlaces que el anterior, sin embargo, su estructura es un poco más ordenada pues los enlaces están dentro de los elementos de lista de una lista no ordenada. Además se integró el componente `<ColapsableNavegacion/>`, que a su vez tiene otros enlaces que se introducen mediante un slot propio.
+El siguiente ejemplo contiene los mismos enlaces que el anterior, sin embargo, su estructura es un poco más ordenada pues los enlaces están dentro de los elementos de lista de una lista no ordenada. Además se integró el componente `<SisdaiColapsableNavegacion/>`, que a su vez tiene otros enlaces que se introducen mediante un slot propio.
 
 <utils-ejemplo-doc ruta="menu-lateral/colapsable.vue"/>
 

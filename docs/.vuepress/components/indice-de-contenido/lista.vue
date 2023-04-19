@@ -1,6 +1,6 @@
 <template>
   <div>
-    <IndiceDeContenido id_indice="indice-lista">
+    <SisdaiIndiceDeContenido id_indice="indice-lista">
       <template slot="contenido-indice-de-contenido">
         <ul>
           <li>
@@ -13,6 +13,6 @@
           </li>
         </ul>
       </template>
-    </IndiceDeContenido>
+    </SisdaiIndiceDeContenido>
   </div>
 </template>

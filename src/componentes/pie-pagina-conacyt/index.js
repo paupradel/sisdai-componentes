@@ -1,8 +1,8 @@
-import PiePaginaConacyt from './PiePaginaConacyt.vue'
+import SisdaiPiePaginaConacyt from './SisdaiPiePaginaConacyt.vue'
 
 const plugin = {
   install: function (Vue) {
-    Vue.component('PiePaginaConacyt', PiePaginaConacyt)
+    Vue.component('SisdaiPiePaginaConacyt', SisdaiPiePaginaConacyt)
   },
 }
 

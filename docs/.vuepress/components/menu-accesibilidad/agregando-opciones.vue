@@ -31,7 +31,7 @@ const nuevaOpcion = {
     class="contenerdor-panttalla-simulada agregando-opcion"
     :class="clasesAccesibles"
   >
-    <MenuAccesibilidad
+    <SisdaiMenuAccesibilidad
       :agregarOpciones="[nuevaOpcion]"
       @alSeleccionarOpcion="agregarClases"
       @restablecer="clasesAccesibles = []"

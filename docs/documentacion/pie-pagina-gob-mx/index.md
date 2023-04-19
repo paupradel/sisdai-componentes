@@ -19,7 +19,7 @@ El pie de página del Gobierno de México sirve principalmente para:
 Al tratarse de un componente institucional se deben respetar los lineamientos de identidad proporcionados por el gobierno.
 
 ```html
-<PiePaginaGobMx />
+<SisdaiPiePaginaGobMx />
 ```
 
 Vista simplificada

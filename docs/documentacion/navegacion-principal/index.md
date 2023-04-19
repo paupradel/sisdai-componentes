@@ -9,7 +9,7 @@ Se trata del componente de barra de navegacion principal del sitio, generalmente
 Uso:
 
 ```html
-<NavegacionPrincipal> ...contenido </NavegacionPrincipal>
+<SisdaiNavegacionPrincipal> ...contenido </SisdaiNavegacionPrincipal>
 ```
 
 <section id="api">
@@ -49,7 +49,7 @@ Este componente no dispara eventos externos
 Slot para el contenido de navegacion, son los links a las secciones disponibles en el sitio.
 
 ```html
-<NavegacionPrincipal>
+<SisdaiNavegacionPrincipal>
   <ul class="nav-menu">
     <li>
       <a
@@ -60,7 +60,7 @@ Slot para el contenido de navegacion, son los links a las secciones disponibles 
       >
     </li>
   </ul>
-</NavegacionPrincipal>
+</SisdaiNavegacionPrincipal>
 ```
 
 De acuerdo a la semantica de html y las reglas de css definidas en Sisdaicss, los links deberan estar contenidos en un [elemento lista desordenada](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul)
@@ -77,7 +77,7 @@ Slot para el contenido de identidad del sitio, donde se despliegan los logos del
 Se recomienda usar las clases css de Sisdaicss
 
 ```html
-<NavegacionPrincipal>
+<SisdaiNavegacionPrincipal>
   <template #identidad>
     <a
       href="https://conacyt.mx/"
@@ -93,7 +93,7 @@ Se recomienda usar las clases css de Sisdaicss
       />
     </a>
   </template>
-</NavegacionPrincipal>
+</SisdaiNavegacionPrincipal>
 ```
 
 </section>

@@ -56,9 +56,9 @@ Esta es la opcion recomendada, asi se asegura que el proyecto solo este dando de
 
 ```js
 //generalmente es el arhivo src/main.js
-import {NavegacionPrincipal} from 'sisdai-componentes/src/componentes'
+import {SisdaiNavegacionPrincipal} from 'sisdai-componentes/src/componentes'
 
-Vue.use(NavegacionPrincipal)
+Vue.use(SisdaiNavegacionPrincipal)
 ```
 
 **Opción 2**
@@ -69,11 +69,11 @@ En Composition API:
 
 ```html
 <script setup> 
-import NavegacionGobMx from 'sisdai-componentes/src/componentes/navegacion-gob-mx/NavegacionGobMx.vue'
+import SisdaiNavegacionGobMx from 'sisdai-componentes/src/componentes/navegacion-gob-mx/SisdaiNavegacionGobMx.vue'
 <script>
 
 <template>
-  <NavegacionGobMx/>
+  <SisdaiNavegacionGobMx/>
 </template>
 ```
 
@@ -81,15 +81,15 @@ En Options API:
 
 ```html
 <template>
-  <NavegacionGobMx/>
+  <SisdaiNavegacionGobMx/>
 </template>
 
 <script>
-import NavegacionGobMx from 'sisdai-componentes/src/componentes/navegacion-gob-mx/NavegacionGobMx.vue'
+import SisdaiNavegacionGobMx from 'sisdai-componentes/src/componentes/navegacion-gob-mx/SisdaiNavegacionGobMx.vue'
 
 export default {
   components:{
-    NavegacionGobMx
+    SisdaiNavegacionGobMx
   }
 }
 <script>

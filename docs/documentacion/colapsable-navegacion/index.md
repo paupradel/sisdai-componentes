@@ -56,6 +56,6 @@ Así se renderiza cuando especificamos un `:titulo` y su slot
 
 <utils-ejemplo-doc ruta="colapsable-navegacion/slot.vue"/>
 
-**Observación:** Este componente `<ColapsableNavegacion/>` tiene un estilo definido para el componente `<MenuLateral/>`. Puedes consultar la sección de dicho componente para ver como pueden convivir
+**Observación:** Este componente `<SisdaiColapsableNavegacion/>` tiene un estilo definido para el componente `<SisdaiMenuLateral/>`. Puedes consultar la sección de dicho componente para ver como pueden convivir
 
 </section>
