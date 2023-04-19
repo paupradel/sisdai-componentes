@@ -74,7 +74,7 @@ defineExpose({ alternarEstado })
       >
         <span
           :class="`icono ${
-            icono === undefined ? 'icono-flecha-arriba-derecha' : icono
+            icono === undefined ? 'icono-enlace-externo' : icono
           }`"
         />
         {{ contenido === undefined ? 'Enlace externo' : contenido }}
