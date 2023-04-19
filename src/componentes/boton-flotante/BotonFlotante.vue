@@ -1,5 +1,21 @@
+<script>
+const propiedades = {
+  enlaces: {
+    type: Array,
+    default: () => [
+      {
+        contenido: 'Enlace externo',
+      },
+    ],
+  },
+}
+</script>
+
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, ref, toRefs } from 'vue'
+
+const props = defineProps(propiedades)
+const { enlaces } = toRefs(props)
 
 const botonFlotanteEstaAbierto = ref(true)
 
@@ -36,7 +52,23 @@ const icono = computed(() => ({
       class="boton-flotante-contenido borde-l-redondeado-20"
       :class="{ 'borde-l': botonFlotanteEstaAbierto }"
     >
-      <slot />
+      <a
+        v-for="({ enlace, clasesCss, icono, contenido }, idx) in enlaces"
+        :key="`boton-flotante-enlace-${idx}`"
+        :href="enlace"
+        :class="`enlace p-x-1 borde-redondeado-0 ${
+          clasesCss === undefined ? '' : clasesCss
+        }`"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span
+          :class="`icono ${
+            icono === undefined ? 'icono-flecha-arriba-derecha' : icono
+          }`"
+        />
+        {{ contenido }}
+      </a>
     </div>
   </div>
 </template>
@@ -44,7 +76,7 @@ const icono = computed(() => ({
 <style>
 .contenedor-boton-flotante {
   position: fixed;
-  z-index: 99;
+  z-index: 3;
   margin: 0;
   display: inline-flex;
   bottom: 24px;
@@ -58,7 +90,6 @@ const icono = computed(() => ({
   height: 40px;
   padding: 0;
   margin: 0;
-  /* display: inline-flex; */
   justify-content: center;
 }
 
@@ -80,10 +111,39 @@ const icono = computed(() => ({
 }
 
 .contenedor-boton-flotante.abierto .boton-flotante-contenido {
-  max-width: 200px;
+  max-width: 500px;
 }
 
-.contenedor-boton-flotante.abierto .boton-flotante-contenido > * {
+.contenedor-boton-flotante .boton-flotante-contenido a.enlace {
   height: 100%;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-flex !important;
+  align-items: center;
+}
+
+.contenedor-boton-flotante .boton-flotante-contenido a.enlace:hover,
+.contenedor-boton-flotante .boton-flotante-contenido a.enlace:focus {
+  color: #fff;
+}
+
+.contenedor-boton-flotante .boton-flotante-contenido a.enlace .icono {
+  padding: 0 8px 0 0;
+}
+
+@keyframes animacionResaltada {
+  0% {
+    opacity: 0.25;
+    top: 2px;
+  }
+  50% {
+    opacity: 1;
+    top: -2px;
+  }
+  100% {
+    opacity: 0.25;
+    top: 2px;
+  }
 }
 </style>

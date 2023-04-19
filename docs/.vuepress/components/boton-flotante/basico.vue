@@ -1,54 +1,43 @@
-<script setup>
-import ElementosParaVerAccesibilidad from './../menu-accesibilidad/elementos-para-ver-accesibilidad.vue'
-</script>
-
 <template>
   <div class="contenerdor-panttalla-simulada">
-    <ElementosParaVerAccesibilidad />
-
-    <BotonFlotante>
-      <a
-        class="enlace enis p-x-1 borde-redondeado-0"
-        href="http://"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span class="icono icono-flecha-arriba-derecha"></span>
-        Ir a ENI
-      </a>
-
-      <a
-        class="enlace gema p-x-1 borde-redondeado-0"
-        href="http://"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span class="icono icono-flecha-arriba-derecha"></span>
-        Ir a ENI
-      </a>
-    </BotonFlotante>
+    <BotonFlotante
+      :enlaces="[
+        {
+          enlace: 'https://eni.conacyt.mx/',
+          contenido: 'Ir a ENI',
+          clasesCss: 'eni',
+        },
+        {
+          enlace: 'https://gema.conacyt.mx/',
+          contenido: 'Ir a GEMA',
+          clasesCss: 'gema',
+        },
+        {
+          contenido: 'Documento externo',
+          clasesCss: 'icono-resaltado',
+          icono: 'icono-documento icono-3',
+        },
+      ]"
+    />
   </div>
 </template>
 
 <style>
-.enlace {
-  color: #fff;
-  font-size: 14px;
-  text-decoration: none;
-  display: inline-flex !important;
-  align-items: center;
-}
-
-.enlace [class*=' icono-'] {
-  padding: 0 8px 0 0;
-}
-
-.enis {
+.boton-flotante-contenido .eni,
+.boton-flotante-contenido .eni:hover,
+.boton-flotante-contenido .eni:focus {
   background: #3caeac;
 }
 
-.gema {
+.boton-flotante-contenido .gema,
+.boton-flotante-contenido .gema:hover,
+.boton-flotante-contenido .gema:focus {
   background: #ff5100;
+}
+
+.boton-flotante-contenido .icono-resaltado .icono {
+  position: relative;
+  animation: animacionResaltada 2s ease-in-out infinite;
 }
 
 .contenerdor-panttalla-simulada .contenedor-boton-flotante {
@@ -56,6 +45,8 @@ import ElementosParaVerAccesibilidad from './../menu-accesibilidad/elementos-par
 }
 
 .contenerdor-panttalla-simulada {
-  padding-bottom: 60px;
+  position: relative;
+  min-height: 80px;
+  width: 100%;
 }
 </style>
