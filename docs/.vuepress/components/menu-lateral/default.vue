@@ -1,5 +1,5 @@
 <template>
   <div>
-    <MenuLateral> </MenuLateral>
+    <SisdaiMenuLateral> </SisdaiMenuLateral>
   </div>
 </template>

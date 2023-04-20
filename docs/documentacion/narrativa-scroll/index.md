@@ -4,12 +4,12 @@ layout: LayoutDocumentacion
 
 # Narrativa scroll
 
-Esta sección explica el uso del componente `NarrativaScroll` el cual cambia imágenes de fondo conforme se escrolean algunos bullets.
+Esta sección explica el uso del componente `SisdaiNarrativaScroll` el cual cambia imágenes de fondo conforme se escrolean algunos bullets.
 
 Uso:
 
 ```html
-<NarrativaScroll></NarrativaScroll>
+<SisdaiNarrativaScroll></SisdaiNarrativaScroll>
 ```
 
 <section id="api">

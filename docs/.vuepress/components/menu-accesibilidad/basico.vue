@@ -24,7 +24,7 @@ function agregarClases({ accion, claseCss }) {
     class="contenerdor-panttalla-simulada"
     :class="clasesAccesibles"
   >
-    <MenuAccesibilidad
+    <SisdaiMenuAccesibilidad
       @alSeleccionarOpcion="agregarClases"
       @restablecer="clasesAccesibles = []"
     />

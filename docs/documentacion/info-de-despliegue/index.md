@@ -17,7 +17,7 @@ La información de despliegue sirve principalmente para:
 - Brindar información del ambiente ya sea de pruebas, desarrollo o producción
 
 ```html
-<InfoDeDespliegue />
+<SisdaiInfoDeDespliegue />
 ```
 
 Vista simplificada

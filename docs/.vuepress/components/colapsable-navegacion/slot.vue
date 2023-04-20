@@ -1,5 +1,5 @@
 <template>
-  <ColapsableNavegacion :titulo="'Este es el título del colapsable'">
+  <SisdaiColapsableNavegacion :titulo="'Este es el título del colapsable'">
     <template v-slot:listado-contenido>
       <li>
         <a
@@ -16,5 +16,5 @@
         >
       </li>
     </template>
-  </ColapsableNavegacion>
+  </SisdaiColapsableNavegacion>
 </template>

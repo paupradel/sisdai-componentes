@@ -1,25 +1,25 @@
-import NarrativaScroll from './narrativa-scroll'
-import ColapsableNavegacion from './colapsable-navegacion'
-import MenuLateral from './menu-lateral'
-import MenuAccesibilidad from './menu-accesibilidad'
+import SisdaiNarrativaScroll from './narrativa-scroll'
+import SisdaiColapsableNavegacion from './colapsable-navegacion'
+import SisdaiMenuLateral from './menu-lateral'
+import SisdaiMenuAccesibilidad from './menu-accesibilidad'
 import BotonFlotante from './boton-flotante'
-import NavegacionPrincipal from './navegacion-principal'
-import IndiceDeContenido from './indice-de-contenido'
-import NavegacionGobMx from './navegacion-gob-mx'
-import PiePaginaGobMx from './pie-pagina-gob-mx'
-import PiePaginaConacyt from './pie-pagina-conacyt'
-import InfoDeDespliegue from './info-de-despliegue'
+import SisdaiNavegacionPrincipal from './navegacion-principal'
+import SisdaiIndiceDeContenido from './indice-de-contenido'
+import SisdaiNavegacionGobMx from './navegacion-gob-mx'
+import SisdaiPiePaginaGobMx from './pie-pagina-gob-mx'
+import SisdaiPiePaginaConacyt from './pie-pagina-conacyt'
+import SisdaiInfoDeDespliegue from './info-de-despliegue'
 
 export {
-  NarrativaScroll,
-  ColapsableNavegacion,
-  MenuLateral,
-  MenuAccesibilidad,
+  SisdaiNarrativaScroll,
+  SisdaiColapsableNavegacion,
+  SisdaiMenuLateral,
+  SisdaiMenuAccesibilidad,
   BotonFlotante,
-  NavegacionPrincipal,
-  IndiceDeContenido,
-  NavegacionGobMx,
-  PiePaginaGobMx,
-  PiePaginaConacyt,
-  InfoDeDespliegue,
+  SisdaiNavegacionPrincipal,
+  SisdaiIndiceDeContenido,
+  SisdaiNavegacionGobMx,
+  SisdaiPiePaginaGobMx,
+  SisdaiPiePaginaConacyt,
+  SisdaiInfoDeDespliegue,
 }

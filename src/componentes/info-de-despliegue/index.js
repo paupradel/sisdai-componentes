@@ -1,8 +1,8 @@
-import InfoDeDespliegue from './InfoDeDespliegue.vue'
+import SisdaiInfoDeDespliegue from './SisdaiInfoDeDespliegue.vue'
 
 const plugin = {
   install: function (Vue) {
-    Vue.component('InfoDeDespliegue', InfoDeDespliegue)
+    Vue.component('SisdaiInfoDeDespliegue', SisdaiInfoDeDespliegue)
   },
 }
 

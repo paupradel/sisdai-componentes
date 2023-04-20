@@ -1,8 +1,8 @@
-import PiePaginaGobMx from './PiePaginaGobMx.vue'
+import SisdaiPiePaginaGobMx from './SisdaiPiePaginaGobMx.vue'
 
 const plugin = {
   install: function (Vue) {
-    Vue.component('PiePaginaGobMx', PiePaginaGobMx)
+    Vue.component('SisdaiPiePaginaGobMx', SisdaiPiePaginaGobMx)
   },
 }
 

@@ -4,12 +4,12 @@ layout: LayoutDocumentacion
 
 # Barra de navegación del Gobierno de México
 
-La barra de navegación del Gobierno de México `<NavegacionGobMx />` es uno de los elementos específicos que deben de cumplir Dependencias y Organismos de la Administración Pública Federal al momento de realizar la maquetación de páginas web para información, trámites y servicios dentro o fuera de la página de Gobierno.
+La barra de navegación del Gobierno de México `<SisdaiNavegacionGobMx />` es uno de los elementos específicos que deben de cumplir Dependencias y Organismos de la Administración Pública Federal al momento de realizar la maquetación de páginas web para información, trámites y servicios dentro o fuera de la página de Gobierno.
 
 Uso:
 
 ```html
-<NavegacionGobMx />
+<SisdaiNavegacionGobMx />
 ```
 
 <section id="api">

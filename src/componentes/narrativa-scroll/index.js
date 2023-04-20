@@ -1,8 +1,8 @@
-import NarrativaScroll from './NarrativaScroll.vue'
+import SisdaiNarrativaScroll from './SisdaiNarrativaScroll.vue'
 
 const plugin = {
   install: function (Vue) {
-    Vue.component('NarrativaScroll', NarrativaScroll)
+    Vue.component('SisdaiNarrativaScroll', SisdaiNarrativaScroll)
   },
 }
 

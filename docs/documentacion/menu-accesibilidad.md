@@ -2,7 +2,7 @@
 layout: LayoutDocumentacion
 ---
 
-# MenuAccesibilidad
+# SisdaiMenuAccesibilidad
 
 El Menú de accesibilidad permite ejecutar a las funciones que agregan reglas de accesibilidad al sitio web. Consulte la [sección de accesibilidad del Sisdai](https://sisdai.conacyt.mx/accesibilidad/introduccion) para más información.
 
@@ -15,7 +15,7 @@ El componente cuenta con tres opciones de accesibilidad predeterminadas:
 Uso:
 
 ```html
-<MenuAccesibilidad></MenuAccesibilidad>
+<SisdaiMenuAccesibilidad />
 ```
 
 <section id="api">
@@ -146,7 +146,7 @@ Para conectar el menú de accesibilidad con el store [Vuex](https://vuex.vuejs.o
     class="contenerdor-panttalla"
     :class="clasesAccesibles"
   >
-    <SisdaiMenuAccesibilidad
+    <SisdaiSisdaiMenuAccesibilidad
       @alSeleccionarOpcion="mutarAccesibilidad"
       @restablecer="limpiarClasesAccesibles"
     />

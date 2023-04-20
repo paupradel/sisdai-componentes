@@ -1,5 +1,5 @@
 <template>
   <div>
-    <PiePaginaGobMx />
+    <SisdaiPiePaginaGobMx />
   </div>
 </template>
