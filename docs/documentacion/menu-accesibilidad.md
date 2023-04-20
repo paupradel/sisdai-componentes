@@ -15,7 +15,7 @@ El componente cuenta con tres opciones de accesibilidad predeterminadas:
 Uso:
 
 ```html
-<SisdaiMenuAccesibilidad></SisdaiMenuAccesibilidad>
+<SisdaiMenuAccesibilidad />
 ```
 
 <section id="api">

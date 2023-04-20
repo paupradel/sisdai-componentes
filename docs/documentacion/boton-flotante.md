@@ -9,7 +9,7 @@ Este Botón flotante permite tener enlaces externos en todas las vistas del siti
 Uso:
 
 ```html
-<SisdaiBotonFlotante></SisdaiBotonFlotante>
+<SisdaiBotonFlotante :enlaces="[...]"/>
 ```
 
 <section id="api">
