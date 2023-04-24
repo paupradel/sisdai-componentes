@@ -119,6 +119,18 @@ Guardar el estado de las variables de accesibilidad en el store, permite que int
 
 Por ejemplo, si en una visualización se requiere que la vista muestre una configuración definida cuando se active la "Vista simplificada", se puede acceder al estado de esa variable importando el modulo de accesibilidad del store.
 
+```js
+import accesibilidad from 'sisdai-componentes/src/stores'
+
+export default new Vuex.Store({
+  modules: {
+    accesibilidad,
+    ...
+  },
+  ...
+})
+```
+
 Para conectar el menú de accesibilidad con el store [Vuex](https://vuex.vuejs.org/), se puede usar la siguiente configuración:
 
 ```html
@@ -127,17 +139,17 @@ Para conectar el menú de accesibilidad con el store [Vuex](https://vuex.vuejs.o
   import store from '@/store/index.js'
 
   const clasesAccesibles = computed(() => ({
-    'a11y-tipografia': store.state.sisdaiAccesibilidad.tipografia_accesible,
-    'a11y-simplificada': store.state.sisdaiAccesibilidad.vista_simplificada,
-    'a11y-hipervinculos': store.state.sisdaiAccesibilidad.enlaces_subrayados,
+    'a11y-tipografia': store.state.accesibilidad.tipografia_accesible,
+    'a11y-simplificada': store.state.accesibilidad.vista_simplificada,
+    'a11y-hipervinculos': store.state.accesibilidad.enlaces_subrayados,
   }))
 
   function mutarAccesibilidad({ accion }) {
-    store.commit(`sisdaiAccesibilidad/${accion}`)
+    store.commit(`accesibilidad/${accion}`)
   }
 
   function limpiarClasesAccesibles() {
-    store.commit('sisdaiAccesibilidad/limpiarClasesAccesibles')
+    store.commit('accesibilidad/limpiarClasesAccesibles')
   }
 </script>
 
