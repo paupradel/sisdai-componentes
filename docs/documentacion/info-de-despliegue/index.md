@@ -40,11 +40,13 @@ Es importante mencionar que el componente solo se mostrará cuando se despliegue
 
 - **entornoProyecto**
   Define el entorno o ambiente de programación en el que se encuentre desplegado actualmente el proyecto. Este valor se obtiene de los archivos `.env` con las variables de entorno. Ejemplo: 'desarrollo'
+
   - Tipo: `String`
   - Requerido: sí
 
 - **actualizacionProyecto**
   Se trata de la fecha en que el proyecto está siendo desplegado. Es decir, toma el momento actual del día, mes, año y hora centrada en América y Ciudad de México. Ejemplo: '1/01/2023, 12:00:00'
+
   - Tipo: `String`
   - Requerido: sí
 
