@@ -2,7 +2,7 @@
   <div class="theme-container">
     <SisdaiNavegacionGobMx />
 
-    <nav-navegacion-principal></nav-navegacion-principal>
+    <nav-navegacion-principal />
 
     <main
       role="main"
@@ -10,5 +10,7 @@
     >
       <Content />
     </main>
+
+    <SisdaiMenuAccesibilidad />
   </div>
 </template>

@@ -1,8 +1,47 @@
+<script setup>
+import { useRoute } from 'vue2-helpers/vue-router'
+
+import { ref, onMounted, watch } from 'vue'
+const lista_elementos = ref([])
+
+const route = useRoute()
+const componenteIndice = ref()
+
+onMounted(() => {
+  setTimeout(() => actualizaContenidoIndice(), 200)
+})
+
+watch(route, () => {
+  let elementos = []
+  setTimeout(() => actualizaContenidoIndice(), 200)
+})
+function actualizaContenidoIndice() {
+  let elementos = []
+  document.querySelectorAll('div.content__default h2').forEach(el => {
+    if (el.id) {
+      elementos.push({
+        id: el.id,
+        texto: el.innerText.replace('#', ''),
+      })
+    }
+  })
+  lista_elementos.value = elementos
+  /**
+   * Apuramos al componente para que su lista de elementos se actualice y
+   * obtenemos las rutas
+   */
+  componenteIndice.value._setupState.lista_elementos.value =
+    lista_elementos.value
+  componenteIndice.value._setupState.seccion_visible.value = ''
+  componenteIndice.value._setupState.autoScrollSuave()
+}
+</script>
+
 <template>
   <div class="theme-container">
     <SisdaiNavegacionGobMx />
 
-    <nav-navegacion-principal></nav-navegacion-principal>
+    <nav-navegacion-principal />
 
     <div class="flex">
       <div class="columna-4 columna-1-mov menu-fondo">
@@ -108,48 +147,12 @@
         </div>
       </div>
     </div>
+
+    <SisdaiMenuAccesibilidad />
   </div>
 </template>
-<script setup>
-import { useRoute } from 'vue2-helpers/vue-router'
 
-import { ref, onMounted, watch } from 'vue'
-const lista_elementos = ref([])
-
-const route = useRoute()
-const componenteIndice = ref()
-
-onMounted(() => {
-  setTimeout(() => actualizaContenidoIndice(), 200)
-})
-
-watch(route, () => {
-  let elementos = []
-  setTimeout(() => actualizaContenidoIndice(), 200)
-})
-function actualizaContenidoIndice() {
-  let elementos = []
-  document.querySelectorAll('div.content__default h2').forEach(el => {
-    if (el.id) {
-      elementos.push({
-        id: el.id,
-        texto: el.innerText.replace('#', ''),
-      })
-    }
-  })
-  lista_elementos.value = elementos
-  /**
-   * Apuramos al componente para que su lista de elementos se actualice y
-   * obtenemos las rutas
-   */
-  componenteIndice.value._setupState.lista_elementos.value =
-    lista_elementos.value
-  componenteIndice.value._setupState.seccion_visible.value = ''
-  componenteIndice.value._setupState.autoScrollSuave()
-}
-</script>
-
-<style src="prismjs/themes/prism-tomorrow.css"></style>
+<style src="prismjs/themes/prism-tomorrow.css" />
 <style>
 .indice-contenido-documentacion {
   position: sticky;
