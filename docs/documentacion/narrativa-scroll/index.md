@@ -18,12 +18,13 @@ Uso:
 
 - `id_scroll`: (_String_) Identificar único del componente
 - `bullets`: (_Array_) Arreglo de objetos, que genera el contenido de los bullets asociadoes a su imagen, en donde cada objeto tiene los siguientes valores:
+
   - `html`: (_String_) texto que irá en cada bullet, acepta html.
   - `imagen`: (_String_) ruta de la imagen
-  por default tiene el siguiente valor, que ayuda a ejemplificar su estructura:
+    por default tiene el siguiente valor, que ayuda a ejemplificar su estructura:
 
-  ```js
-  [
+    ```js
+    ;[
       {
         html: `<div class="contenedor-portada">
           <div class="degradado-negro-abajo">
@@ -47,7 +48,7 @@ Uso:
         imagen: 'https://placekitten.com/1920/1042',
       },
     ]
-  ```  
+    ```
 
 - `depurador`: (_Boolean_) Cuando el valor es `true`, se muestra una línea roja que ayuda a visualizar en qué posición de las secciones se disparan las transiciones de las imágenes de fondo. Cuando es `false`, no se muestra. El valor por default es `false`
 - `altura_sensor`: (_Number_) Número entre 0 y 1 que determina la altura de la pantalla a la cual se dispara la transición. si es 0, las transiciones se disparan cuando sale un bullet de pantalla. Si es 1, las transiciones se ejecutan cuando entra el bullet a pantalla
@@ -61,6 +62,7 @@ Uso:
 -`scroleando` Es la función que se ejecuta cada que se hace un scroll para detectar la posición de la narrativa y ejecutar transiciones según se indique
 
 </section>
+
 <section id="ejemplos">
 
 ## Ejemplos

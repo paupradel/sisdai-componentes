@@ -5,7 +5,7 @@ sectionName: Documentación
 
 # Documentación
 
-Para el uso de la presente biblioteca  se recomienda el uso de Vue 2.7 y el soporte para [Composition Api](https://vuejs.org/api/composition-api-setup.html) en su proyecto.
+Para el uso de la presente biblioteca se recomienda el uso de Vue 2.7 y el soporte para [Composition Api](https://vuejs.org/api/composition-api-setup.html) en su proyecto.
 
 <section id="instalacion">
 
@@ -25,23 +25,39 @@ Si su proyecto tiene configurado el preprocesador `sass` o `scss`
 
 ```js
 //generalmente es el archivo src/main.js
-import "sisdai-css/src/eni.scss"
+import 'sisdai-css/src/eni.scss'
 ```
 
 O si su proyecto solo acepta css plano:
 
 ```html
-<link href="https://cdn.jsdelivr.net/gh/conacyt-dai/dadsig-css/dist/eni.min.css" rel="stylesheet">
+<link
+  href="https://cdn.jsdelivr.net/gh/conacyt-dai/dadsig-css/dist/eni.min.css"
+  rel="stylesheet"
+/>
 ```
 
-Adicionalmente  debera agregarse las fuentes e iconos en el encabezado del documento HTML base de su proyecto:
+Adicionalmente debera agregarse las fuentes e iconos en el encabezado del documento HTML base de su proyecto:
 
 ```html
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<link
+  rel="preconnect"
+  href="https://fonts.googleapis.com"
+/>
+<link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Montserrat:wght@400;500;600&display=swap"
+  rel="stylesheet"
+/>
 
-<link href="https://file.myfontastic.com/JS4TgqY9L4s8WsKQDkt5qA/icons.css" rel="stylesheet">
+<link
+  href="https://file.myfontastic.com/JS4TgqY9L4s8WsKQDkt5qA/icons.css"
+  rel="stylesheet"
+/>
 ```
 
 **Uso de los componentes**
@@ -56,7 +72,7 @@ Esta es la opcion recomendada, asi se asegura que el proyecto solo este dando de
 
 ```js
 //generalmente es el arhivo src/main.js
-import {SisdaiNavegacionPrincipal} from 'sisdai-componentes/src/componentes'
+import { SisdaiNavegacionPrincipal } from 'sisdai-componentes/src/componentes'
 
 Vue.use(SisdaiNavegacionPrincipal)
 ```
@@ -68,7 +84,7 @@ En el componente o vista `.vue` en donde desees ocupar el componente, podras dar
 En Composition API:
 
 ```html
-<script setup> 
+<script setup>
 import SisdaiNavegacionGobMx from 'sisdai-componentes/src/componentes/navegacion-gob-mx/SisdaiNavegacionGobMx.vue'
 <script>
 
@@ -109,19 +125,19 @@ import SisdaiComponentes from 'sisdai-componentes'
 Vue.use(SisdaiComponentes)
 ```
 
-Aunque esta forma es la mas  limpia en el codigo (porque se ahorra dar de alta cada componente), solo es  recomendable si se tiene claro que se estan usando todos los componentes y directivas de la biblioteca en su proyecto.
+Aunque esta forma es la mas limpia en el codigo (porque se ahorra dar de alta cada componente), solo es recomendable si se tiene claro que se estan usando todos los componentes y directivas de la biblioteca en su proyecto.
 
 #### Instalar a partir del paquete de distibucion
 
 Dependiendo de las configuraciones de su proyecto , la forma en que su proyecto interprete javascript y/o la gestion de las dependencias de su proyecto. En algunos casos sera necesario instalar el paquete desde la carpeta de distribucion "dist".
 
-Esta carpeta contiene los paquetes en dos formatos: CommonJs y UMD (Universal Module Definition), siendo el ultimo el que  casi siempre  es mas compatible con cualquier proyecto de javascript.
+Esta carpeta contiene los paquetes en dos formatos: CommonJs y UMD (Universal Module Definition), siendo el ultimo el que casi siempre es mas compatible con cualquier proyecto de javascript.
 
 Ejemplos:
 
 ```js
 //en CommonJs
-const  SisdaiComponentes = require ('sisdai-componentes/dist/sisdai-componentes.common.js')
+const SisdaiComponentes = require('sisdai-componentes/dist/sisdai-componentes.common.js')
 //en UMD (Universal Module Definition)
 import SisdaiComponentes from 'sisdai-componentes/dist/sisdai-componentes.umd.js'
 ```
