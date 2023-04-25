@@ -1,5 +1,4 @@
 <script setup>
-import { computed } from 'vue'
 import { useRoute } from 'vue2-helpers/vue-router'
 import store from './../../store'
 
@@ -37,22 +36,12 @@ function actualizaContenidoIndice() {
   componenteIndice.value._setupState.seccion_visible.value = ''
   componenteIndice.value._setupState.autoScrollSuave()
 }
-
-const clasesAccesibles = computed(() => ({
-  'a11y-tipografia': store.state.accesibilidad.tipografia_accesible,
-  'a11y-simplificada': store.state.accesibilidad.vista_simplificada,
-  'a11y-hipervinculos': store.state.accesibilidad.enlaces_subrayados,
-}))
-
-function mutarAccesibilidad({ accion }) {
-  store.commit(`accesibilidad/${accion}`)
-}
 </script>
 
 <template>
   <div
     class="theme-container"
-    :class="clasesAccesibles"
+    :class="store.getters['accesibilidad/clasesAccesibles']"
   >
     <SisdaiNavegacionGobMx />
 
@@ -164,7 +153,9 @@ function mutarAccesibilidad({ accion }) {
     </div>
 
     <SisdaiMenuAccesibilidad
-      @alSeleccionarOpcion="mutarAccesibilidad"
+      @alSeleccionarOpcion="
+        ({ accion }) => store.commit(`accesibilidad/${accion}`)
+      "
       @restablecer="store.commit('accesibilidad/limpiarClasesAccesibles')"
     />
   </div>
