@@ -152,6 +152,10 @@ function actualizaContenidoIndice() {
       </div>
     </div>
 
+    <SisdaiPiePaginaConacyt />
+
+    <SisdaiPiePaginaGobMx />
+
     <SisdaiMenuAccesibilidad
       @alSeleccionarOpcion="
         ({ accion }) => store.commit(`accesibilidad/${accion}`)
