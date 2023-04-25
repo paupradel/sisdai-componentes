@@ -18,6 +18,10 @@ import store from './../../store'
       <Content />
     </main>
 
+    <SisdaiPiePaginaConacyt />
+
+    <SisdaiPiePaginaGobMx />
+
     <SisdaiMenuAccesibilidad
       @alSeleccionarOpcion="
         ({ accion }) => store.commit(`accesibilidad/${accion}`)
