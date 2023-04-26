@@ -112,6 +112,11 @@ function actualizaContenidoIndice() {
                   Directivas</router-link
                 >
               </li>
+              <li>
+                <router-link to="/documentacion/boton-descarga">
+                  BotonDescarga</router-link
+                >
+              </li>
             </ul>
             <a
               href="https://github.com/salsa-community/sisdai-componentes"

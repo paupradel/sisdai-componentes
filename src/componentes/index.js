@@ -3,6 +3,7 @@ import SisdaiColapsableNavegacion from './colapsable-navegacion'
 import SisdaiMenuLateral from './menu-lateral'
 import SisdaiMenuAccesibilidad from './menu-accesibilidad'
 import BotonFlotante from './boton-flotante'
+import SisdaiBotonDescarga from './boton-descarga'
 import SisdaiNavegacionPrincipal from './navegacion-principal'
 import SisdaiIndiceDeContenido from './indice-de-contenido'
 import SisdaiNavegacionGobMx from './navegacion-gob-mx'
@@ -16,6 +17,7 @@ export {
   SisdaiMenuLateral,
   SisdaiMenuAccesibilidad,
   BotonFlotante,
+  SisdaiBotonDescarga,
   SisdaiNavegacionPrincipal,
   SisdaiIndiceDeContenido,
   SisdaiNavegacionGobMx,
