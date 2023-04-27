@@ -112,6 +112,9 @@ function actualizaContenidoIndice() {
                   Directivas</router-link
                 >
               </li>
+              <li>
+                <router-link to="/documentacion/modal"> Modal</router-link>
+              </li>
             </ul>
             <a
               href="https://github.com/salsa-community/sisdai-componentes"
