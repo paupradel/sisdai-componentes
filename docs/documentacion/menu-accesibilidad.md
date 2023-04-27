@@ -61,40 +61,6 @@ Uso:
 
 Este componente no permite contenido con slots
 
-### Store
-
-Este componente cuenta con un modulo de store en estructura de [Vuex](https://vuex.vuejs.org/) con variables y mutaciones para cada una de las opciones predeterminadas:
-
-- Tipografía accesible
-  - Variable: `tipografia_accesible` (de tipo boleano en `false` por defecto).
-  - Mutación: `alternarTipografiaAccesible`.
-- Vista simplificada
-  - Variable: `vista_simplificada` (de tipo boleano en `false` por defecto).
-  - Mutación: `alternarVistaSimplificada`.
-- Enlaces subrayados
-  - Variable: `enlaces_subrayados` (de tipo boleano en `false` por defecto).
-  - Mutación: `alternarEnlacesSubrayados`.
-
-Además de una mutación extra que restablece los valores de todas las variables:
-
-- `limpiarClasesAccesibles`:
-  Cambia el valor de todas las variables de accesibilidad a `false`.
-
-Uso en `store/index.js`:
-
-```javascript
-import Vue from 'vue'
-import Vuex from 'vuex'
-import storeAccesibilidad from 'sisdai-componentes/src/stores/accesibilidad'
-
-export default new Vuex.Store({
-  modules: {
-    storeAccesibilidad,
-  },
-  ...
-})
-```
-
 </section>
 
 <section id="ejemplos">
@@ -113,11 +79,74 @@ Junto con el uso de la propiedad `agregarOpciones` para añadir reglas de accesi
 
 <utils-ejemplo-doc ruta="menu-accesibilidad/agregando-opciones.vue"/>
 
+</section>
+
+<section id="store">
+
+## Store
+
+Este componente cuenta con un módulo de store en estructura de [Vuex](https://vuex.vuejs.org/) con variables y mutaciones para cada una de las opciones predeterminadas:
+
+- Tipografía accesible
+  - Variable: `tipografia_accesible` (de tipo boleano en `false` por defecto).
+  - Mutación: `alternarTipografiaAccesible` (sin parámetros).
+- Vista simplificada
+  - Variable: `vista_simplificada` (de tipo boleano en `false` por defecto).
+  - Mutación: `alternarVistaSimplificada` (sin parámetros).
+- Enlaces subrayados
+  - Variable: `enlaces_subrayados` (de tipo boleano en `false` por defecto).
+  - Mutación: `alternarEnlacesSubrayados` (sin parámetros).
+
+Además de una mutación extra que restablece los valores de todas las variables:
+
+- `restablecer`:
+  Cambia el valor de todas las variables de accesibilidad a `false` (sin parámetros).
+
+### Propiedades de store
+
+- **objetoStore**
+  Objeto store completo del proytecto.
+
+  - Tipo: `Object`
+  - Valor predeterminado: `{}`
+  - Requerido: no
+
+- **nombreModuloStore**
+  Si el nombre del modulo de accesibilidad en el store del proyecto es diferente de `accesibilidad`, se debe introducir el nombre del modulo en esta propiedad.
+
+  - Tipo: `String`
+  - Valor predeterminado: `accesibilidad`
+  - Requerido: no
+
+</section>
+
+<section id="ejemplos-con-store">
+
+## Ejemplos con store
+
 #### Conectar con store
 
 Guardar el estado de las variables de accesibilidad en el store, permite que interactúen con la reactividad de componentes complejos que estén a un nivel profundo en la organización del proyecto.
 
-Por ejemplo, si en una visualización se requiere que la vista muestre una configuración definida cuando se active la "Vista simplificada", se puede acceder al estado de esa variable importando el modulo de accesibilidad del store.
+Por ejemplo, si en una visualización se requiere que la vista muestre una configuración definida cuando se active la "Vista simplificada", se puede acceder al estado de esa variable importando el modulo de accesibilidad en el store:
+
+```html
+<script setup>
+  import store from '@/store'
+</script>
+
+<SisdaiVisualizacion>
+  <SisdaiGrafico v-show="!store.state.accesibilidad.vista_simplificada" />
+
+  <table v-show="store.state.accesibilidad.vista_simplificada" />
+</SisdaiVisualizacion>
+```
+
+<br />
+
+**Accesibilidad en el store**
+
+Para hacer uso del módulo de accesivilidad en el store [Vuex](https://vuex.vuejs.org/), se necesita la siguiente configuración en el archivo `@/store/index`:
 
 ```js
 import accesibilidad from 'sisdai-componentes/src/stores'
@@ -131,24 +160,44 @@ export default new Vuex.Store({
 })
 ```
 
-Para conectar el menú de accesibilidad con el store [Vuex](https://vuex.vuejs.org/), se puede usar la siguiente configuración:
+<br />
+
+**Conectar componente con store**
+
+Para conectar los métodos de el menú de accesibilidad con el store [Vuex](https://vuex.vuejs.org/), se puede usar la siguiente configuración:
 
 ```html
 <script setup>
-  import store from '@/store/index.js'
+  import store from '@/store'
 </script>
 
 <template>
-  <div
-    class="contenerdor-panttalla"
-    :class="store.getters['accesibilidad/clasesAccesibles']"
-  >
+  <div :class="store.getters['accesibilidad/clasesAccesibles']">
     <SisdaiSisdaiMenuAccesibilidad
       @alSeleccionarOpcion="
         ({ accion }) => store.commit(`accesibilidad/${accion}`)
       "
-      @restablecer="store.commit('accesibilidad/limpiarClasesAccesibles')"
+      @restablecer="store.commit('accesibilidad/restablecer')"
     />
+    ...
+  </div>
+</template>
+```
+
+<br />
+
+**Propiedad objetoStore**
+
+Si el nombre del modulo de accesibilidad en el store del proyecto es diferente de **accesibilidad** de debe usar la propiedad `nombreModuloStore` para que funcione correctamente.
+
+```html
+<script setup>
+  import store from '@/store'
+</script>
+
+<template>
+  <div :class="store.getters['accesibilidad/clasesAccesibles']">
+    <SisdaiSisdaiMenuAccesibilidad :objetoStore="store" />
     ...
   </div>
 </template>

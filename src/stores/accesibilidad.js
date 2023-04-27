@@ -23,7 +23,7 @@ export default {
     alternarEnlacesSubrayados(state) {
       state.enlaces_subrayados = !state.enlaces_subrayados
     },
-    limpiarClasesAccesibles(state) {
+    restablecer(state) {
       state.tipografia_accesible = false
       state.vista_simplificada = false
       state.enlaces_subrayados = false

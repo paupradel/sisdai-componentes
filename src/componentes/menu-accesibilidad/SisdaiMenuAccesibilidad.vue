@@ -12,6 +12,23 @@ const propiedades = {
     type: Array,
     default: () => [],
   },
+
+  /**
+   * Objeto store completo del proytecto.
+   */
+  objetoStore: {
+    type: Object,
+    default: () => {},
+  },
+
+  /**
+   * Si el nombre del modulo de accesibilidad en el store del proyecto es diferente de
+   * `accesibilidad`, se debe introducir el nombre del modulo en esta propiedad.
+   */
+  nombreModuloStore: {
+    type: String,
+    default: 'accesibilidad',
+  },
 }
 
 const eventos = {
@@ -35,7 +52,7 @@ import opcionesDefault from './opcionesDefault'
 
 const props = defineProps(propiedades)
 const emits = defineEmits(Object.values(eventos))
-const { agregarOpciones } = toRefs(props)
+const { agregarOpciones, nombreModuloStore, objetoStore } = toRefs(props)
 
 /**
  * Opciones que se mostrarán en el menú de accesibilidad.
@@ -51,12 +68,27 @@ const opciones = computed(() => [...opcionesDefault, ...agregarOpciones.value])
 const menuAccesibilidadEstaAbierto = ref(false)
 
 /**
+ * Ejecuta un cambio en el store si dicho objeto permite hacer commits (si se esta usando la
+ * pripiedad `objetoStore`).
+ * @param {String} accion nombre del mutation en el modulo del store.
+ */
+function ejecutarEnStore(accion) {
+  if (
+    objetoStore.value !== undefined &&
+    Object.prototype.hasOwnProperty.call(objetoStore.value, 'commit')
+  ) {
+    objetoStore.value.commit(`${nombreModuloStore.value}/${accion}`)
+  }
+}
+
+/**
  * Desencadena el emit 'alSeleccionarOpcion' al mismo tiempo que cierra el menú.
  * @param {Object} Opcion seleccionada.
  */
 function seleccionarOpcion(opcion) {
   emits(eventos.alSeleccionarOpcion, opcion)
   menuAccesibilidadEstaAbierto.value = false
+  ejecutarEnStore(opcion.accion)
 }
 
 /**
@@ -65,6 +97,7 @@ function seleccionarOpcion(opcion) {
 function restablecer() {
   emits(eventos.restablecer)
   menuAccesibilidadEstaAbierto.value = false
+  ejecutarEnStore('restablecer')
 }
 
 /**
