@@ -9,6 +9,7 @@ import SisdaiNavegacionGobMx from './navegacion-gob-mx'
 import SisdaiPiePaginaGobMx from './pie-pagina-gob-mx'
 import SisdaiPiePaginaConacyt from './pie-pagina-conacyt'
 import SisdaiInfoDeDespliegue from './info-de-despliegue'
+import SisdaiLeerMasMenos from './leer-mas-menos'
 
 export {
   SisdaiNarrativaScroll,
@@ -22,4 +23,5 @@ export {
   SisdaiPiePaginaGobMx,
   SisdaiPiePaginaConacyt,
   SisdaiInfoDeDespliegue,
+  SisdaiLeerMasMenos,
 }
