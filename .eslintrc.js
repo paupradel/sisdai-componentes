@@ -8,7 +8,6 @@ module.exports = {
     'eslint:recommended',
     'plugin:prettier/recommended',
     'prettier',
-    'lint: eslint . --fix',
   ],
   plugins: ['html'],
   parserOptions: {
