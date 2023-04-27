@@ -80,3 +80,39 @@ function abreModal() {
     </button>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.encabezado-cuerpo {
+  display: flex;
+  .titulo-modal {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0px;
+  }
+  .icono-archivo-descargar {
+    margin-right: 8px;
+    font-size: 24px;
+  }
+}
+.cuerpo-modal {
+  .subtitulo-modal {
+    font-weight: 600;
+  }
+}
+.pie-modal {
+  margin-left: auto;
+  @media (max-width: 768px) {
+    width: 100%;
+    .boton-primario {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
+.text-bold {
+  font-weight: 500;
+}
+.text-regular {
+  font-weight: 400;
+}
+</style>
