@@ -55,6 +55,7 @@ Slot para el contenido de navegacion, son los links a las secciones disponibles 
       <a
         class="nav-hipervinculo"
         href="#"
+        exact
       >
         Enlace sección</a
       >
@@ -66,6 +67,8 @@ Slot para el contenido de navegacion, son los links a las secciones disponibles 
 De acuerdo a la semantica de html y las reglas de css definidas en Sisdaicss, los links deberan estar contenidos en un [elemento lista desordenada](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul)
 
 En caso de tener un [router](https://router.vuejs.org/), el elemento `<a>` podria ser remplazado por el componente `<RouterLink>` conservando las clases de estilo necesarias.
+
+Se debe agregar el atributo `exact` al primer elemento de la lista de navegación para que el estilo de la sección actual en el menú se active exactamente cuando la ruta esté selecionada.
 
 ##### identidad
 

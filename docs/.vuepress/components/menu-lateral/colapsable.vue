@@ -4,7 +4,12 @@
       <template slot="contenido-menu-lateral">
         <ul>
           <li>
-            <router-link to="#api"> API</router-link>
+            <router-link
+              to="#api"
+              exact
+            >
+              API</router-link
+            >
           </li>
           <li>
             <router-link to="#slots"> Slots</router-link>

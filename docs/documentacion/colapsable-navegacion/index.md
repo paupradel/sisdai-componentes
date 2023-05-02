@@ -34,9 +34,16 @@ A continuación se enlistan las propiedades que admite el componente
 
 ```html
 <li>
-  <a href="#"> Elemento desplegado</a>
+  <a
+    href="#"
+    exact
+  >
+    Elemento desplegado</a
+  >
 </li>
 ```
+
+Se debe agregar el atributo `exact` al primer elemento de la lista de navegación para que el estilo de la sección actual en el menú se active exactamente cuando la ruta esté selecionada.
 
 </section>
 

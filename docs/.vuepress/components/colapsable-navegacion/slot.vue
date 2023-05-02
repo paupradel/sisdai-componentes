@@ -5,6 +5,7 @@
         <a
           href="#"
           class="nav-hipervinculo"
+          exact
           >Opción 1 desplegable</a
         >
       </li>
