@@ -22,7 +22,12 @@
     >
       <div class="menu-max-height">
         <slot name="contenido-menu-lateral">
-          <router-link to="#routerlink"> router link prueba </router-link>
+          <router-link
+            to="#routerlink"
+            exact
+          >
+            router link prueba
+          </router-link>
           <a href="#anchore"> anchore link prueba </a>
           <a
             href="https://github.com/salsa-community/sisdai-componentes"

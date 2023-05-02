@@ -22,6 +22,7 @@
           <a
             class="nav-hipervinculo"
             href="#"
+            exact
           >
             Seccion 1</a
           >

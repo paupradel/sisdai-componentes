@@ -23,7 +23,12 @@ Para este componente, el uso de [Vue Router](https://router.vuejs.org/) es altam
 Por _default_ el contenido del slot es el siguiente:
 
 ```html
-<router-link to="#routerlink"> router link prueba </router-link>
+<router-link
+  to="#routerlink"
+  exact
+>
+  router link prueba
+</router-link>
 <a href="#anchore"> anchore link prueba </a>
 <a
   href="https://github.com/salsa-community/sisdai-componentes"
@@ -34,6 +39,8 @@ Por _default_ el contenido del slot es el siguiente:
   ejemplo github
 </a>
 ```
+
+Se debe agregar el atributo `exact` al primer elemento de la lista de navegación para que el estilo de la sección actual en el menú se active exactamente cuando la ruta esté selecionada.
 
 </section>
 
