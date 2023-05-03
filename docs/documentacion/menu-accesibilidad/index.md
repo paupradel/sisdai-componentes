@@ -2,7 +2,7 @@
 layout: LayoutDocumentacion
 ---
 
-# SisdaiMenuAccesibilidad
+# MenuAccesibilidad
 
 El Menú de accesibilidad permite ejecutar a las funciones que agregan reglas de accesibilidad al sitio web. Consulte la [sección de accesibilidad del Sisdai](https://sisdai.conacyt.mx/accesibilidad/introduccion) para más información.
 

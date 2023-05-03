@@ -16,6 +16,7 @@ watch(route, () => {
   let elementos = []
   setTimeout(() => actualizaContenidoIndice(), 200)
 })
+
 function actualizaContenidoIndice() {
   let elementos = []
   document.querySelectorAll('div.content__default h2').forEach(el => {
@@ -52,6 +53,11 @@ function actualizaContenidoIndice() {
         <SisdaiMenuLateral>
           <template slot="contenido-menu-lateral">
             <ul>
+              <li>
+                <router-link to="/documentacion">
+                  <b>SisdaiComponentes</b>
+                </router-link>
+              </li>
               <li>
                 <router-link to="/documentacion/boton-flotante">
                   Botonflotante
