@@ -1,11 +1,15 @@
 <script setup>
 import { ref } from 'vue'
 
-const submenuEstaAbierto = ref(false)
+const sisdai_nav_ppal = ref('')
+
+function alternarSubmenu() {
+  sisdai_nav_ppal.value._setupState.alternarSubmenu()
+}
 </script>
 <template>
   <div class="contenedor">
-    <SisdaiNavegacionPrincipal>
+    <SisdaiNavegacionPrincipal ref="sisdai_nav_ppal">
       <!--Definiendo el logo del sitio-->
       <template #identidad>
         <a
@@ -34,18 +38,15 @@ const submenuEstaAbierto = ref(false)
         <li class="nav-contenedor-submenu">
           <button
             class="nav-boton-submenu"
-            @click="submenuEstaAbierto = !submenuEstaAbierto"
+            @click="alternarSubmenu"
           >
             Submenu
           </button>
-          <ul
-            class="nav-submenu"
-            :class="{ abierto: submenuEstaAbierto }"
-          >
+          <ul class="nav-submenu">
             <li>
               <button
                 class="nav-boton-regresar"
-                @click="submenuEstaAbierto = !submenuEstaAbierto"
+                @click="alternarSubmenu"
               >
                 Submenu
               </button>
