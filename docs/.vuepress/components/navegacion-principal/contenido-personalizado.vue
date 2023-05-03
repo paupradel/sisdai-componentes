@@ -1,3 +1,8 @@
+<script setup>
+import { ref } from 'vue'
+
+const submenuEstaAbierto = ref(false)
+</script>
 <template>
   <div class="contenedor">
     <SisdaiNavegacionPrincipal>
@@ -23,16 +28,49 @@
             class="nav-hipervinculo"
             href="#"
             exact
+            >Sección 1</a
           >
-            Seccion 1</a
+        </li>
+        <li class="nav-contenedor-submenu">
+          <button
+            class="nav-boton-submenu"
+            @click="submenuEstaAbierto = !submenuEstaAbierto"
           >
+            Submenu
+          </button>
+          <ul
+            class="nav-submenu"
+            :class="{ abierto: submenuEstaAbierto }"
+          >
+            <li>
+              <button
+                class="nav-boton-regresar"
+                @click="submenuEstaAbierto = !submenuEstaAbierto"
+              >
+                Submenu
+              </button>
+            </li>
+            <li>
+              <a
+                class="nav-hipervinculo"
+                href="/ejem"
+                >Subsección 1</a
+              >
+            </li>
+            <li>
+              <a
+                class="nav-hipervinculo"
+                href="/ejem"
+                >Subsección 2</a
+              >
+            </li>
+          </ul>
         </li>
         <li>
           <a
             class="nav-hipervinculo"
-            href="#"
-          >
-            Seccion 2</a
+            href="/creditos"
+            >Sección 2</a
           >
         </li>
       </ul>
