@@ -53,44 +53,29 @@ function actualizaContenidoIndice() {
           <template slot="contenido-menu-lateral">
             <ul>
               <li>
-                <router-link to="/documentacion/info-de-despliegue">
-                  InfoDeDespliegue</router-link
-                >
-              </li>
-              <li>
-                <router-link to="/documentacion/pie-pagina-conacyt">
-                  PiePaginaConacyt</router-link
-                >
-              </li>
-              <li>
-                <router-link to="/documentacion/pie-pagina-gob-mx">
-                  PiePaginaGobMx</router-link
-                >
+                <router-link to="/documentacion/boton-flotante">
+                  Botonflotante
+                </router-link>
               </li>
               <li>
                 <router-link to="/documentacion/colapsable-navegacion">
-                  Colapsable navegación</router-link
-                >
+                  Colapsable navegación
+                </router-link>
               </li>
               <li>
-                <router-link to="/documentacion/menu-lateral">
-                  MenuLateral</router-link
-                >
-              </li>
-              <li>
-                <router-link to="/documentacion/navegacion-principal">
-                  NavegacionPrincipal</router-link
-                >
-              </li>
-              <li>
-                <router-link to="/documentacion/navegacion-gob-mx">
-                  NavegacionGobMx</router-link
-                >
+                <router-link to="/documentacion/directivas">
+                  Directivas
+                </router-link>
               </li>
               <li>
                 <router-link to="/documentacion/indice-de-contenido">
-                  IndiceDeContenido</router-link
-                >
+                  IndiceDeContenido
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/documentacion/info-de-despliegue">
+                  InfoDeDespliegue
+                </router-link>
               </li>
               <li>
                 <router-link to="/documentacion/menu-accesibilidad">
@@ -98,19 +83,34 @@ function actualizaContenidoIndice() {
                 </router-link>
               </li>
               <li>
-                <router-link to="/documentacion/boton-flotante">
-                  Botonflotante
+                <router-link to="/documentacion/menu-lateral">
+                  MenuLateral
                 </router-link>
               </li>
               <li>
                 <router-link to="/documentacion/narrativa-scroll">
-                  NarrativaScroll</router-link
-                >
+                  NarrativaScroll
+                </router-link>
               </li>
               <li>
-                <router-link to="/documentacion/directivas">
-                  Directivas</router-link
-                >
+                <router-link to="/documentacion/navegacion-gob-mx">
+                  NavegacionGobMx
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/documentacion/navegacion-principal">
+                  NavegacionPrincipal
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/documentacion/pie-pagina-conacyt">
+                  PiePaginaConacyt
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/documentacion/pie-pagina-gob-mx">
+                  PiePaginaGobMx
+                </router-link>
               </li>
             </ul>
             <a
