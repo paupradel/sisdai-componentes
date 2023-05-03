@@ -115,6 +115,6 @@ Agregando contenido personalizado
 
 Para que la subnavegación en versión la móvil se abra y cierre, se deberá agregar la lógica que alterne la clase css dinámica `abierto` del elemento de lista `ul` con el selector `nav-submenu`.
 
-Dicha alternancia se puede lograr mediante un evento de clic en los elementos `button` con los selectores `nav-boton-submenu` y `nav-boton-regresar`.
+Dicha alternancia se puede lograr mediante un evento de clic en los elementos `button` con los selectores `nav-boton-submenu` y `nav-boton-regresar` para llamar a la función `alternarSubmenu` del `_setupState` de referencia o instancia del componente.
 
 </section>
