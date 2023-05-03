@@ -16,6 +16,7 @@ watch(route, () => {
   let elementos = []
   setTimeout(() => actualizaContenidoIndice(), 200)
 })
+
 function actualizaContenidoIndice() {
   let elementos = []
   document.querySelectorAll('div.content__default h2').forEach(el => {
@@ -53,48 +54,8 @@ function actualizaContenidoIndice() {
           <template slot="contenido-menu-lateral">
             <ul>
               <li>
-                <router-link to="/documentacion/info-de-despliegue">
-                  InfoDeDespliegue</router-link
-                >
-              </li>
-              <li>
-                <router-link to="/documentacion/pie-pagina-conacyt">
-                  PiePaginaConacyt</router-link
-                >
-              </li>
-              <li>
-                <router-link to="/documentacion/pie-pagina-gob-mx">
-                  PiePaginaGobMx</router-link
-                >
-              </li>
-              <li>
-                <router-link to="/documentacion/colapsable-navegacion">
-                  Colapsable navegación</router-link
-                >
-              </li>
-              <li>
-                <router-link to="/documentacion/menu-lateral">
-                  MenuLateral</router-link
-                >
-              </li>
-              <li>
-                <router-link to="/documentacion/navegacion-principal">
-                  NavegacionPrincipal</router-link
-                >
-              </li>
-              <li>
-                <router-link to="/documentacion/navegacion-gob-mx">
-                  NavegacionGobMx</router-link
-                >
-              </li>
-              <li>
-                <router-link to="/documentacion/indice-de-contenido">
-                  IndiceDeContenido</router-link
-                >
-              </li>
-              <li>
-                <router-link to="/documentacion/menu-accesibilidad">
-                  MenuAccesibilidad
+                <router-link to="/documentacion">
+                  <b>SisdaiComponentes</b>
                 </router-link>
               </li>
               <li>
@@ -103,14 +64,59 @@ function actualizaContenidoIndice() {
                 </router-link>
               </li>
               <li>
-                <router-link to="/documentacion/narrativa-scroll">
-                  NarrativaScroll</router-link
-                >
+                <router-link to="/documentacion/colapsable-navegacion">
+                  Colapsable navegación
+                </router-link>
               </li>
               <li>
                 <router-link to="/documentacion/directivas">
-                  Directivas</router-link
-                >
+                  Directivas
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/documentacion/indice-de-contenido">
+                  IndiceDeContenido
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/documentacion/info-de-despliegue">
+                  InfoDeDespliegue
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/documentacion/menu-accesibilidad">
+                  MenuAccesibilidad
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/documentacion/menu-lateral">
+                  MenuLateral
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/documentacion/narrativa-scroll">
+                  NarrativaScroll
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/documentacion/navegacion-gob-mx">
+                  NavegacionGobMx
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/documentacion/navegacion-principal">
+                  NavegacionPrincipal
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/documentacion/pie-pagina-conacyt">
+                  PiePaginaConacyt
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/documentacion/pie-pagina-gob-mx">
+                  PiePaginaGobMx
+                </router-link>
               </li>
             </ul>
             <a
