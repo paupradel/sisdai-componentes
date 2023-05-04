@@ -1,25 +1,11 @@
-import SisdaiNarrativaScroll from './narrativa-scroll'
-import SisdaiColapsableNavegacion from './colapsable-navegacion'
-import SisdaiMenuLateral from './menu-lateral'
-import SisdaiMenuAccesibilidad from './menu-accesibilidad'
-import BotonFlotante from './boton-flotante'
-import SisdaiNavegacionPrincipal from './navegacion-principal'
-import SisdaiIndiceDeContenido from './indice-de-contenido'
-import SisdaiNavegacionGobMx from './navegacion-gob-mx'
-import SisdaiPiePaginaGobMx from './pie-pagina-gob-mx'
-import SisdaiPiePaginaConacyt from './pie-pagina-conacyt'
-import SisdaiInfoDeDespliegue from './info-de-despliegue'
-
-export {
-  SisdaiNarrativaScroll,
-  SisdaiColapsableNavegacion,
-  SisdaiMenuLateral,
-  SisdaiMenuAccesibilidad,
-  BotonFlotante,
-  SisdaiNavegacionPrincipal,
-  SisdaiIndiceDeContenido,
-  SisdaiNavegacionGobMx,
-  SisdaiPiePaginaGobMx,
-  SisdaiPiePaginaConacyt,
-  SisdaiInfoDeDespliegue,
-}
+export { default as SisdaiNarrativaScroll } from './narrativa-scroll'
+export { default as SisdaiColapsableNavegacion } from './colapsable-navegacion'
+export { default as SisdaiMenuLateral } from './menu-lateral'
+export { default as SisdaiMenuAccesibilidad } from './menu-accesibilidad'
+export { default as BotonFlotante } from './boton-flotante'
+export { default as SisdaiNavegacionPrincipal } from './navegacion-principal'
+export { default as SisdaiIndiceDeContenido } from './indice-de-contenido'
+export { default as SisdaiNavegacionGobMx } from './navegacion-gob-mx'
+export { default as SisdaiPiePaginaGobMx } from './pie-pagina-gob-mx'
+export { default as SisdaiPiePaginaConacyt } from './pie-pagina-conacyt'
+export { default as SisdaiInfoDeDespliegue } from './info-de-despliegue'
