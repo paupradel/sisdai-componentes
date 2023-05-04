@@ -1,16 +1,52 @@
 import {
-  NarrativaScroll,
-} from './components';
+  SisdaiNavegacionGobMx,
+  SisdaiNavegacionPrincipal,
+  SisdaiPiePaginaGobMx,
+  SisdaiPiePaginaConacyt,
+  SisdaiColapsableNavegacion,
+  SisdaiMenuLateral,
+  SisdaiIndiceDeContenido,
+  SisdaiInfoDeDespliegue,
+  SisdaiMenuAccesibilidad,
+  SisdaiNarrativaScroll,
+  BotonFlotante,
+} from './componentes'
 
-export default function plugin(Vue) {
-  if (plugin.installed) {
-    return;
-  }
-  plugin.installed = true;
-  Vue.use(NarrativaScroll);
+import { GlobosInformacion } from './directivas'
+
+const plugin = {
+  install: function (Vue) {
+    //UI base
+    Vue.use(SisdaiNavegacionGobMx)
+    Vue.use(SisdaiNavegacionPrincipal)
+    Vue.use(SisdaiPiePaginaGobMx)
+    Vue.use(SisdaiPiePaginaConacyt)
+    Vue.use(SisdaiColapsableNavegacion)
+    Vue.use(SisdaiMenuLateral)
+    Vue.use(SisdaiIndiceDeContenido)
+    Vue.use(SisdaiInfoDeDespliegue)
+    //accesibilidad
+    Vue.use(SisdaiMenuAccesibilidad)
+    //auxiliares
+    Vue.use(GlobosInformacion)
+    //otros
+    Vue.use(SisdaiNarrativaScroll)
+    Vue.use(BotonFlotante)
+  },
 }
 
 export {
-  plugin as install,
-  NarrativaScroll,
-};
+  SisdaiNavegacionGobMx,
+  SisdaiNavegacionPrincipal,
+  SisdaiPiePaginaGobMx,
+  SisdaiPiePaginaConacyt,
+  SisdaiColapsableNavegacion,
+  SisdaiMenuLateral,
+  SisdaiIndiceDeContenido,
+  SisdaiInfoDeDespliegue,
+  SisdaiMenuAccesibilidad,
+  GlobosInformacion,
+  SisdaiNarrativaScroll,
+}
+
+export default plugin
