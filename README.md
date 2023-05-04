@@ -12,12 +12,6 @@ Para instalar las dependencias de la biblioteca:
 npm install
 ```
 
-Para instalar las dependencias del ambiente de desarrollo:
-
-```
-npm docs:install
-```
-
 ### Compilar ambiente de desarrollo en local
 
 Este comando levanta la baseweb para que quien desarrolle pueda hacer pruebas
