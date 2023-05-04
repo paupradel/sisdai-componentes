@@ -113,8 +113,8 @@ Agregando contenido personalizado
 
 <utils-ejemplo-doc ruta="navegacion-principal/contenido-personalizado.vue"/>
 
-Para que la subnavegación en versión la móvil se abra y cierre, se deberá agregar la lógica que alterne la clase css dinámica `abierto` del elemento de lista `ul` con el selector `nav-submenu`.
+Para que la subnavegación en la móvil versión se abra y cierre, se deberá agregar la lógica que alterne la clase dinámica css `abierto` del elemento de lista `ul` con el selector `nav-submenu`.
 
-Dicha alternancia se puede lograr mediante un evento de clic en los elementos `button` con los selectores `nav-boton-submenu` y `nav-boton-regresar`.
+Dicha alternancia se puede lograr mediante un evento de clic en los elementos `button` con los selectores `nav-boton-submenu` y `nav-boton-regresar` para llamar a la función `alternarSubmenu` del `_setupState` de la referencia o instancia del componente.
 
 </section>

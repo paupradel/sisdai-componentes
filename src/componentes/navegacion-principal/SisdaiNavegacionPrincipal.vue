@@ -15,8 +15,12 @@ defineProps({
 
 //Que el menu se pueda cerrar automaticamente al enfocar otra cosa
 const cuadroElementosMenu = ref(null)
-const { menuEstaAbierto, alternarMenu } =
-  useMenuDesenfocable(cuadroElementosMenu)
+const {
+  menuEstaAbierto,
+  alternarMenu,
+  // eslint-disable-next-line
+  alternarSubmenu,
+} = useMenuDesenfocable(cuadroElementosMenu)
 </script>
 
 <template>
