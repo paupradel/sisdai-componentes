@@ -26,4 +26,16 @@ export default [
     icono: 'icono-enlace-subrayado',
     titulo: 'Enlaces subrayados',
   },
+  {
+    accion: 'incrementarTamanioTipografia',
+    claseCss: 'a11y-tamanio',
+    icono: 'icono-estrella',
+    titulo: 'Incrementar tamanio tipografia',
+  },
+  {
+    accion: 'reducirTamanioTipografia',
+    claseCss: 'a11y-tamanio',
+    icono: 'icono-estrella',
+    titulo: 'Reducir tamanio tipografia',
+  },
 ]
