@@ -39,7 +39,7 @@ const {
             class="nav-logo"
             width="130"
             height="38"
-            src="https://cdn.conacyt.mx/sisdai-archivos/conacyt-azul.svg"
+            src="https://cdn.conacyt.mx/sisdai-archivos/conahcyt-azul.svg"
             alt="Conacyt."
           />
         </a>

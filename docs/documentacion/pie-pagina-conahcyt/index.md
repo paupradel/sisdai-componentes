@@ -21,7 +21,7 @@ El pie de página del Conacyt sirve principalmente para:
 Al tratarse de un componente institucional se deben respetar los lineamientos de identidad proporcionados.
 
 ```html
-<SisdaiPiePaginaConacyt />
+<SisdaiPiePaginaConahcyt />
 ```
 
 Vista simplificada
@@ -55,6 +55,6 @@ Este componente no utiliza slots.
 
 Usando el contenido por defecto.
 
-<utils-ejemplo-doc ruta="pie-pagina-conacyt/basico.vue"/>
+<utils-ejemplo-doc ruta="pie-pagina-conahcyt/basico.vue"/>
 
 </section>

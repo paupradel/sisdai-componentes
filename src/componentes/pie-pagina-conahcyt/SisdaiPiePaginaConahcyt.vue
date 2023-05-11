@@ -5,19 +5,18 @@
     <div class="flex flex-wrap">
       <div class="columna-8 columna-8-esc">
         <img
-          src="https://cdn.conacyt.mx/sisdai-archivos/conacyt-azul.svg"
-          alt="Conacyt"
-          style="filter: brightness(0) invert(100)"
+          src="https://cdn.conacyt.mx/sisdai-archivos/conahcyt-blanco.svg"
+          alt="Conahcyt"
           width="200px"
           height="60px"
         />
-        <p>Consejo Nacional de Ciencia y Tecnología</p>
+        <p>Consejo Nacional de Humanidades, Ciencias y Tecnologías</p>
         <p>
           Av. Insurgentes Sur 1582, Col. Crédito Constructor,<br />
           Alcaldía Benito Juárez, C.P. 03940, Ciudad de México<br />
           Tel: (55) 5322-7700
         </p>
-        <p>©2021 Conacyt Derechos Reservados</p>
+        <p>©2021 Conahcyt Derechos Reservados</p>
       </div>
       <nav class="columna-8 columna-4-esc">
         <p class="titulo-lista">Enlaces</p>
@@ -55,7 +54,7 @@
               href="http://comunidad.conacyt.mx/"
               target="_blank"
               rel="noopener"
-              >Intranet Conacyt</a
+              >Intranet Conahcyt</a
             >
           </li>
         </ul>
