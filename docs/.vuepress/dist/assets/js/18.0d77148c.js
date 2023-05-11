@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[18],{314:function(n,e,t){"use strict";t.r(e);var u=t(1),a=Object(u.a)({},(function(){var n=this._self._c;return n("div",[n("SisdaiMenuLateral")],1)}),[],!1,null,null,null);e.default=a.exports}}]);

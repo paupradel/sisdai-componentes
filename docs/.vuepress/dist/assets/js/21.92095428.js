@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[21],{319:function(n,s,t){"use strict";t.r(s);var a=t(1),e=Object(a.a)({},(function(){var n=this._self._c;return n("div",{staticClass:"contenedor"},[n("SisdaiNavegacionGobMx")],1)}),[],!1,null,null,null);s.default=e.exports}}]);

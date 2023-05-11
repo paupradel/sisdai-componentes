@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[25],{321:function(n,t,a){"use strict";a.r(t);var i=a(1),s=Object(i.a)({},(function(){var n=this._self._c;return n("div",{staticClass:"contenedor"},[n("SisdaiPiePaginaConacyt")],1)}),[],!1,null,null,null);t.default=s.exports}}]);
