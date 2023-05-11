@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[47],{290:function(n,a,e){"use strict";e.r(a),a.default='<template>\n  <div class="contenedor">\n    <SisdaiNavegacionGobMx></SisdaiNavegacionGobMx>\n  </div>\n</template>\n'}}]);

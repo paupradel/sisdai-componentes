@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[24],{305:function(t,o,n){"use strict";n.r(o);var s={__name:"un-boton",setup:t=>({__sfc:!0,algo:"algo"})},a=n(1),i=Object(a.a)(s,(function(){var t=this._self._c;this._self._setupProxy;return t("button",{staticClass:"boton-primario"},[this._v("boton primario")])}),[],!1,null,null,null);o.default=i.exports}}]);

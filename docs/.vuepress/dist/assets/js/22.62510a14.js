@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[22],{318:function(n,i,a){"use strict";a.r(i);var s=a(1),t=Object(s.a)({},(function(){var n=this._self._c;return n("div",{staticClass:"contenedor"},[n("SisdaiNavegacionPrincipal")],1)}),[],!1,null,null,null);i.default=t.exports}}]);

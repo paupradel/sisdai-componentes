@@ -109,8 +109,8 @@ function actualizaContenidoIndice() {
                 </router-link>
               </li>
               <li>
-                <router-link to="/documentacion/pie-pagina-conacyt">
-                  PiePaginaConacyt
+                <router-link to="/documentacion/pie-pagina-conahcyt">
+                  PiePaginaConahcyt
                 </router-link>
               </li>
               <li>
@@ -158,7 +158,7 @@ function actualizaContenidoIndice() {
       </div>
     </div>
 
-    <SisdaiPiePaginaConacyt />
+    <SisdaiPiePaginaConahcyt />
 
     <SisdaiPiePaginaGobMx />
 

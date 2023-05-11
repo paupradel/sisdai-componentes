@@ -2,7 +2,7 @@ import {
   SisdaiNavegacionGobMx,
   SisdaiNavegacionPrincipal,
   SisdaiPiePaginaGobMx,
-  SisdaiPiePaginaConacyt,
+  SisdaiPiePaginaConahcyt,
   SisdaiColapsableNavegacion,
   SisdaiMenuLateral,
   SisdaiIndiceDeContenido,
@@ -20,7 +20,7 @@ const plugin = {
     Vue.use(SisdaiNavegacionGobMx)
     Vue.use(SisdaiNavegacionPrincipal)
     Vue.use(SisdaiPiePaginaGobMx)
-    Vue.use(SisdaiPiePaginaConacyt)
+    Vue.use(SisdaiPiePaginaConahcyt)
     Vue.use(SisdaiColapsableNavegacion)
     Vue.use(SisdaiMenuLateral)
     Vue.use(SisdaiIndiceDeContenido)
@@ -39,7 +39,7 @@ export {
   SisdaiNavegacionGobMx,
   SisdaiNavegacionPrincipal,
   SisdaiPiePaginaGobMx,
-  SisdaiPiePaginaConacyt,
+  SisdaiPiePaginaConahcyt,
   SisdaiColapsableNavegacion,
   SisdaiMenuLateral,
   SisdaiIndiceDeContenido,

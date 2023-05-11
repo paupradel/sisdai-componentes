@@ -20,7 +20,7 @@ window.location.href = './documentacion'
       <Content />
     </main>
 
-    <SisdaiPiePaginaConacyt />
+    <SisdaiPiePaginaConahcyt />
 
     <SisdaiPiePaginaGobMx />
 

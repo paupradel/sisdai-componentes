@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[50],{293:function(n,t,o){"use strict";o.r(t),t.default="<template>\n  <button class=\"boton-primario\">boton primario</button>\n</template>\n\n<script setup>\n//un comentario\nconst algo = 'algo'\n<\/script>\n"}}]);
