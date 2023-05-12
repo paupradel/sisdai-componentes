@@ -77,17 +77,21 @@ export function useMenuDesenfocable(elementoMenuEnfocable) {
   }
 
   function abrirSubmenu() {
-    const navSubmenu = document.querySelector('.nav-submenu')
-    const list = navSubmenu.classList
-    list.add('abierto')
-    submenuEstaAbierto.value = true
+    if (document.querySelector('.nav-submenu')) {
+      const navSubmenu = document.querySelector('.nav-submenu')
+      const list = navSubmenu.classList
+      list.add('abierto')
+      submenuEstaAbierto.value = true
+    }
   }
 
   function cerrarSubmenu() {
-    const navSubmenu = document.querySelector('.nav-submenu')
-    const list = navSubmenu.classList
-    list.remove('abierto')
-    submenuEstaAbierto.value = false
+    if (document.querySelector('.nav-submenu')) {
+      const navSubmenu = document.querySelector('.nav-submenu')
+      const list = navSubmenu.classList
+      list.remove('abierto')
+      submenuEstaAbierto.value = false
+    }
   }
 
   function alternarSubmenu() {
