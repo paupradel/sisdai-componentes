@@ -24,7 +24,7 @@
           <li>
             <a
               class="hipervinculo-conacyt"
-              href="https://conacyt.mx/conacyt/directorio/"
+              href="https://conahcyt.mx/directorio/"
               target="_blank"
               rel="noopener"
               >Directorio</a
@@ -33,16 +33,16 @@
           <li>
             <a
               class="hipervinculo-conacyt"
-              href="https://conacyt.mx/soporte-tecnico/"
+              href="https://conahcyt.mx/centro-de-contacto-de-atencion/"
               target="_blank"
               rel="noopener"
-              >Soporte Técnico</a
+              >Centro de Contacto</a
             >
           </li>
           <li>
             <a
               class="hipervinculo-conacyt"
-              href="https://conacyt.mx/aviso-de-privacidad/"
+              href="https://conahcyt.mx/aviso-de-privacidad/"
               target="_blank"
               rel="noopener"
               >Política de Privacidad</a
@@ -51,7 +51,7 @@
           <li>
             <a
               class="hipervinculo-conacyt"
-              href="http://comunidad.conacyt.mx/"
+              href="http://comunidad.conahcyt.mx/index.php"
               target="_blank"
               rel="noopener"
               >Intranet Conahcyt</a
@@ -66,7 +66,7 @@
         </p>
         <p>
           <a
-            href="https://www.facebook.com/ConacytMX/"
+            href="https://www.facebook.com/ConahcytMX"
             class="hipervinculo-conacyt m-r-3"
             target="_blank"
             rel="noopener"
@@ -75,7 +75,7 @@
             <span class="a11y-solo-lectura">feisbuk,</span>
           </a>
           <a
-            href="https://twitter.com/Conacyt_MX"
+            href="https://twitter.com/Conahcyt_Mex"
             class="hipervinculo-conacyt m-r-3"
             target="_blank"
             rel="noopener"
@@ -84,7 +84,7 @@
             <span class="a11y-solo-lectura">tuiter,</span>
           </a>
           <a
-            href="https://www.instagram.com/conacyt_mx/"
+            href="https://www.instagram.com/conahcyt_mex/"
             class="hipervinculo-conacyt m-r-3"
             target="_blank"
             rel="noopener"
@@ -93,7 +93,7 @@
             <span class="a11y-solo-lectura">instagram </span>
           </a>
           <a
-            href="https://www.youtube.com/channel/UClcVyko0ESwMc_6Lu1bXmIQ"
+            href="https://www.youtube.com/@Conahcytmx"
             class="hipervinculo-conacyt"
             target="_blank"
             rel="noopener"

@@ -31,7 +31,7 @@ const {
     <div class="nav-contenedor-identidad">
       <slot name="identidad">
         <a
-          href="https://conacyt.mx/"
+          href="https://conahcyt.mx/"
           target="_blank"
           class="nav-hiperviculo-logo"
         >
@@ -40,7 +40,7 @@ const {
             width="130"
             height="38"
             src="https://cdn.conacyt.mx/sisdai-archivos/conahcyt-azul.svg"
-            alt="Conacyt."
+            alt="Conahcyt."
           />
         </a>
       </slot>
