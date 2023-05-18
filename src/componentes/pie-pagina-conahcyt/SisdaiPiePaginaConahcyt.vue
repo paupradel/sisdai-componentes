@@ -10,7 +10,6 @@
           width="200px"
           height="60px"
         />
-        <p>Consejo Nacional de Humanidades, Ciencias y Tecnologías</p>
         <p>
           Av. Insurgentes Sur 1582, Col. Crédito Constructor,<br />
           Alcaldía Benito Juárez, C.P. 03940, Ciudad de México<br />
